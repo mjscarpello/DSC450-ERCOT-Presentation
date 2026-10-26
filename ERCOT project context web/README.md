@@ -6,6 +6,14 @@ A **source-linked, weighted, interactive research knowledge graph** for Bellevue
 
 This repository package is the **research context layer**, **not** a completed narration script, native Studio S production, or trained forecasting model. Nothing is published to GitHub automatically.
 
+## Research Explorer (new, Milestone 1)
+
+The **primary GitHub Pages research interface** is [explorer.html](explorer.html). It offers an evidence-first dashboard, filterable findings, eight-model comparisons, a gallery of all 38 original figures, question and source browsers, a searchable concept index, and focused evidence connections. The project root [index.html](../index.html) links to it.
+
+The new interface fetches the existing `data/context_graph.json` and `data/model_metrics.json` **without modifying scientific content**. Launch it from GitHub Pages or a local HTTP server (`python -m http.server 8765` from the repository root). The older **standalone offline Plotly network** remains at [outputs/ERCOT_CONTEXT_WEB.html](outputs/ERCOT_CONTEXT_WEB.html); open it directly without a server.
+
+Development milestone details, known limitations, automated tests and next priorities are recorded in [EXPLORER_MILESTONE_1.md](docs/EXPLORER_MILESTONE_1.md).
+
 ## Start here
 
 1. Download/unzip this project; from its root run:
