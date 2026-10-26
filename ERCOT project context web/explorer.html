@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1321">
+  <meta name="description" content="Explore evidence, forecasting models, notebook figures, research questions, and scientific boundaries from the DSC 450 ERCOT electricity demand project.">
+  <title>ERCOT Research Explorer | DSC 450</title>
+  <link rel="stylesheet" href="./explorer.css">
+  <script src="./explorer.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to research</a>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#overview" aria-label="ERCOT Research Explorer home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="brand-name">ERCOT <span>Research Explorer</span></span>
+      </a>
+      <button class="top-search" id="open-search" type="button" aria-label="Search all research">
+        <span class="search-symbol" aria-hidden="true">⌕</span>
+        <span>Search figures, findings, models, questions…</span>
+        <kbd>/</kbd>
+      </button>
+      <div class="top-actions">
+        <span class="project-tag">DSC 450 <span class="tag-dot"></span> Project 2</span>
+        <a class="icon-link" href="https://github.com/mjscarpello/DSC450-ERCOT-Presentation" target="_blank" rel="noopener noreferrer" aria-label="Open the project GitHub repository" title="View source">↗</a>
+      </div>
+    </header>
+    <div class="body-layout">
+      <nav class="sidebar" aria-label="Research sections">
+        <div class="sidebar-label">WORKSPACE</div>
+        <a class="nav-item" data-view="overview" href="#overview"><span class="nav-symbol" aria-hidden="true">▦</span> Overview</a>
+        <a class="nav-item" data-view="findings" href="#findings"><span class="nav-symbol" aria-hidden="true">✦</span> Research findings <span class="nav-count" id="count-findings"></span></a>
+        <a class="nav-item" data-view="models" href="#models"><span class="nav-symbol" aria-hidden="true">▥</span> Model comparison</a>
+        <a class="nav-item" data-view="figures" href="#figures"><span class="nav-symbol" aria-hidden="true">▧</span> Figure library <span class="nav-count" id="count-figures"></span></a>
+        <a class="nav-item" data-view="questions" href="#questions"><span class="nav-symbol" aria-hidden="true">?</span> Research questions <span class="nav-count" id="count-questions"></span></a>
+        <div class="sidebar-divider"></div>
+        <div class="sidebar-label">DISCOVERY</div>
+        <a class="nav-item" data-view="graph" href="#graph"><span class="nav-symbol" aria-hidden="true">◎</span> Evidence connections</a>
+        <a class="nav-item" data-view="sources" href="#sources"><span class="nav-symbol" aria-hidden="true">≡</span> Source registry</a>
+        <div class="sidebar-bottom">
+          <span class="sidebar-label">ABOUT THIS EXPLORER</span>
+          <p>The research stays source-linked. Relationship weights indicate editorial closeness, not confidence or causality.</p>
+          <a href="./outputs/ERCOT_CONTEXT_WEB.html">Open original network ↗</a>
+        </div>
+      </nav>
+      <main id="main-content" tabindex="-1">
+        <div id="page-content" aria-live="polite">
+          <section class="loading-state"><div class="loading-spinner" aria-hidden="true"></div><h1>Loading research</h1><p>Reading the local project graph and verified metric snapshot…</p></section>
+        </div>
+        <footer class="page-footer"><span>DSC 450 · ERCOT electricity demand forecasting</span><span>Research context, not operational forecasting advice</span></footer>
+      </main>
+    </div>
+  </div>
+  <div id="overlay-root"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
