@@ -1,0 +1,1672 @@
+{
+  "metadata": {
+    "title": "ERCOT DSC450 Research Context Web",
+    "version": "1.0-draft",
+    "created": "2026-10-26",
+    "purpose": "Source-linked research reasoning and development history, intentionally not a screenplay or presentation scene manifest",
+    "authority": "The October 25 report and full notebook are primary interpreted sources; prediction CSV used for arithmetic checks; prior discussions give context but are not substitutes for documented evidence.",
+    "epistemic_statuses": {
+      "source-supported": "In supplied report or notebook (may include source assertions, not independently audited)",
+      "conversation-supported": "Supported by the project conversations",
+      "interpretive": "Plausible explanation or interpretation; not an experimental proof",
+      "user-plan": "Requested intention, not completed work",
+      "open": "Missing verification or undecided"
+    },
+    "recommended_use": "Review this web before claiming evidence, attributing work, choosing figures, scripting, or writing Studio S orchestration. Do not treat open or interpretive nodes as verified results."
+  },
+  "nodes": [
+    {
+      "id": "SRC-REPORT",
+      "type": "source",
+      "title": "October 25 updated report",
+      "summary": "Latest supplied Milestone 2 research report with figures, metrics, limitations, ethical implications and appendix.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "all sections"
+        }
+      ]
+    },
+    {
+      "id": "SRC-NOTEBOOK",
+      "type": "source",
+      "title": "Full visualization notebook",
+      "summary": "102-cell notebook containing research questions, figure-generating code, interpretation and safeguards.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cells 0–101"
+        }
+      ]
+    },
+    {
+      "id": "SRC-CLEAN",
+      "type": "source",
+      "title": "Cleaned EIA-930 hourly dataset",
+      "summary": "Team-prepared historical ERCOT demand dataset and engineered predictors.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "eia930_erco_cleaned (1)(2).csv",
+          "locator": "all rows/columns"
+        }
+      ]
+    },
+    {
+      "id": "SRC-WEATHER",
+      "type": "source",
+      "title": "Weather-enriched data",
+      "summary": "Hourly weather-augmented historical dataset using regional temperature measures.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "eia930_erco_weather(1).csv",
+          "locator": "all rows/columns"
+        }
+      ]
+    },
+    {
+      "id": "SRC-PRED",
+      "type": "source",
+      "title": "Hourly prediction export",
+      "summary": "8,760 test-year hours, observed demand, ERCOT benchmark and seven team forecasts including official hybrid.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "ercot_model_predicitons_comparison_with_hybrid(1).csv",
+          "locator": "columns TIMESTAMP, ACTUAL_DEMAND_MWH, ERCOT_DAY_AHEAD, ... HYBRID_50_50"
+        }
+      ]
+    },
+    {
+      "id": "SRC-RUBRIC",
+      "type": "source",
+      "title": "Milestone 3 assignment",
+      "summary": "Presentation deliverables: report/white paper, presentation, Q&A, code/link. Team decides speaking split.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Project 2 Presentation Group Assignment (Milestone 3).docx",
+          "locator": "page 1"
+        }
+      ]
+    },
+    {
+      "id": "SRC-STUDIO",
+      "type": "source",
+      "title": "Studio S M01F checkpoint",
+      "summary": "Code-driven Electron/Canvas presentation software checkpoint with modular project and capability documentation.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Studio_S_v0.2.0-dev.8_M01F_Checkpoint (1)(1).zip",
+          "locator": "Studio_S_v0.2_Development/docs/CAPABILITIES.md and MODULAR_PROJECTS.md"
+        }
+      ]
+    },
+    {
+      "id": "SRC-TEAMCONTEXT",
+      "type": "source",
+      "title": "DSC 450 team discussion history",
+      "summary": "Earlier team decisions, presentation preferences and the user’s proposed model combination.",
+      "status": "conversation-supported",
+      "sources": [
+        {
+          "file": "DSC 450 project conversations",
+          "locator": "October 22–26, 2026 team messages and planning discussions"
+        }
+      ]
+    },
+    {
+      "id": "GOAL-RESEARCH",
+      "type": "question",
+      "title": "Can public data forecast ERCOT next-day hourly demand?",
+      "summary": "Compare historical demand/calendar/weather-driven approaches with a weekly-repeat baseline and ERCOT published forecast.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Research Question, p.3"
+        },
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cells 0–1"
+        }
+      ]
+    },
+    {
+      "id": "GOAL-BUSINESS",
+      "type": "question",
+      "title": "Why forecast demand?",
+      "summary": "Day-ahead hourly estimates inform generation schedules, purchases and reserves; this study does not estimate blackout probability or financial impact.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Introduction and Business Problem, p.3"
+        }
+      ]
+    },
+    {
+      "id": "GOAL-PRESENTATION",
+      "type": "deliverable",
+      "title": "Research-grounded narrated educational video",
+      "summary": "Target 13–15 minutes, separately recorded speakers, built with Studio S; not yet produced.",
+      "status": "user-plan",
+      "sources": [
+        {
+          "file": "DSC 450 project conversations",
+          "locator": "October 25–26 presentation plan"
+        }
+      ]
+    },
+    {
+      "id": "OUT-MILESTONE3",
+      "type": "deliverable",
+      "title": "Milestone 3 required submissions",
+      "summary": "Report/white paper, presentation, Q&A and code/link; one submission for team, Sunday Week 8 11:59 p.m.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Project 2 Presentation Group Assignment (Milestone 3).docx",
+          "locator": "p.1"
+        }
+      ]
+    },
+    {
+      "id": "ROLE-SARAH",
+      "type": "role",
+      "title": "Sarah — Data Wrangler",
+      "summary": "Cleaned EIA-930 data, preserved demand, engineered local calendar and demand-lag features, supported weather data.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cell 2"
+        }
+      ]
+    },
+    {
+      "id": "ROLE-ANDREA",
+      "type": "role",
+      "title": "Andrea — Data Scientist",
+      "summary": "Trained and evaluated forecasting alternatives, modified SARIMA forecast design, exported per-hour model predictions including official 50/50 hybrid.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cell 2 and 75"
+        },
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Modeling Approaches, p.5"
+        }
+      ]
+    },
+    {
+      "id": "ROLE-MATTHEW",
+      "type": "role",
+      "title": "Matthew — Data Visualizer / Presenter",
+      "summary": "Developed visualization questions, diagnostic comparisons, interpretations, exploratory hybrid weight analysis and planned production.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cells 0, 2, 75, 88"
+        },
+        {
+          "file": "DSC 450 project conversations",
+          "locator": "Presentation planning"
+        }
+      ]
+    },
+    {
+      "id": "DATA-HISTORY",
+      "type": "data",
+      "title": "41,616 observed hourly demand records",
+      "summary": "Continuous EIA-930 UTC hourly records from Jan. 1, 2022 through Sept. 30, 2026; no duplicate UTC timestamps, missing actual demand or nonpositive values.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Methods / Analysis, p.4"
+        },
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cell 7"
+        }
+      ]
+    },
+    {
+      "id": "DATA-TIME",
+      "type": "decision",
+      "title": "UTC matching, Central-local calendar features",
+      "summary": "UTC avoids DST alignment ambiguities; local time explains consumption cycles. Seasonal local-day figures handle clock transitions for display only.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Methods / Analysis, p.4"
+        },
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cells 7, 18"
+        }
+      ]
+    },
+    {
+      "id": "DATA-FEATURES",
+      "type": "data",
+      "title": "Calendar and demand-history features",
+      "summary": "Hour, weekday, season, holidays, 24-hour and 168-hour lags, historical moving averages.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Methods / Analysis, p.4"
+        }
+      ]
+    },
+    {
+      "id": "DATA-WEATHER",
+      "type": "data",
+      "title": "Regional observed temperature features",
+      "summary": "Temperatures from Houston, Dallas–Fort Worth, San Antonio and Austin; weighted regional temperature and heating/cooling indicators.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Methods / Analysis, p.4"
+        },
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cell 2"
+        }
+      ]
+    },
+    {
+      "id": "DATA-SPLIT",
+      "type": "data",
+      "title": "Chronological training and test windows",
+      "summary": "Models trained primarily Oct. 2022–Sep. 2025; held-out test period Oct. 2025–Sep. 2026 (8,760 hours).",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Modeling Approaches, p.5"
+        }
+      ]
+    },
+    {
+      "id": "DATA-SHARED",
+      "type": "decision",
+      "title": "8,640 shared-hour evaluation",
+      "summary": "120 ERCOT forecast values unavailable during test year; excluded without imputation for matched eight-way comparisons.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Results pp.5–6 and Appendix p.10"
+        },
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cells 7, 56"
+        }
+      ]
+    },
+    {
+      "id": "METHOD-NAIVE",
+      "type": "model",
+      "title": "Seasonal naive baseline",
+      "summary": "Forecast repeats demand from same hour a week earlier.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Modeling Approaches, p.5"
+        }
+      ]
+    },
+    {
+      "id": "METHOD-SARIMA",
+      "type": "model",
+      "title": "Rolling SARIMA",
+      "summary": "Seasonal autoregressive forecast in rolling 24-hour UTC blocks, updated using observed demand between blocks.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Modeling Approaches, p.5"
+        }
+      ]
+    },
+    {
+      "id": "METHOD-PROPHET",
+      "type": "model",
+      "title": "Prophet",
+      "summary": "Trend, daily/weekly/annual seasonal components with limited tuning; static holdout forecasts.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Modeling Approaches, p.5"
+        }
+      ]
+    },
+    {
+      "id": "METHOD-XGB",
+      "type": "model",
+      "title": "XGBoost",
+      "summary": "Tree boosting on calendar and historical-demand features.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Modeling Approaches, p.5"
+        }
+      ]
+    },
+    {
+      "id": "METHOD-WXGB",
+      "type": "model",
+      "title": "Weather-enhanced XGBoost",
+      "summary": "XGBoost using additional observed/lagged temperature and heating/cooling predictors.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Modeling Approaches, p.5"
+        }
+      ]
+    },
+    {
+      "id": "METHOD-SARIMAX",
+      "type": "model",
+      "title": "Weather-enhanced rolling SARIMAX",
+      "summary": "Rolling SARIMA-family model with exogenous weather predictors.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Modeling Approaches, p.5"
+        }
+      ]
+    },
+    {
+      "id": "METHOD-HYBRID",
+      "type": "model",
+      "title": "Official 50/50 hybrid",
+      "summary": "Arithmetic mean of rolling SARIMA and weather-enhanced XGBoost hourly forecasts; not a separately retrained model.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Modeling Approaches, p.5"
+        },
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cells 75, 100"
+        },
+        {
+          "file": "ercot_model_predicitons_comparison_with_hybrid(1).csv",
+          "locator": "HYBRID_50_50"
+        }
+      ]
+    },
+    {
+      "id": "METHOD-ERCOT",
+      "type": "model",
+      "title": "ERCOT published day-ahead benchmark",
+      "summary": "External forecast generated by ERCOT, not a model trained by the team.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Business Problem, p.3"
+        },
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cells 1, 57"
+        }
+      ]
+    },
+    {
+      "id": "DEC-ROLL",
+      "type": "decision",
+      "title": "Revise static full-year SARIMA to rolling 24h",
+      "summary": "Initial long-range fixed forecast drifted implausibly, prompting rolling windows and updates.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Modeling Approaches, p.5"
+        }
+      ]
+    },
+    {
+      "id": "DEC-ERROR-DIRECTION",
+      "type": "decision",
+      "title": "Distinguish magnitude from directional error",
+      "summary": "MAE is nonnegative; signed forecast minus actual error indicates over- versus underprediction.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cell 52"
+        }
+      ]
+    },
+    {
+      "id": "DEC-COMPLEMENT",
+      "type": "question",
+      "title": "Do SARIMA and Weather XGBoost make different errors?",
+      "summary": "Use paired signed-error plots to investigate whether averaging could cancel some errors; correlation alone does not guarantee gain.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cells 73, 75"
+        }
+      ]
+    },
+    {
+      "id": "DEC-WEIGHT-TEST",
+      "type": "decision",
+      "title": "Chronological exploratory hybrid-weight check",
+      "summary": "Choose blend weight on Oct. 2025–Mar. 2026 hours, then assess on Apr.–Sep. 2026; does not replace official 50/50 model.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cells 75–86"
+        }
+      ]
+    },
+    {
+      "id": "FIND-SEASONAL",
+      "type": "finding",
+      "title": "Demand varies strongly by hour and season",
+      "summary": "Summer afternoon peaks and variable daily patterns motivate calendar and lag predictors; descriptive association alone does not prove model skill.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Fig.1 and narrative p.4"
+        },
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cells 15–38"
+        }
+      ]
+    },
+    {
+      "id": "FIND-WEATHER",
+      "type": "finding",
+      "title": "Weather improved XGBoost, not tested SARIMAX",
+      "summary": "Weather XGBoost outperformed original XGBoost overall; weather SARIMAX did not outperform rolling SARIMA.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Modeling Approaches and Appendix p.12"
+        }
+      ]
+    },
+    {
+      "id": "FIND-OVERALL",
+      "type": "finding",
+      "title": "Hybrid leads team overall",
+      "summary": "On 8,640 matched hours, ERCOT MAE ≈1,135; hybrid ≈2,006; weather XGB ≈2,477; naive ≈4,205 MWh. Hybrid improves ≈52% versus naive.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Results p.5"
+        },
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cells 56–60"
+        },
+        {
+          "file": "ercot_model_predicitons_comparison_with_hybrid(1).csv",
+          "locator": "all comparable records"
+        }
+      ],
+      "measurements": {
+        "n": 8640,
+        "MAE_MWh": {
+          "ERCOT_DAY_AHEAD": 1134.8,
+          "SEASONAL_NAIVE": 4205.29,
+          "ROLLING_SARIMA": 2661.58,
+          "PROPHET": 4846.27,
+          "XGBOOST": 2647.42,
+          "WEATHER_SARIMAX": 2729.84,
+          "WEATHER_XGBOOST": 2476.68,
+          "HYBRID_50_50": 2005.85
+        },
+        "hybrid_MAE_reduction_vs_naive_pct": 52.3,
+        "verification": "recomputed from supplied prediction CSV; values rounded"
+      }
+    },
+    {
+      "id": "FIND-ERCOT",
+      "type": "finding",
+      "title": "ERCOT remains more accurate overall",
+      "summary": "External operator benchmark beats all team models on 8,640 matched hours; this is not a fair same-issuance contest.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Results and Conclusion pp.5,8"
+        }
+      ]
+    },
+    {
+      "id": "FIND-SUMMER-WEEK",
+      "type": "finding",
+      "title": "One high-demand week illustrates forecast shape",
+      "summary": "Jul. 19–25, 2026 shows recurring load rises and falls and differing peak magnitudes; case study does not establish model rankings.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Fig.3 p.6"
+        },
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cells 61–63, 84–85"
+        }
+      ]
+    },
+    {
+      "id": "FIND-PEAK",
+      "type": "finding",
+      "title": "Peak-hour model ranking reverses",
+      "summary": "Top 1% observed demand: 88 matched hours, cutoff ~87,966 MWh; rolling SARIMA MAE ~1,242, weather SARIMAX ~1,176, hybrid ~3,189, weather XGBoost ~6,421 MWh.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Peak-Demand Performance p.7"
+        },
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cells 64–68, 100"
+        }
+      ]
+    },
+    {
+      "id": "FIND-UNDER",
+      "type": "finding",
+      "title": "Both XGBoost variants underforecasted all top-1% hours",
+      "summary": "On retrospective top 1% (88 matched hours), XGBoost and weather XGBoost underpredicted every hour.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Peak-Demand Performance p.7"
+        }
+      ]
+    },
+    {
+      "id": "FIND-CAUSE",
+      "type": "hypothesis",
+      "title": "Tree extrapolation is a possible explanation",
+      "summary": "Tree-based boosted methods may be limited at unseen record load magnitudes while rolling SARIMA adapts to recent observations; plausible interpretation, not causal proof.",
+      "status": "interpretive",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Peak-Demand Performance p.7"
+        }
+      ]
+    },
+    {
+      "id": "FIND-ERCOT-PEAK",
+      "type": "finding",
+      "title": "ERCOT error rose only modestly in top decile",
+      "summary": "Historical ERCOT MAE about 1,132 MWh outside top demand decile versus 1,163 within; challenged assumption that high load automatically means much larger errors.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cells 53–55"
+        }
+      ]
+    },
+    {
+      "id": "FIND-BLEND-TEST",
+      "type": "finding",
+      "title": "50/50 beat tuned earlier-weight blend on later split",
+      "summary": "Exploratory earlier-selected SARIMA weight ~36% did not beat fixed 50/50 blend on later assessment; not a prospectively optimized operational rule.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cells 75–86"
+        }
+      ]
+    },
+    {
+      "id": "FIND-DIVERGENCE",
+      "type": "finding",
+      "title": "Models have different error regimes",
+      "summary": "Notebook F26–F33 compare hour/month/season-specific MAE with each model’s own overall MAE; own-average improvement is not the same as beating baseline or ERCOT.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cells 88–100"
+        }
+      ]
+    },
+    {
+      "id": "V-F03",
+      "type": "visual",
+      "title": "F03 | month × local-hour demand heatmap",
+      "summary": "Displays descriptive recurrent hourly and seasonal load patterns; corresponds to Report Figure 1.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cells 15–17"
+        },
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Figure 1 p.4"
+        }
+      ]
+    },
+    {
+      "id": "V-F03-SEASONS",
+      "type": "visual",
+      "title": "F03A–F03E | daily seasonal heatmaps",
+      "summary": "Four complete seasons, shared color scale, daily variation concealed by seasonal averages.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cells 18–22"
+        }
+      ]
+    },
+    {
+      "id": "V-F12",
+      "type": "visual",
+      "title": "F12 | ERCOT monthly MAE and signed bias",
+      "summary": "Distinguishes error magnitude from its directional sign.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cells 50–52"
+        }
+      ]
+    },
+    {
+      "id": "V-F13",
+      "type": "visual",
+      "title": "F13 | ERCOT top-decile demand MAE",
+      "summary": "Checks hypothesis that highest actual demand means greater benchmark forecast error.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cells 53–55"
+        }
+      ]
+    },
+    {
+      "id": "V-F14",
+      "type": "visual",
+      "title": "F14 | eight-series matched MAE leaderboard",
+      "summary": "Main comparison chart, corresponds to Report Figure 2.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cell 56"
+        },
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Figure 2 p.6"
+        }
+      ]
+    },
+    {
+      "id": "V-F16",
+      "type": "visual",
+      "title": "F16 | July forecast overlay",
+      "summary": "Actual demand versus ERCOT, SARIMA, weather XGBoost, hybrid; corresponds to Report Figure 3.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cells 61–63"
+        },
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Figure 3 p.6"
+        }
+      ]
+    },
+    {
+      "id": "V-F17",
+      "type": "visual",
+      "title": "F17 | MAE by observed demand group",
+      "summary": "Main retrospective peak-load comparison; corresponds to Report Figure 4.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cells 64–68"
+        },
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Figure 4 p.7"
+        }
+      ]
+    },
+    {
+      "id": "V-F20",
+      "type": "visual",
+      "title": "F20 | paired signed errors",
+      "summary": "Tests whether the component models make related or complementary directional errors.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cells 73–74"
+        }
+      ]
+    },
+    {
+      "id": "V-F21-25",
+      "type": "visual",
+      "title": "F21–F25 | exploratory hybrid diagnostics",
+      "summary": "Blend weight sensitivity, later-period check, demand bins, July overlay and win rates.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cells 75–87"
+        }
+      ]
+    },
+    {
+      "id": "V-F26-33",
+      "type": "visual",
+      "title": "F26–F33 | error divergence diagnostics",
+      "summary": "Compare own-overall MAE by hour/month/season and check skill versus naive and gap versus ERCOT.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cells 88–99"
+        }
+      ]
+    },
+    {
+      "id": "LIMIT-ORIGIN",
+      "type": "limitation",
+      "title": "Different forecast issuance conditions",
+      "summary": "Matching prediction target hours does not establish same origin, forecast horizon, retraining interval or predictor access.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Conclusion p.8 and Appendix p.10"
+        }
+      ]
+    },
+    {
+      "id": "LIMIT-WEATHER",
+      "type": "limitation",
+      "title": "Observed weather is not advance forecast",
+      "summary": "Availability of some weather inputs at issue time is unverified; reported accuracy may not reflect live day-ahead operation.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Methods p.4, Conclusion p.8"
+        },
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cells 7, 100"
+        }
+      ]
+    },
+    {
+      "id": "LIMIT-PEAK-BIN",
+      "type": "limitation",
+      "title": "Top-demand groups only known after the fact",
+      "summary": "Observed-demand cutoff can describe history but cannot be used to select tomorrow’s forecasting model.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Peak-Demand Performance p.7"
+        },
+        {
+          "file": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+          "locator": "cells 64, 75"
+        }
+      ]
+    },
+    {
+      "id": "LIMIT-CAUSAL",
+      "type": "limitation",
+      "title": "Causal and operational claims not established",
+      "summary": "Reported errors are not blackout probabilities, procurement savings, causally attributed to model features or proof of safe deployment.",
+      "status": "source-supported",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Introduction p.3, Recommendations p.8"
+        }
+      ]
+    },
+    {
+      "id": "OPEN-UPSTREAM",
+      "type": "open",
+      "title": "Audit original training code and feature timing",
+      "summary": "Full model training notebooks and forecast-issue feature timestamps are not in this source set; need separate review before operational claims.",
+      "status": "open",
+      "sources": [
+        {
+          "file": "Milestone_2_ERCOT_Hybrid_Updated(2).docx",
+          "locator": "Conclusion p.8"
+        }
+      ]
+    },
+    {
+      "id": "OPEN-STUDIO",
+      "type": "open",
+      "title": "Verify native Studio S build on final assets",
+      "summary": "M01F capability contract is not proof that a complete ERCOT project will render on the target Mac.",
+      "status": "open",
+      "sources": [
+        {
+          "file": "Studio_S_v0.2.0-dev.8_M01F_Checkpoint (1)(1).zip",
+          "locator": "docs/CAPABILITIES.md"
+        }
+      ]
+    },
+    {
+      "id": "OPEN-SCRIPT",
+      "type": "open",
+      "title": "Script, speaker approval and timing not yet decided",
+      "summary": "Narration and scene allocations must follow confirmation of context; individual audio and timestamps have not been approved.",
+      "status": "open",
+      "sources": [
+        {
+          "file": "DSC 450 project conversations",
+          "locator": "October 25–26 planning"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "ROLE-SARAH",
+      "to": "DATA-HISTORY",
+      "relation": "prepared"
+    },
+    {
+      "from": "ROLE-SARAH",
+      "to": "DATA-FEATURES",
+      "relation": "engineered"
+    },
+    {
+      "from": "ROLE-SARAH",
+      "to": "DATA-WEATHER",
+      "relation": "supported preparation of"
+    },
+    {
+      "from": "ROLE-ANDREA",
+      "to": "METHOD-SARIMA",
+      "relation": "developed"
+    },
+    {
+      "from": "ROLE-ANDREA",
+      "to": "METHOD-XGB",
+      "relation": "developed"
+    },
+    {
+      "from": "ROLE-ANDREA",
+      "to": "METHOD-WXGB",
+      "relation": "developed"
+    },
+    {
+      "from": "ROLE-ANDREA",
+      "to": "METHOD-SARIMAX",
+      "relation": "developed"
+    },
+    {
+      "from": "ROLE-ANDREA",
+      "to": "METHOD-HYBRID",
+      "relation": "officially exported"
+    },
+    {
+      "from": "ROLE-MATTHEW",
+      "to": "V-F03",
+      "relation": "analyzed"
+    },
+    {
+      "from": "ROLE-MATTHEW",
+      "to": "V-F17",
+      "relation": "analyzed"
+    },
+    {
+      "from": "ROLE-MATTHEW",
+      "to": "V-F20",
+      "relation": "analyzed"
+    },
+    {
+      "from": "ROLE-MATTHEW",
+      "to": "V-F26-33",
+      "relation": "developed"
+    },
+    {
+      "from": "ROLE-MATTHEW",
+      "to": "DEC-WEIGHT-TEST",
+      "relation": "explored"
+    },
+    {
+      "from": "SRC-CLEAN",
+      "to": "DATA-HISTORY",
+      "relation": "contains"
+    },
+    {
+      "from": "SRC-WEATHER",
+      "to": "DATA-WEATHER",
+      "relation": "contains"
+    },
+    {
+      "from": "SRC-PRED",
+      "to": "DATA-SPLIT",
+      "relation": "covers test period"
+    },
+    {
+      "from": "DATA-HISTORY",
+      "to": "DATA-TIME",
+      "relation": "aligned using"
+    },
+    {
+      "from": "DATA-HISTORY",
+      "to": "DATA-FEATURES",
+      "relation": "supports"
+    },
+    {
+      "from": "DATA-HISTORY",
+      "to": "FIND-SEASONAL",
+      "relation": "reveals"
+    },
+    {
+      "from": "DATA-WEATHER",
+      "to": "METHOD-WXGB",
+      "relation": "informs"
+    },
+    {
+      "from": "DATA-WEATHER",
+      "to": "METHOD-SARIMAX",
+      "relation": "informs"
+    },
+    {
+      "from": "GOAL-RESEARCH",
+      "to": "METHOD-NAIVE",
+      "relation": "uses as baseline"
+    },
+    {
+      "from": "GOAL-RESEARCH",
+      "to": "METHOD-ERCOT",
+      "relation": "uses as benchmark"
+    },
+    {
+      "from": "GOAL-BUSINESS",
+      "to": "GOAL-RESEARCH",
+      "relation": "motivates"
+    },
+    {
+      "from": "DEC-ROLL",
+      "to": "METHOD-SARIMA",
+      "relation": "changed implementation of"
+    },
+    {
+      "from": "METHOD-SARIMA",
+      "to": "METHOD-HYBRID",
+      "relation": "contributes 50%"
+    },
+    {
+      "from": "METHOD-WXGB",
+      "to": "METHOD-HYBRID",
+      "relation": "contributes 50%"
+    },
+    {
+      "from": "SRC-PRED",
+      "to": "DATA-SHARED",
+      "relation": "enables common-hour evaluation"
+    },
+    {
+      "from": "DATA-SHARED",
+      "to": "FIND-OVERALL",
+      "relation": "defines denominator for"
+    },
+    {
+      "from": "DATA-SHARED",
+      "to": "FIND-PEAK",
+      "relation": "defines matched hours for"
+    },
+    {
+      "from": "METHOD-NAIVE",
+      "to": "FIND-OVERALL",
+      "relation": "provides comparison"
+    },
+    {
+      "from": "METHOD-ERCOT",
+      "to": "FIND-ERCOT",
+      "relation": "provides comparison"
+    },
+    {
+      "from": "METHOD-WXGB",
+      "to": "FIND-WEATHER",
+      "relation": "contributes evidence to"
+    },
+    {
+      "from": "METHOD-HYBRID",
+      "to": "FIND-OVERALL",
+      "relation": "produces"
+    },
+    {
+      "from": "METHOD-HYBRID",
+      "to": "FIND-PEAK",
+      "relation": "exposes limitation in"
+    },
+    {
+      "from": "FIND-SEASONAL",
+      "to": "V-F03",
+      "relation": "visualized by"
+    },
+    {
+      "from": "FIND-SEASONAL",
+      "to": "V-F03-SEASONS",
+      "relation": "deepened by"
+    },
+    {
+      "from": "DATA-TIME",
+      "to": "V-F03-SEASONS",
+      "relation": "governs interpretation of"
+    },
+    {
+      "from": "DEC-ERROR-DIRECTION",
+      "to": "V-F12",
+      "relation": "visualized by"
+    },
+    {
+      "from": "DEC-ERROR-DIRECTION",
+      "to": "V-F20",
+      "relation": "enables"
+    },
+    {
+      "from": "V-F13",
+      "to": "FIND-ERCOT-PEAK",
+      "relation": "tests"
+    },
+    {
+      "from": "FIND-OVERALL",
+      "to": "V-F14",
+      "relation": "visualized by"
+    },
+    {
+      "from": "FIND-SUMMER-WEEK",
+      "to": "V-F16",
+      "relation": "visualized by"
+    },
+    {
+      "from": "FIND-PEAK",
+      "to": "V-F17",
+      "relation": "visualized by"
+    },
+    {
+      "from": "V-F20",
+      "to": "DEC-COMPLEMENT",
+      "relation": "informs question"
+    },
+    {
+      "from": "DEC-COMPLEMENT",
+      "to": "METHOD-HYBRID",
+      "relation": "motivated exploration of"
+    },
+    {
+      "from": "DEC-WEIGHT-TEST",
+      "to": "V-F21-25",
+      "relation": "visualized by"
+    },
+    {
+      "from": "DEC-WEIGHT-TEST",
+      "to": "FIND-BLEND-TEST",
+      "relation": "produced"
+    },
+    {
+      "from": "FIND-DIVERGENCE",
+      "to": "V-F26-33",
+      "relation": "visualized by"
+    },
+    {
+      "from": "FIND-PEAK",
+      "to": "FIND-UNDER",
+      "relation": "contains"
+    },
+    {
+      "from": "FIND-UNDER",
+      "to": "FIND-CAUSE",
+      "relation": "suggests hypothesis"
+    },
+    {
+      "from": "LIMIT-PEAK-BIN",
+      "to": "FIND-PEAK",
+      "relation": "qualifies"
+    },
+    {
+      "from": "LIMIT-PEAK-BIN",
+      "to": "FIND-BLEND-TEST",
+      "relation": "qualifies any regime selection"
+    },
+    {
+      "from": "LIMIT-ORIGIN",
+      "to": "FIND-OVERALL",
+      "relation": "qualifies"
+    },
+    {
+      "from": "LIMIT-ORIGIN",
+      "to": "FIND-ERCOT",
+      "relation": "qualifies"
+    },
+    {
+      "from": "LIMIT-WEATHER",
+      "to": "FIND-WEATHER",
+      "relation": "qualifies"
+    },
+    {
+      "from": "LIMIT-WEATHER",
+      "to": "METHOD-WXGB",
+      "relation": "applies to"
+    },
+    {
+      "from": "LIMIT-CAUSAL",
+      "to": "GOAL-BUSINESS",
+      "relation": "restricts implications for"
+    },
+    {
+      "from": "OPEN-UPSTREAM",
+      "to": "LIMIT-ORIGIN",
+      "relation": "needed to resolve"
+    },
+    {
+      "from": "SRC-STUDIO",
+      "to": "OPEN-STUDIO",
+      "relation": "documents current status for"
+    },
+    {
+      "from": "SRC-RUBRIC",
+      "to": "OUT-MILESTONE3",
+      "relation": "defines"
+    },
+    {
+      "from": "GOAL-PRESENTATION",
+      "to": "OUT-MILESTONE3",
+      "relation": "aims to fulfill"
+    },
+    {
+      "from": "GOAL-PRESENTATION",
+      "to": "OPEN-SCRIPT",
+      "relation": "requires approval of"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "GOAL-RESEARCH",
+      "relation": "supports / describes",
+      "why": "Research Question, p.3"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "GOAL-RESEARCH",
+      "relation": "supports / describes",
+      "why": "cells 0–1"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "GOAL-BUSINESS",
+      "relation": "supports / describes",
+      "why": "Introduction and Business Problem, p.3"
+    },
+    {
+      "from": "SRC-TEAMCONTEXT",
+      "to": "GOAL-PRESENTATION",
+      "relation": "supports / describes",
+      "why": "October 25–26 presentation plan"
+    },
+    {
+      "from": "SRC-RUBRIC",
+      "to": "OUT-MILESTONE3",
+      "relation": "supports / describes",
+      "why": "p.1"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "ROLE-SARAH",
+      "relation": "supports / describes",
+      "why": "cell 2"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "ROLE-ANDREA",
+      "relation": "supports / describes",
+      "why": "cell 2 and 75"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "ROLE-ANDREA",
+      "relation": "supports / describes",
+      "why": "Modeling Approaches, p.5"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "ROLE-MATTHEW",
+      "relation": "supports / describes",
+      "why": "cells 0, 2, 75, 88"
+    },
+    {
+      "from": "SRC-TEAMCONTEXT",
+      "to": "ROLE-MATTHEW",
+      "relation": "supports / describes",
+      "why": "Presentation planning"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "DATA-HISTORY",
+      "relation": "supports / describes",
+      "why": "Methods / Analysis, p.4"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "DATA-HISTORY",
+      "relation": "supports / describes",
+      "why": "cell 7"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "DATA-TIME",
+      "relation": "supports / describes",
+      "why": "Methods / Analysis, p.4"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "DATA-TIME",
+      "relation": "supports / describes",
+      "why": "cells 7, 18"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "DATA-FEATURES",
+      "relation": "supports / describes",
+      "why": "Methods / Analysis, p.4"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "DATA-WEATHER",
+      "relation": "supports / describes",
+      "why": "Methods / Analysis, p.4"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "DATA-WEATHER",
+      "relation": "supports / describes",
+      "why": "cell 2"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "DATA-SPLIT",
+      "relation": "supports / describes",
+      "why": "Modeling Approaches, p.5"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "DATA-SHARED",
+      "relation": "supports / describes",
+      "why": "Results pp.5–6 and Appendix p.10"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "DATA-SHARED",
+      "relation": "supports / describes",
+      "why": "cells 7, 56"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "METHOD-NAIVE",
+      "relation": "supports / describes",
+      "why": "Modeling Approaches, p.5"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "METHOD-SARIMA",
+      "relation": "supports / describes",
+      "why": "Modeling Approaches, p.5"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "METHOD-PROPHET",
+      "relation": "supports / describes",
+      "why": "Modeling Approaches, p.5"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "METHOD-XGB",
+      "relation": "supports / describes",
+      "why": "Modeling Approaches, p.5"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "METHOD-WXGB",
+      "relation": "supports / describes",
+      "why": "Modeling Approaches, p.5"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "METHOD-SARIMAX",
+      "relation": "supports / describes",
+      "why": "Modeling Approaches, p.5"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "METHOD-HYBRID",
+      "relation": "supports / describes",
+      "why": "Modeling Approaches, p.5"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "METHOD-HYBRID",
+      "relation": "supports / describes",
+      "why": "cells 75, 100"
+    },
+    {
+      "from": "SRC-PRED",
+      "to": "METHOD-HYBRID",
+      "relation": "supports / describes",
+      "why": "HYBRID_50_50"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "METHOD-ERCOT",
+      "relation": "supports / describes",
+      "why": "Business Problem, p.3"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "METHOD-ERCOT",
+      "relation": "supports / describes",
+      "why": "cells 1, 57"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "DEC-ROLL",
+      "relation": "supports / describes",
+      "why": "Modeling Approaches, p.5"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "DEC-ERROR-DIRECTION",
+      "relation": "supports / describes",
+      "why": "cell 52"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "DEC-COMPLEMENT",
+      "relation": "supports / describes",
+      "why": "cells 73, 75"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "DEC-WEIGHT-TEST",
+      "relation": "supports / describes",
+      "why": "cells 75–86"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "FIND-SEASONAL",
+      "relation": "supports / describes",
+      "why": "Fig.1 and narrative p.4"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "FIND-SEASONAL",
+      "relation": "supports / describes",
+      "why": "cells 15–38"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "FIND-WEATHER",
+      "relation": "supports / describes",
+      "why": "Modeling Approaches and Appendix p.12"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "FIND-OVERALL",
+      "relation": "supports / describes",
+      "why": "Results p.5"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "FIND-OVERALL",
+      "relation": "supports / describes",
+      "why": "cells 56–60"
+    },
+    {
+      "from": "SRC-PRED",
+      "to": "FIND-OVERALL",
+      "relation": "supports / describes",
+      "why": "all comparable records"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "FIND-ERCOT",
+      "relation": "supports / describes",
+      "why": "Results and Conclusion pp.5,8"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "FIND-SUMMER-WEEK",
+      "relation": "supports / describes",
+      "why": "Fig.3 p.6"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "FIND-SUMMER-WEEK",
+      "relation": "supports / describes",
+      "why": "cells 61–63, 84–85"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "FIND-PEAK",
+      "relation": "supports / describes",
+      "why": "Peak-Demand Performance p.7"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "FIND-PEAK",
+      "relation": "supports / describes",
+      "why": "cells 64–68, 100"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "FIND-UNDER",
+      "relation": "supports / describes",
+      "why": "Peak-Demand Performance p.7"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "FIND-CAUSE",
+      "relation": "supports / describes",
+      "why": "Peak-Demand Performance p.7"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "FIND-ERCOT-PEAK",
+      "relation": "supports / describes",
+      "why": "cells 53–55"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "FIND-BLEND-TEST",
+      "relation": "supports / describes",
+      "why": "cells 75–86"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "FIND-DIVERGENCE",
+      "relation": "supports / describes",
+      "why": "cells 88–100"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "V-F03",
+      "relation": "supports / describes",
+      "why": "cells 15–17"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "V-F03",
+      "relation": "supports / describes",
+      "why": "Figure 1 p.4"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "V-F03-SEASONS",
+      "relation": "supports / describes",
+      "why": "cells 18–22"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "V-F12",
+      "relation": "supports / describes",
+      "why": "cells 50–52"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "V-F13",
+      "relation": "supports / describes",
+      "why": "cells 53–55"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "V-F14",
+      "relation": "supports / describes",
+      "why": "cell 56"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "V-F14",
+      "relation": "supports / describes",
+      "why": "Figure 2 p.6"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "V-F16",
+      "relation": "supports / describes",
+      "why": "cells 61–63"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "V-F16",
+      "relation": "supports / describes",
+      "why": "Figure 3 p.6"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "V-F17",
+      "relation": "supports / describes",
+      "why": "cells 64–68"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "V-F17",
+      "relation": "supports / describes",
+      "why": "Figure 4 p.7"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "V-F20",
+      "relation": "supports / describes",
+      "why": "cells 73–74"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "V-F21-25",
+      "relation": "supports / describes",
+      "why": "cells 75–87"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "V-F26-33",
+      "relation": "supports / describes",
+      "why": "cells 88–99"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "LIMIT-ORIGIN",
+      "relation": "supports / describes",
+      "why": "Conclusion p.8 and Appendix p.10"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "LIMIT-WEATHER",
+      "relation": "supports / describes",
+      "why": "Methods p.4, Conclusion p.8"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "LIMIT-WEATHER",
+      "relation": "supports / describes",
+      "why": "cells 7, 100"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "LIMIT-PEAK-BIN",
+      "relation": "supports / describes",
+      "why": "Peak-Demand Performance p.7"
+    },
+    {
+      "from": "SRC-NOTEBOOK",
+      "to": "LIMIT-PEAK-BIN",
+      "relation": "supports / describes",
+      "why": "cells 64, 75"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "LIMIT-CAUSAL",
+      "relation": "supports / describes",
+      "why": "Introduction p.3, Recommendations p.8"
+    },
+    {
+      "from": "SRC-REPORT",
+      "to": "OPEN-UPSTREAM",
+      "relation": "supports / describes",
+      "why": "Conclusion p.8"
+    },
+    {
+      "from": "SRC-STUDIO",
+      "to": "OPEN-STUDIO",
+      "relation": "supports / describes",
+      "why": "docs/CAPABILITIES.md"
+    },
+    {
+      "from": "SRC-TEAMCONTEXT",
+      "to": "OPEN-SCRIPT",
+      "relation": "supports / describes",
+      "why": "October 25–26 planning"
+    }
+  ]
+}

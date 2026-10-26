@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ERCOT Research Context Web · Python Edition</title>
+<style>
+:root{color-scheme:dark;--bg:#0b111a;--panel:#111b29;--border:#263649;--ink:#e5ebf4;--sub:#99aabf;--sky:#55c8ce;--gold:#ffb477}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);font:14px/1.5 system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--ink)}header{padding:22px 26px 18px;border-bottom:1px solid var(--border);background:linear-gradient(105deg,#162331,#0b111a)}h1{font-size:24px;line-height:1.2;margin:0 0 6px;font-weight:700;letter-spacing:-.025em}header p{margin:0;color:var(--sub);max-width:950px}.statistics{display:flex;gap:16px;margin-top:13px;color:var(--sub);font-size:12px}.statistics b{color:#dce8f4;font-size:14px}
+.workspace{display:grid;grid-template-columns:270px minmax(360px,1fr) 370px;height:calc(100vh - 144px);min-height:600px}.controls,.details{padding:18px;overflow:auto;background:var(--panel)}.controls{border-right:1px solid var(--border)}.details{border-left:1px solid var(--border)}.canvas{min-width:0;position:relative;background:radial-gradient(circle at 45% 40%,#111d2c,#0b111a 67%)}#graph{width:100%;height:100%}
+label{display:block;color:#b3c2d2;font-size:11px;font-weight:700;letter-spacing:.075em;text-transform:uppercase;margin:17px 0 7px}input,select,button{font:inherit;color:var(--ink);border-radius:8px;border:1px solid #35495d;background:#0e1723;padding:9px;width:100%}input:focus,select:focus,button:focus{outline:2px solid #3d9ec0}button{cursor:pointer;background:#1a3040}button:hover{background:#254354}.row{display:flex;gap:7px}.row button{flex:1}.check{display:flex;gap:8px;align-items:center;color:var(--sub);font-size:13px;margin-top:9px}.check input{width:auto}#matches{max-height:220px;overflow:auto;border:1px solid var(--border);border-radius:8px;margin-top:10px}.hit{padding:8px 10px;cursor:pointer;border-bottom:1px solid #213040;font-size:12px}.hit:hover{background:#203345}.hit span{display:block;color:var(--sub);font-size:10px}#status{color:var(--sub);font-size:12px;margin-top:13px}.legend{margin-top:18px;display:flex;flex-wrap:wrap;gap:6px}.legend-item{font-size:10px;border:1px solid var(--border);padding:4px 7px;border-radius:20px}.swatch{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px}
+.heading{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--sky);font-weight:700;margin-bottom:4px}.node-title{font-size:21px;line-height:1.25;letter-spacing:-.02em;margin:4px 0 9px}.pill{display:inline-block;font-size:11px;border-radius:15px;padding:3px 8px;border:1px solid #365062;color:#bdd0e1;margin:2px 4px 7px 0}.small{color:var(--sub);font-size:13px}.measure{margin:12px 0;padding:12px;border-radius:8px;border:1px solid #31566a;background:#0b2531}.measure b{font-size:19px;color:#b9f3e9}.fact{border-top:1px solid var(--border);margin-top:14px;padding-top:10px}.fact h3{font-size:13px;margin:0 0 5px;color:#d5e4f0}.fact code{font-size:11px;color:#97c1ca;word-break:break-all}.connection{width:100%;display:block;text-align:left;border:1px solid var(--border);background:#102030;margin:7px 0;padding:10px 11px;color:var(--ink)}.connection b{font-size:12px}.connection p{margin:4px 0 0;font-size:11px;color:var(--sub)}.connection .bar{height:3px;border-radius:4px;background:#32475d;margin-top:8px}.connection .fill{height:100%;background:#63bfc2;border-radius:4px}.asset{width:100%;border:1px solid #30465a;border-radius:8px;margin:8px 0;object-fit:contain;background:white}
+footer{padding:10px 18px;border-top:1px solid var(--border);font-size:11px;color:var(--sub)}@media(max-width:1100px){.workspace{grid-template-columns:230px minmax(360px,1fr) 300px}}@media(max-width:820px){.workspace{height:auto;display:flex;flex-direction:column}.controls{border:0;border-bottom:1px solid var(--border)}.canvas{height:600px}.details{border:0;border-top:1px solid var(--border)}}
+</style><script>/*__OFFLINE_PLOTLY__*/</script></head>
+<body><header><h1>ERCOT Research Context Web</h1><p>A connected research memory for the DSC 450 electricity-demand forecasting project. Select any node to explore the numerical evidence, methodology, questions, figures, and limitations behind it.</p><div class="statistics"><span><b id="nodesTotal"></b> research nodes</span><span><b id="edgesTotal"></b> weighted links</span><span><b>38</b> original notebook figures</span><span>Source-linked · Offline</span></div></header>
+<div class="workspace">
+<aside class="controls">
+ <div class="heading">Explore the research</div><label for="search">Find a concept</label><input id="search" placeholder="e.g. peak, SARIMA, F17" autocomplete="off"><div id="matches"></div>
+ <label for="type">Node category</label><select id="type"><option value="">All categories</option></select>
+ <label for="depth">Branches from selected node</label><select id="depth"><option value="1">1 connection</option><option selected value="2">2 connections</option><option value="3">3 connections</option><option value="4">4 connections</option></select>
+ <label for="strength">Minimum connection strength</label><select id="strength"><option value="1">1 — All connections</option><option value="2">2 — Context and stronger</option><option selected value="3">3 — Interpretation and stronger</option><option value="4">4 — Direct documented only</option><option value="5">5 — Quantitative only</option></select>
+ <div class="check"><input id="all" type="checkbox"><span>Show entire research web</span></div><div class="check"><input id="labels" type="checkbox"><span>Show every node label</span></div>
+ <div class="row" style="margin-top:16px"><button id="reset">Return to key finding</button><button id="copy">Copy node ID</button></div>
+ <div id="status"></div><div class="legend" id="legend"></div>
+ </aside>
+ <main class="canvas"><div id="graph"></div></main>
+ <aside class="details" id="details"></aside>
+</div>
+<footer>Editorial edge weights describe how directly two concepts are linked. They are NOT probabilities, measured correlations, causal effects, or confidence scores. Check each node’s evidence status and source locator before using it as a scientific claim.</footer>
+<script>
+const DATA = /*__GRAPH_JSON__*/;
+const NODE = Object.fromEntries(DATA.nodes.map(n=>[n.id,n]));
+const ALL_EDGES = DATA.edges;
+const COLORS=DATA.typeColors;
+let focus='FIND-OVERALL';
+const $ = id=>document.getElementById(id);
+$('nodesTotal').textContent=DATA.nodes.length;$('edgesTotal').textContent=DATA.edges.length;
+const categories=[...new Set(DATA.nodes.map(n=>n.type))].sort();
+for(const type of categories){ const opt=document.createElement('option');opt.value=type;opt.textContent=type.replaceAll('_',' ');$('type').append(opt); }
+$('legend').innerHTML=categories.map(type=>`<span class="legend-item"><span class="swatch" style="background:${COLORS[type]||'#ccd'}"></span>${type.replaceAll('_',' ')}</span>`).join('');
+function esc(s){return String(s??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#39;');}
+function change(n){if(!NODE[n])return;focus=n;render();}
+function candidateSet(){
+ const min=Number($('strength').value), depth=Number($('depth').value); const vis=new Set([focus]);
+ if($('all').checked)DATA.nodes.forEach(n=>vis.add(n.id));
+ else{let wave=new Set([focus]);for(let d=0;d<depth;d++){const next=new Set();for(const e of ALL_EDGES){if(e.weight<min)continue;if(wave.has(e.from))next.add(e.to);if(wave.has(e.to))next.add(e.from);}for(const n of next)vis.add(n);wave=next;}}
+ const cat=$('type').value;
+ if(cat){return new Set([...vis].filter(id=>NODE[id].type===cat||id===focus));}
+ return vis;
+}
+function render(){
+ const vis=candidateSet(), min=Number($('strength').value), showlabels=$('labels').checked;
+ const edges=ALL_EDGES.filter(e=>vis.has(e.from)&&vis.has(e.to)&&e.weight>=min);
+ const byWeight={};for(const e of edges){(byWeight[e.weight]??=[]).push(e);}
+ const traces=[];
+ for(const [w,items] of Object.entries(byWeight)){
+   const xs=[],ys=[];for(const e of items){xs.push(NODE[e.from].x,NODE[e.to].x,null);ys.push(NODE[e.from].y,NODE[e.to].y,null)}
+   traces.push({type:'scattergl',mode:'lines',x:xs,y:ys,line:{color:w>=5?'rgba(98,185,169,.36)':'rgba(118,151,173,.20)',width:Number(w)>=4?1.8:1},hoverinfo:'skip',showlegend:false,name:'Strength '+w});
+ }
+ for(const t of categories){let arr=[...vis].map(id=>NODE[id]).filter(n=>n.type===t);if(!arr.length)continue;
+  traces.push({type:'scattergl',mode:showlabels?'markers+text':'markers',x:arr.map(n=>n.x),y:arr.map(n=>n.y),customdata:arr.map(n=>n.id),text:arr.map(n=>n.id===focus||n.type==='finding'||n.type==='limitation'?n.title.slice(0,30):n.id),textposition:'top center',textfont:{size:10,color:'#bdcce0'},marker:{size:arr.map(n=>n.id===focus?22:Math.min(16,7+Math.sqrt(n.degree)*.85)),color:COLORS[t]||'#b6c9de',line:{color:arr.map(n=>n.id===focus?'#ffffff':'#132435'),width:arr.map(n=>n.id===focus?2.5:1)}},
+    hovertemplate:'<b>%{customdata}</b><br>%{text}<extra></extra>',name:t,showlegend:false}); }
+ const layout={paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'rgba(0,0,0,0)',margin:{l:18,r:18,t:20,b:15},showlegend:false,
+   xaxis:{visible:false,showgrid:false,zeroline:false},yaxis:{visible:false,showgrid:false,zeroline:false,scaleanchor:'x',scaleratio:1},
+   hoverlabel:{bgcolor:'#1d3044',font:{color:'#fff'}},uirevision:null};
+ Plotly.react('graph',traces,layout,{responsive:true,displaylogo:false,modeBarButtonsToRemove:['lasso2d','select2d','autoScale2d']}).then(()=>{
+  const plot=$('graph');
+  if(!plot._ercotClickBound){plot.on('plotly_click',data=>{const point=data.points?.[0];if(point&&point.customdata&&NODE[point.customdata])change(point.customdata)});plot._ercotClickBound=true;}
+ });
+ $('status').textContent=`Showing ${vis.size} nodes and ${edges.length} links; selected: ${focus}. Click a node to inspect it.`;
+ showDetail(focus);
+}
+
+function connected(id){return ALL_EDGES.filter(e=>e.from===id||e.to===id).sort((a,b)=>b.weight-a.weight)}
+function showDetail(id){const n=NODE[id],links=connected(id),source=(n.sources||[]).map(s=>`<p class="small"><b>${esc(s.file)}</b><br>${esc(s.locator||'')}</p>`).join('')||'<p class="small">See incoming provenance and report links.</p>';
+ const fig=(n.asset_path&&n.asset_path.endsWith('.png'))?`<img class="asset" src="../${esc(n.asset_path)}" alt="Notebook figure ${esc(n.id)}">`:'';
+ const value=(n.value!==undefined)?`<div class="measure"><b>${Number(n.value).toLocaleString(undefined,{maximumFractionDigits:3})}</b> ${esc(n.unit||'')}<div class="small">${esc(n.metric||'Quantified observation')}</div></div>`:'';
+ const question=n.research_question?`<div class="fact"><h3>Research question</h3><p>${esc(n.research_question)}</p></div>`:'';
+ const all=links.map(e=>{const other=e.from===id?e.to:e.from;return `<button class="connection" data-node="${esc(other)}"><b>${esc(NODE[other].title)}</b> <span style="float:right;color:#9ebace">${e.weight}/5</span><p>${esc(e.from===id?'Out → '+e.relation:'In ← '+e.relation)}</p><div class="bar"><div class="fill" style="width:${e.weight*20}%"></div></div><p>${esc(e.rationale||'')}</p></button>`}).join('');
+ $('details').innerHTML=`<div class="heading">Node details · ${esc(id)}</div><h2 class="node-title">${esc(n.title)}</h2><span class="pill">${esc(n.type.replaceAll('_',' '))}</span><span class="pill">${esc(n.status||'')}</span>${value}<p>${esc(n.summary||'')}</p>${fig}${question}<div class="fact"><h3>Source trace</h3>${source}</div><div class="fact"><h3>${links.length} connections (strongest first)</h3>${all}</div>`;
+ $('details').querySelectorAll('[data-node]').forEach(b=>b.addEventListener('click',()=>change(b.dataset.node)));
+}
+function search(){let v=$('search').value.toLowerCase().trim();if(!v){$('matches').innerHTML='';return}let arr=DATA.nodes.filter(n=>[n.id,n.title,n.summary,n.research_question].some(z=>String(z||'').toLowerCase().includes(v))).slice(0,30);
+ $('matches').innerHTML=arr.length?arr.map(n=>`<div class="hit" data-id="${esc(n.id)}"><b>${esc(n.title)}</b><span>${esc(n.id)} · ${esc(n.type)}</span></div>`).join(''):'<div class="hit">No matching concepts</div>';
+ $('matches').querySelectorAll('[data-id]').forEach(b=>b.addEventListener('click',()=>{change(b.dataset.id);$('matches').innerHTML='';$('search').value='' }));}
+for(const id of ['depth','strength','all','type','labels'])$(id).addEventListener('change',render);
+$('search').addEventListener('input',search);
+$('reset').addEventListener('click',()=>{$('type').value='';$('all').checked=false;change('FIND-OVERALL')});
+$('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(focus);$('copy').textContent='Copied '+focus;}catch(e){$('copy').textContent=focus;}setTimeout(()=>{$('copy').textContent='Copy node ID'},1500)});
+render();
+</script></body></html>

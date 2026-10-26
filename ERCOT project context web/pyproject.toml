@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ercot-context-web"
+version = "2.0.0"
+description = "Source-linked, weighted research graph for DSC 450 ERCOT forecasting"
+requires-python = ">=3.10"
+dependencies = ["networkx>=3.2", "plotly>=5.18"]
+
+[project.optional-dependencies]
+metrics = ["pandas>=2.1"]
+notebook = ["nbformat>=5.9"]
+all = ["pandas>=2.1", "nbformat>=5.9"]
+
+[project.scripts]
+ercot-web = "ercot_web.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

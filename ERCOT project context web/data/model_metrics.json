@@ -1,0 +1,100 @@
+{
+  "source_file": "ercot_model_predicitons_comparison_with_hybrid(1).csv",
+  "data_kind": "recalculated from hourly model predictions",
+  "units": "MWh; error calculated as forecast - actual",
+  "test_hours": 8760,
+  "matched_hours": 8640,
+  "missing_ercot_hours": 120,
+  "top_1pct_threshold_all_test_hours_MWh": 87965.69,
+  "top_1pct_matched_hours": 88,
+  "overall": {
+    "ERCOT_DAY_AHEAD": {
+      "MAE_MWh": 1134.795,
+      "MAPE_percent": 1.9991,
+      "signed_bias_MWh": 311.088
+    },
+    "HYBRID_50_50": {
+      "MAE_MWh": 2005.849,
+      "MAPE_percent": 3.535,
+      "signed_bias_MWh": -600.547
+    },
+    "WEATHER_XGBOOST": {
+      "MAE_MWh": 2476.684,
+      "MAPE_percent": 4.1835,
+      "signed_bias_MWh": -1200.273
+    },
+    "XGBOOST": {
+      "MAE_MWh": 2647.415,
+      "MAPE_percent": 4.5154,
+      "signed_bias_MWh": -799.426
+    },
+    "ROLLING_SARIMA": {
+      "MAE_MWh": 2661.577,
+      "MAPE_percent": 4.865,
+      "signed_bias_MWh": -0.821
+    },
+    "WEATHER_SARIMAX": {
+      "MAE_MWh": 2729.839,
+      "MAPE_percent": 4.9914,
+      "signed_bias_MWh": -1.206
+    },
+    "SEASONAL_NAIVE": {
+      "MAE_MWh": 4205.285,
+      "MAPE_percent": 7.4616,
+      "signed_bias_MWh": -145.072
+    },
+    "PROPHET": {
+      "MAE_MWh": 4846.274,
+      "MAPE_percent": 8.0508,
+      "signed_bias_MWh": -1441.095
+    }
+  },
+  "top_1pct": {
+    "ERCOT_DAY_AHEAD": {
+      "MAE_MWh": 1157.58,
+      "MAPE_percent": 1.2955,
+      "signed_bias_MWh": -113.148
+    },
+    "HYBRID_50_50": {
+      "MAE_MWh": 3188.64,
+      "MAPE_percent": 3.5675,
+      "signed_bias_MWh": -3188.64
+    },
+    "WEATHER_XGBOOST": {
+      "MAE_MWh": 6421.161,
+      "MAPE_percent": 7.1874,
+      "signed_bias_MWh": -6421.161
+    },
+    "XGBOOST": {
+      "MAE_MWh": 8018.776,
+      "MAPE_percent": 8.9751,
+      "signed_bias_MWh": -8018.776
+    },
+    "ROLLING_SARIMA": {
+      "MAE_MWh": 1241.959,
+      "MAPE_percent": 1.3929,
+      "signed_bias_MWh": 43.881
+    },
+    "WEATHER_SARIMAX": {
+      "MAE_MWh": 1175.893,
+      "MAPE_percent": 1.3201,
+      "signed_bias_MWh": 161.111
+    },
+    "SEASONAL_NAIVE": {
+      "MAE_MWh": 4075.148,
+      "MAPE_percent": 4.5511,
+      "signed_bias_MWh": -3642.08
+    },
+    "PROPHET": {
+      "MAE_MWh": 14908.424,
+      "MAPE_percent": 16.6949,
+      "signed_bias_MWh": -14908.424
+    }
+  },
+  "hybrid_max_abs_formula_difference_MWh": 7.275957614183426e-12,
+  "hybrid_MAE_improvement_over_naive_percent": 52.302,
+  "top_1pct_xgboost_underforecast_counts": {
+    "XGBOOST": 88,
+    "WEATHER_XGBOOST": 88
+  }
+}

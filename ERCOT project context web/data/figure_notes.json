@@ -1,0 +1,382 @@
+{
+  "F01": {
+    "id": "F01",
+    "title": "Figure F01 — Historical Monthly Trend",
+    "research_question": "How has average observed ERCOT demand changed over the recorded months?",
+    "source_notebook_cell_0_based": 10,
+    "source_markdown_cell_0_based": 9,
+    "notebook_commentary_excerpt": "Figure F01 — Historical Monthly Trend Research question: How has average observed ERCOT demand changed over the recorded months? Reading rule: This figure is descriptive unless it explicitly shows forecast errors; patterns alone do not prove causation or model feature importance.",
+    "figure_path": "assets/figures/F01.png",
+    "image_sha256": "e4ee088ae6fc0ad60947b408e48b91f13d6f8991324cedba1bb91b168a5fa8ca"
+  },
+  "F02": {
+    "id": "F02",
+    "title": "Figure F02 — Year Over Year Jan Sep",
+    "research_question": "Have January–September demand levels changed across years?",
+    "source_notebook_cell_0_based": 13,
+    "source_markdown_cell_0_based": 12,
+    "notebook_commentary_excerpt": "Figure F02 — Year Over Year Jan Sep Research question: Have January–September demand levels changed across years? Reading rule: This figure is descriptive unless it explicitly shows forecast errors; patterns alone do not prove causation or model feature importance.",
+    "figure_path": "assets/figures/F02.png",
+    "image_sha256": "1f88feefff208dd143259139b2cba34ec9f85e9286d4f75d5f128b9afdb7fc47"
+  },
+  "F03": {
+    "id": "F03",
+    "title": "Figure F03 — Month Hour Heatmap",
+    "research_question": "Which month-by-hour combinations have the highest typical demand?",
+    "source_notebook_cell_0_based": 16,
+    "source_markdown_cell_0_based": 15,
+    "notebook_commentary_excerpt": "Figure F03 — Month Hour Heatmap Research question: Which month-by-hour combinations have the highest typical demand? Reading rule: This figure is descriptive unless it explicitly shows forecast errors; patterns alone do not prove causation or model feature importance.",
+    "figure_path": "assets/figures/F03.png",
+    "image_sha256": "a491901e86c7db90bdbc70acb13fbc4124ab69f1f81963c77cc935b19e46a7e2"
+  },
+  "F03A": {
+    "id": "F03A",
+    "title": "Figures F03A–F03E — Looking inside each season, one day and hour at a time",
+    "research_question": "Our original month-by-hour chart shows the *average* shape of demand, but I was interested in what those averages might be hiding. A season can have a consistent daily rhythm while still containing individual days with unusually high or low demand. These heatmaps keep every local calendar day in view: **rows = days, columns = hours (0–23), color = observed hourly electricity demand",
+    "source_notebook_cell_0_based": 20,
+    "source_markdown_cell_0_based": 18,
+    "notebook_commentary_excerpt": "Figures F03A–F03E — Looking inside each season, one day and hour at a time Why I wanted to add these: Our original month-by-hour chart shows the average shape of demand, but I was interested in what those averages might be hiding. A season can have a consistent daily rhythm while still containing individual days with unusually high or low demand. These heatmaps keep every local calendar day in view: rows = days, columns = hours (0–23), color = observed hourly electricity demand. I used four complete meteorological seasons from September 2025 th",
+    "figure_path": "assets/figures/F03A.png",
+    "image_sha256": "f93351edf3f3cc935fcadc2335afe216b21d7f751a731c9ca22b3c25841b74b2"
+  },
+  "F03B": {
+    "id": "F03B",
+    "title": "Figures F03A–F03E — Looking inside each season, one day and hour at a time",
+    "research_question": "Our original month-by-hour chart shows the *average* shape of demand, but I was interested in what those averages might be hiding. A season can have a consistent daily rhythm while still containing individual days with unusually high or low demand. These heatmaps keep every local calendar day in view: **rows = days, columns = hours (0–23), color = observed hourly electricity demand",
+    "source_notebook_cell_0_based": 21,
+    "source_markdown_cell_0_based": 18,
+    "notebook_commentary_excerpt": "Figures F03A–F03E — Looking inside each season, one day and hour at a time Why I wanted to add these: Our original month-by-hour chart shows the average shape of demand, but I was interested in what those averages might be hiding. A season can have a consistent daily rhythm while still containing individual days with unusually high or low demand. These heatmaps keep every local calendar day in view: rows = days, columns = hours (0–23), color = observed hourly electricity demand. I used four complete meteorological seasons from September 2025 th",
+    "figure_path": "assets/figures/F03B.png",
+    "image_sha256": "e038f478ee9a8c894ab203386b3097f0abaf58faf26b78d8aeccc8a25cb161cc"
+  },
+  "F03C": {
+    "id": "F03C",
+    "title": "Figures F03A–F03E — Looking inside each season, one day and hour at a time",
+    "research_question": "Our original month-by-hour chart shows the *average* shape of demand, but I was interested in what those averages might be hiding. A season can have a consistent daily rhythm while still containing individual days with unusually high or low demand. These heatmaps keep every local calendar day in view: **rows = days, columns = hours (0–23), color = observed hourly electricity demand",
+    "source_notebook_cell_0_based": 21,
+    "source_markdown_cell_0_based": 18,
+    "notebook_commentary_excerpt": "Figures F03A–F03E — Looking inside each season, one day and hour at a time Why I wanted to add these: Our original month-by-hour chart shows the average shape of demand, but I was interested in what those averages might be hiding. A season can have a consistent daily rhythm while still containing individual days with unusually high or low demand. These heatmaps keep every local calendar day in view: rows = days, columns = hours (0–23), color = observed hourly electricity demand. I used four complete meteorological seasons from September 2025 th",
+    "figure_path": "assets/figures/F03C.png",
+    "image_sha256": "099b0ba6b72a2ca568f3cd695c95e79ef9bfdcd1c71278b3cc1b4de30d8abafa"
+  },
+  "F03D": {
+    "id": "F03D",
+    "title": "Figures F03A–F03E — Looking inside each season, one day and hour at a time",
+    "research_question": "Our original month-by-hour chart shows the *average* shape of demand, but I was interested in what those averages might be hiding. A season can have a consistent daily rhythm while still containing individual days with unusually high or low demand. These heatmaps keep every local calendar day in view: **rows = days, columns = hours (0–23), color = observed hourly electricity demand",
+    "source_notebook_cell_0_based": 21,
+    "source_markdown_cell_0_based": 18,
+    "notebook_commentary_excerpt": "Figures F03A–F03E — Looking inside each season, one day and hour at a time Why I wanted to add these: Our original month-by-hour chart shows the average shape of demand, but I was interested in what those averages might be hiding. A season can have a consistent daily rhythm while still containing individual days with unusually high or low demand. These heatmaps keep every local calendar day in view: rows = days, columns = hours (0–23), color = observed hourly electricity demand. I used four complete meteorological seasons from September 2025 th",
+    "figure_path": "assets/figures/F03D.png",
+    "image_sha256": "bf46604c807582f43082fadc1b4309aa620fecb84410ea2c77675ef9eaecc30f"
+  },
+  "F03E": {
+    "id": "F03E",
+    "title": "Figures F03A–F03E — Looking inside each season, one day and hour at a time",
+    "research_question": "Our original month-by-hour chart shows the *average* shape of demand, but I was interested in what those averages might be hiding. A season can have a consistent daily rhythm while still containing individual days with unusually high or low demand. These heatmaps keep every local calendar day in view: **rows = days, columns = hours (0–23), color = observed hourly electricity demand",
+    "source_notebook_cell_0_based": 21,
+    "source_markdown_cell_0_based": 18,
+    "notebook_commentary_excerpt": "Figures F03A–F03E — Looking inside each season, one day and hour at a time Why I wanted to add these: Our original month-by-hour chart shows the average shape of demand, but I was interested in what those averages might be hiding. A season can have a consistent daily rhythm while still containing individual days with unusually high or low demand. These heatmaps keep every local calendar day in view: rows = days, columns = hours (0–23), color = observed hourly electricity demand. I used four complete meteorological seasons from September 2025 th",
+    "figure_path": "assets/figures/F03E.png",
+    "image_sha256": "ad1eaffa1fdd1c812e551c0063032f7c5594f46a24164556f676a5141bf776dc"
+  },
+  "F04": {
+    "id": "F04",
+    "title": "Figure F04 — Season Hour Profiles",
+    "research_question": "How do the 24-hour shapes differ across winter, spring, summer and fall?",
+    "source_notebook_cell_0_based": 24,
+    "source_markdown_cell_0_based": 23,
+    "notebook_commentary_excerpt": "Figure F04 — Season Hour Profiles Research question: How do the 24-hour shapes differ across winter, spring, summer and fall? Reading rule: This figure is descriptive unless it explicitly shows forecast errors; patterns alone do not prove causation or model feature importance.",
+    "figure_path": "assets/figures/F04.png",
+    "image_sha256": "9bcb9134d74679d023238d0af1b4eae2666e6294a345eeab34a1435a1f848bfb"
+  },
+  "F05": {
+    "id": "F05",
+    "title": "Figure F05 — Weekday Weekend Profiles",
+    "research_question": "How do weekend and weekday demand patterns compare?",
+    "source_notebook_cell_0_based": 27,
+    "source_markdown_cell_0_based": 26,
+    "notebook_commentary_excerpt": "Figure F05 — Weekday Weekend Profiles Research question: How do weekend and weekday demand patterns compare? Reading rule: This figure is descriptive unless it explicitly shows forecast errors; patterns alone do not prove causation or model feature importance.",
+    "figure_path": "assets/figures/F05.png",
+    "image_sha256": "52d3ee5583aceb325c1f1d006bc052526ecff0c5efdb69587a108431735b721c"
+  },
+  "F06": {
+    "id": "F06",
+    "title": "Figure F06 — Monthly Boxplots",
+    "research_question": "How much variation is concealed by monthly means?",
+    "source_notebook_cell_0_based": 30,
+    "source_markdown_cell_0_based": 29,
+    "notebook_commentary_excerpt": "Figure F06 — Monthly Boxplots Research question: How much variation is concealed by monthly means? Reading rule: This figure is descriptive unless it explicitly shows forecast errors; patterns alone do not prove causation or model feature importance.",
+    "figure_path": "assets/figures/F06.png",
+    "image_sha256": "2a8e53d0108216e477b1b730918372f4d49a5a64cb44521424496366521c75aa"
+  },
+  "F07": {
+    "id": "F07",
+    "title": "Figure F07 — Peak Share By Month",
+    "research_question": "In which months are top-five-percent demand hours concentrated?",
+    "source_notebook_cell_0_based": 33,
+    "source_markdown_cell_0_based": 32,
+    "notebook_commentary_excerpt": "Figure F07 — Peak Share By Month Research question: In which months are top-five-percent demand hours concentrated? Reading rule: This figure is descriptive unless it explicitly shows forecast errors; patterns alone do not prove causation or model feature importance.",
+    "figure_path": "assets/figures/F07.png",
+    "image_sha256": "97e6927c31bc2ddbfc9324594c08f42d3ec3422b5dd8a125fdd576aed5dc621d"
+  },
+  "F08": {
+    "id": "F08",
+    "title": "Figure F08 — Hourly Ramping",
+    "research_question": "At which hours does demand change fastest?",
+    "source_notebook_cell_0_based": 36,
+    "source_markdown_cell_0_based": 35,
+    "notebook_commentary_excerpt": "Figure F08 — Hourly Ramping Research question: At which hours does demand change fastest? Reading rule: This figure is descriptive unless it explicitly shows forecast errors; patterns alone do not prove causation or model feature importance.",
+    "figure_path": "assets/figures/F08.png",
+    "image_sha256": "ded9b106a20bb8cc8ce93e72d69c76bb9c63a951dd24dd29a7dcf46672476d63"
+  },
+  "F09": {
+    "id": "F09",
+    "title": "Figure F09 — July Peak Week",
+    "research_question": "What does a real high-load week look like?",
+    "source_notebook_cell_0_based": 39,
+    "source_markdown_cell_0_based": 38,
+    "notebook_commentary_excerpt": "Figure F09 — July Peak Week Research question: What does a real high-load week look like? Reading rule: This figure is descriptive unless it explicitly shows forecast errors; patterns alone do not prove causation or model feature importance.",
+    "figure_path": "assets/figures/F09.png",
+    "image_sha256": "6faee926efeeb2189cd8867abacfb3319e4999543c89edb2e1e289ab4e82a334"
+  },
+  "F10": {
+    "id": "F10",
+    "title": "Figure F10 — Ercot Actual Vs Forecast",
+    "research_question": "How closely does ERCOT’s published prediction follow observed load?",
+    "source_notebook_cell_0_based": 45,
+    "source_markdown_cell_0_based": 44,
+    "notebook_commentary_excerpt": "Figure F10 — Ercot Actual Vs Forecast Research question: How closely does ERCOT’s published prediction follow observed load? Reading rule: This figure is descriptive unless it explicitly shows forecast errors; patterns alone do not prove causation or model feature importance.",
+    "figure_path": "assets/figures/F10.png",
+    "image_sha256": "6d5c9dd36d52d1053bc8554fb48ac410e4e3b0e3da35c568f62f8698a6ce702b"
+  },
+  "F11": {
+    "id": "F11",
+    "title": "Figure F11 — Ercot Mae By Hour",
+    "research_question": "When is ERCOT’s typical absolute forecasting error largest?",
+    "source_notebook_cell_0_based": 48,
+    "source_markdown_cell_0_based": 47,
+    "notebook_commentary_excerpt": "Figure F11 — Ercot Mae By Hour Research question: When is ERCOT’s typical absolute forecasting error largest? Reading rule: This figure is descriptive unless it explicitly shows forecast errors; patterns alone do not prove causation or model feature importance.",
+    "figure_path": "assets/figures/F11.png",
+    "image_sha256": "d7c881a613d56da9bbb80dfc55e2cc6ebc558484fd70c167d54ab1f28dfb8577"
+  },
+  "F12": {
+    "id": "F12",
+    "title": "Figure F12 — Ercot Mae And Bias",
+    "research_question": "How does benchmark forecast magnitude differ from signed bias?",
+    "source_notebook_cell_0_based": 51,
+    "source_markdown_cell_0_based": 50,
+    "notebook_commentary_excerpt": "Figure F12 — Ercot Mae And Bias Research question: How does benchmark forecast magnitude differ from signed bias? Reading rule: This figure is descriptive unless it explicitly shows forecast errors; patterns alone do not prove causation or model feature importance.",
+    "figure_path": "assets/figures/F12.png",
+    "image_sha256": "68552f79c731b4e49f4462be3dd07b5037ceeb3b908dc9af8214dd4552f4de2d"
+  },
+  "F13": {
+    "id": "F13",
+    "title": "Figure F13 — Ercot Peak Decile Mae",
+    "research_question": "Does ERCOT make larger misses during the highest-demand decile?",
+    "source_notebook_cell_0_based": 54,
+    "source_markdown_cell_0_based": 53,
+    "notebook_commentary_excerpt": "Figure F13 — Ercot Peak Decile Mae Research question: Does ERCOT make larger misses during the highest-demand decile? Reading rule: This figure is descriptive unless it explicitly shows forecast errors; patterns alone do not prove causation or model feature importance.",
+    "figure_path": "assets/figures/F13.png",
+    "image_sha256": "dc766b8ba7f6ae4b09acdc1f49f3e3b0abfb941efc835f6c531e6f1f4c1beee9"
+  },
+  "F14": {
+    "id": "F14",
+    "title": "",
+    "research_question": "How did the project-developed methods perform against the simple baseline and ERCOT on the",
+    "source_notebook_cell_0_based": 56,
+    "source_markdown_cell_0_based": 55,
+    "notebook_commentary_excerpt": "What the result actually says: During the shared holdout, ERCOT's MAE is about 1,132 MWh outside the top demand decile and about 1,163 MWh within it. That is a modest difference, not evidence of a dramatic breakdown in peak-hour forecasting. Why this matters to me: I initially expected high demand to imply more difficult prediction. This chart shows why I should test an intuition instead of writing the conclusion beforehand. It is still useful to study peak-period errors, perhaps with percentage error, day-specific case studies, and team-model ",
+    "figure_path": "assets/figures/F14.png",
+    "image_sha256": "e9e247ebd228aa0ed65437fcd8dda0a1e1737be24076b192c24c8a7a30619d10"
+  },
+  "F15": {
+    "id": "F15",
+    "title": "Figure F15 — Model accuracy in relative terms",
+    "research_question": "Do our conclusions about forecasting models hold when error is expressed as a percentage of actual demand?",
+    "source_notebook_cell_0_based": 59,
+    "source_markdown_cell_0_based": 58,
+    "notebook_commentary_excerpt": "Figure F15 — Model accuracy in relative terms Research question: Do our conclusions about forecasting models hold when error is expressed as a percentage of actual demand? Interpretation safeguard: MAPE gives a unitless comparison on matched hours; it is not an estimate of electricity procurement cost.",
+    "figure_path": "assets/figures/F15.png",
+    "image_sha256": "e9a446f5949d1b2d3cfc1f5eec5ebcfcda74d282722ebaf95ac0590c62380c6b"
+  },
+  "F16": {
+    "id": "F16",
+    "title": "5. From foundational charts to a concrete forecast story | F16",
+    "research_question": "",
+    "source_notebook_cell_0_based": 63,
+    "source_markdown_cell_0_based": 61,
+    "notebook_commentary_excerpt": "5. From foundational charts to a concrete forecast story F16 Andrea exported real hourly predictions for all seven of the team's model series, including the 50/50 hybrid, and ERCOT's benchmark is available on most hours. This is now a required reproducible overlay, not a speculative export request. The July case-study window contains unusually high actual demand; observing how lines diverge illustrates why aggregate metrics need to be complemented with diagnostic visuals.",
+    "figure_path": "assets/figures/F16.png",
+    "image_sha256": "2821a1d3b1775abba7177baf7b13ba4f626a13eb91c43bbd4349b691b012b5de"
+  },
+  "F17": {
+    "id": "F17",
+    "title": "Figure F17 — Accuracy across observed demand levels",
+    "research_question": "Do our conclusions about model performance change during high-load hours?",
+    "source_notebook_cell_0_based": 67,
+    "source_markdown_cell_0_based": 66,
+    "notebook_commentary_excerpt": "Figure F17 — Accuracy across observed demand levels Business question: Do our conclusions about model performance change during high-load hours? Reading rule: Lower is better. Colors preserve the team's original model assignments. Groups use actual demand, so the chart is retrospective, not a mechanism for choosing a model in real time.",
+    "figure_path": "assets/figures/F17.png",
+    "image_sha256": "f54c87a58156025f75aa88674866f342c32ee78312cf8d98b11f3f5ba7c9bb23"
+  },
+  "F18": {
+    "id": "F18",
+    "title": "Figure F18 — Typical errors by local hour",
+    "research_question": "Are model differences concentrated at particular times of day?",
+    "source_notebook_cell_0_based": 70,
+    "source_markdown_cell_0_based": 69,
+    "notebook_commentary_excerpt": "Figure F18 — Typical errors by local hour Question: Are model differences concentrated at particular times of day? Limitation: Local hours are descriptive groups; they do not control for season, temperature, or demand level.",
+    "figure_path": "assets/figures/F18.png",
+    "image_sha256": "01176eeceea9982493c13d615a3ae7aae48d4026b1a9f566970720d165d9ef01"
+  },
+  "F19": {
+    "id": "F19",
+    "title": "Figure F19 — Seasonal stability of model error",
+    "research_question": "Does a strong annual average obscure months where a model struggles?",
+    "source_notebook_cell_0_based": 72,
+    "source_markdown_cell_0_based": 71,
+    "notebook_commentary_excerpt": "Figure F19 — Seasonal stability of model error Question: Does a strong annual average obscure months where a model struggles? Definition: Calendar months are derived from each hour's Central-local timestamp. The test is one year; this is not a multi-year model-stability claim.",
+    "figure_path": "assets/figures/F19.png",
+    "image_sha256": "cd6958aa6bdf451accc09e58c53afefbcb355e37c935a9cb005970557ea247f2"
+  },
+  "F20": {
+    "id": "F20",
+    "title": "Figure F20 — Do Rolling SARIMA and Weather XGBoost make similar mistakes?",
+    "research_question": "",
+    "source_notebook_cell_0_based": 74,
+    "source_markdown_cell_0_based": 73,
+    "notebook_commentary_excerpt": "Figure F20 — Do Rolling SARIMA and Weather XGBoost make similar mistakes? Plot signed errors (forecast minus actual) for each of the same hours. If both models make nearly identical errors, averaging offers little opportunity for cancellation. If their mistakes differ, an ensemble might improve accuracy. The correlation is an empirical diagnostic, not a guarantee of better results. The axes cross at zero, so points on opposite-sign quadrants indicate hours where one model overpredicted while the other underpredicted.",
+    "figure_path": "assets/figures/F20.png",
+    "image_sha256": "71d764be02a70f367a9753411e5f2d6e81289538006956d719392944aac432ab"
+  },
+  "F21": {
+    "id": "F21",
+    "title": "Figure F21 — How the blend's validation MAE changes with its weight",
+    "research_question": "Is it worth combining the forecasts, and how sensitive is the earlier-period result to weighting?",
+    "source_notebook_cell_0_based": 78,
+    "source_markdown_cell_0_based": 77,
+    "notebook_commentary_excerpt": "Figure F21 — How the blend's validation MAE changes with its weight Question: Is it worth combining the forecasts, and how sensitive is the earlier-period result to weighting? Metric: Earlier-period MAE; lower is better. The later data do not appear in this plot, preventing weight selection based on the final comparison.",
+    "figure_path": "assets/figures/F21.png",
+    "image_sha256": "97355638f2448a07cb50ad07299fb04bb74df2f9326f81603b92c27c16cd889c"
+  },
+  "F22": {
+    "id": "F22",
+    "title": "Figure F22 — Test the idea on later hours without retuning",
+    "research_question": "",
+    "source_notebook_cell_0_based": 80,
+    "source_markdown_cell_0_based": 79,
+    "notebook_commentary_excerpt": "Figure F22 — Test the idea on later hours without retuning This is the main hybrid-experiment comparison. We evaluate the fixed 50/50 blend and the earlier-selected weight alongside the component models and ERCOT. It is important that we present both choices: the later period might favor the fixed blend even if the tuned weights looked better earlier.",
+    "figure_path": "assets/figures/F22.png",
+    "image_sha256": "f55e2f26134ace1e3b998c09edc29ab81cb3839980bb6a947bf7df570d884a4c"
+  },
+  "F23": {
+    "id": "F23",
+    "title": "Figure F23 — Does the later-period blend help across demand levels?",
+    "research_question": "",
+    "source_notebook_cell_0_based": 83,
+    "source_markdown_cell_0_based": 82,
+    "notebook_commentary_excerpt": "Figure F23 — Does the later-period blend help across demand levels? Evaluate the fixed and earlier-selected blends against both component models, on the later segment only. Demand bins use the full 8,760-hour test year's observed demand cutoffs defined in F17 to keep the visual categories stable. The small top-demand group is descriptive and should not guide direct operational model switching.",
+    "figure_path": "assets/figures/F23.png",
+    "image_sha256": "6a1e552858f5504d9cff34114929366bce2d581bbc2f6ad09c54ebc210e1bd00"
+  },
+  "F24": {
+    "id": "F24",
+    "title": "Figure F24 — A concrete forecast case study",
+    "research_question": "",
+    "source_notebook_cell_0_based": 85,
+    "source_markdown_cell_0_based": 84,
+    "notebook_commentary_excerpt": "Figure F24 — A concrete forecast case study We return to the same July 19–25, 2026 (Central Time) week used in F10/F16, now adding the fixed blend. Looking at one high-load week can reveal how averages hide shape and timing errors, but it cannot substitute for the full evaluation.",
+    "figure_path": "assets/figures/F24.png",
+    "image_sha256": "dd78500c5bc74b2e9780db2f874b48870538015536a0b590bf0c7aca25c21b0d"
+  },
+  "F25": {
+    "id": "F25",
+    "title": "Figure F25 — How often does the 50/50 blend reduce forecast error?",
+    "research_question": "",
+    "source_notebook_cell_0_based": 87,
+    "source_markdown_cell_0_based": 86,
+    "notebook_commentary_excerpt": "Figure F25 — How often does the 50/50 blend reduce forecast error? This chart shows the percentage of later-period hours for which the fixed blend's absolute error is lower than Rolling SARIMA's, Weather XGBoost's, or both models' errors. These are descriptive rates, not a rule for choosing tomorrow's model. Overall MAE can improve even when the blend is not the best choice for a majority of individual hours.",
+    "figure_path": "assets/figures/F25.png",
+    "image_sha256": "fdd2aa50c2a8c4d3ab91a8618654557fc413cddaa10642e0caef5c9dc6882789"
+  },
+  "F26": {
+    "id": "F26",
+    "title": "F26–F27 | Hour-by-hour divergence",
+    "research_question": "",
+    "source_notebook_cell_0_based": 90,
+    "source_markdown_cell_0_based": 89,
+    "notebook_commentary_excerpt": "F26–F27 Hour-by-hour divergence The dashed line represents each model’s own overall MAE. Shading and positive/negative percentage differences show which hours consistently present larger or smaller absolute forecast misses. The two panels have separate reference lines because the models have different overall errors.",
+    "figure_path": "assets/figures/F26.png",
+    "image_sha256": "6bd617b53c93b19742c326b65d6475e62da7c5ba4093f564effd616d70ef844c"
+  },
+  "F27": {
+    "id": "F27",
+    "title": "F26–F27 | Hour-by-hour divergence",
+    "research_question": "",
+    "source_notebook_cell_0_based": 90,
+    "source_markdown_cell_0_based": 89,
+    "notebook_commentary_excerpt": "F26–F27 Hour-by-hour divergence The dashed line represents each model’s own overall MAE. Shading and positive/negative percentage differences show which hours consistently present larger or smaller absolute forecast misses. The two panels have separate reference lines because the models have different overall errors.",
+    "figure_path": "assets/figures/F27.png",
+    "image_sha256": "9d52df322cfc07cdee45950a70c81388b085fcb6c16810909bce1daa21991f62"
+  },
+  "F28": {
+    "id": "F28",
+    "title": "F28–F29 | Monthly and seasonal divergence",
+    "research_question": "",
+    "source_notebook_cell_0_based": 92,
+    "source_markdown_cell_0_based": 91,
+    "notebook_commentary_excerpt": "F28–F29 Monthly and seasonal divergence These figures reveal whether an overall score masks months or entire seasons where a model is less accurate. Each comparison is relative to that same model’s own overall MAE; the sample counts are shown for the seasonal groups.",
+    "figure_path": "assets/figures/F28.png",
+    "image_sha256": "14250d082e9d7faa9ec2698cb8746e2087f4c55e52a187678ca1669112fedc25"
+  },
+  "F29": {
+    "id": "F29",
+    "title": "F28–F29 | Monthly and seasonal divergence",
+    "research_question": "",
+    "source_notebook_cell_0_based": 92,
+    "source_markdown_cell_0_based": 91,
+    "notebook_commentary_excerpt": "F28–F29 Monthly and seasonal divergence These figures reveal whether an overall score masks months or entire seasons where a model is less accurate. Each comparison is relative to that same model’s own overall MAE; the sample counts are shown for the seasonal groups.",
+    "figure_path": "assets/figures/F29.png",
+    "image_sha256": "89586e65380c3bb82de539ed070c621543a445186da35837e27eb4825aa415a8"
+  },
+  "F30": {
+    "id": "F30",
+    "title": "F30–F31 | Month-by-hour and season-by-hour error heatmaps",
+    "research_question": "",
+    "source_notebook_cell_0_based": 94,
+    "source_markdown_cell_0_based": 93,
+    "notebook_commentary_excerpt": "F30–F31 Month-by-hour and season-by-hour error heatmaps A monthly or seasonal average can hide within-day changes. Green cells indicate model MAE below its overall reference; red cells indicate above-reference error. These are error heatmaps, distinct from the descriptive observed-demand heatmaps F03A–F03E.",
+    "figure_path": "assets/figures/F30.png",
+    "image_sha256": "37105a209cfa8c467099d80da458cbb9a1c9f20462b61805a6ec8d70fe710034"
+  },
+  "F31": {
+    "id": "F31",
+    "title": "F30–F31 | Month-by-hour and season-by-hour error heatmaps",
+    "research_question": "",
+    "source_notebook_cell_0_based": 94,
+    "source_markdown_cell_0_based": 93,
+    "notebook_commentary_excerpt": "F30–F31 Month-by-hour and season-by-hour error heatmaps A monthly or seasonal average can hide within-day changes. Green cells indicate model MAE below its overall reference; red cells indicate above-reference error. These are error heatmaps, distinct from the descriptive observed-demand heatmaps F03A–F03E.",
+    "figure_path": "assets/figures/F31.png",
+    "image_sha256": "4a1ae64066cd3d5a29d74bd13c42a379f3f26613edeb09037516d2ac5ffa5268"
+  },
+  "F32": {
+    "id": "F32",
+    "title": "F32 | Do changes relative to average also mean useful forecasting skill?",
+    "research_question": "",
+    "source_notebook_cell_0_based": 96,
+    "source_markdown_cell_0_based": 95,
+    "notebook_commentary_excerpt": "F32 Do changes relative to average also mean useful forecasting skill? A drop below a model’s own MAE does not mean that it beats a meaningful forecasting alternative. The left panel measures improvement over the seasonal naive baseline using the period-specific MAE for both approaches; the right panel compares model error against ERCOT day-ahead on the identical hours.",
+    "figure_path": "assets/figures/F32.png",
+    "image_sha256": "ca67ee324c2a2c8f7e28755f8361ee69a51578a7c4650710b6348bda0cb9a570"
+  },
+  "F33": {
+    "id": "F33",
+    "title": "F33 | How did errors behave during a real peak week?",
+    "research_question": "",
+    "source_notebook_cell_0_based": 98,
+    "source_markdown_cell_0_based": 97,
+    "notebook_commentary_excerpt": "F33 How did errors behave during a real peak week? The previous figures average groups of hours. Here we show actual individual hourly absolute errors for the July 19–25 case study, keeping the typical MAE reference as a horizontal line. An individual large miss is not itself an MAE; MAE is the average over many such misses.",
+    "figure_path": "assets/figures/F33.png",
+    "image_sha256": "c8f1e918cd911c2e0cb7819d158e6b9d87225187c980d49dfa6fd1367799e833"
+  }
+}

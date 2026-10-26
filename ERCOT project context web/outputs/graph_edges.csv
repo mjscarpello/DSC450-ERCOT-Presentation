@@ -1,0 +1,592 @@
+source,target,relationship,weight,kind,flow,rationale
+SRC-REPORT,GOAL-RESEARCH,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,GOAL-BUSINESS,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,ROLE-ANDREA,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,DATA-HISTORY,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,DATA-TIME,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,DATA-FEATURES,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,DATA-WEATHER,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,DATA-SPLIT,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,DATA-SHARED,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,METHOD-NAIVE,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,METHOD-SARIMA,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,METHOD-PROPHET,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,METHOD-XGB,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,METHOD-WXGB,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,METHOD-SARIMAX,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,METHOD-HYBRID,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,METHOD-ERCOT,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,DEC-ROLL,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,FIND-SEASONAL,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,FIND-WEATHER,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,FIND-OVERALL,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,FIND-ERCOT,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,FIND-SUMMER-WEEK,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,FIND-PEAK,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,FIND-UNDER,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,FIND-CAUSE,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,V-F03,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,V-F14,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,V-F16,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,V-F17,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,LIMIT-ORIGIN,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,LIMIT-WEATHER,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,LIMIT-PEAK-BIN,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,LIMIT-CAUSAL,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,OPEN-UPSTREAM,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-REPORT,SEC-PROBLEM,contains written evidence,4,provenance,dependency,Report section exists in the October 25 hybrid-updated document.
+SRC-REPORT,SEC-DATA,contains written evidence,4,provenance,dependency,Report section exists in the October 25 hybrid-updated document.
+SRC-REPORT,SEC-MODELS,contains written evidence,4,provenance,dependency,Report section exists in the October 25 hybrid-updated document.
+SRC-REPORT,SEC-RESULTS,contains written evidence,4,provenance,dependency,Report section exists in the October 25 hybrid-updated document.
+SRC-REPORT,SEC-BEHAVIOR,contains written evidence,4,provenance,dependency,Report section exists in the October 25 hybrid-updated document.
+SRC-REPORT,SEC-PEAK,contains written evidence,4,provenance,dependency,Report section exists in the October 25 hybrid-updated document.
+SRC-REPORT,SEC-RECOMMEND,contains written evidence,4,provenance,dependency,Report section exists in the October 25 hybrid-updated document.
+SRC-REPORT,SEC-QA,contains written evidence,4,provenance,dependency,Report section exists in the October 25 hybrid-updated document.
+SRC-NOTEBOOK,GOAL-RESEARCH,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,ROLE-SARAH,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,ROLE-ANDREA,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,ROLE-MATTHEW,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,DATA-HISTORY,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,DATA-TIME,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,DATA-WEATHER,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,DATA-SHARED,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,METHOD-HYBRID,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,METHOD-ERCOT,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,DEC-ERROR-DIRECTION,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,DEC-COMPLEMENT,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,DEC-WEIGHT-TEST,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,FIND-SEASONAL,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,FIND-OVERALL,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,FIND-SUMMER-WEEK,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,FIND-PEAK,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,FIND-ERCOT-PEAK,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,FIND-BLEND-TEST,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,FIND-DIVERGENCE,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,V-F03,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,V-F03-SEASONS,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,V-F12,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,V-F13,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,V-F14,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,V-F16,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,V-F17,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,V-F20,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,V-F21-25,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,V-F26-33,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,LIMIT-WEATHER,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,LIMIT-PEAK-BIN,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-NOTEBOOK,FIG-F01,contains embedded figure,4,provenance,dependency,Figure F01 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F01,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F02,contains embedded figure,4,provenance,dependency,Figure F02 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F02,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F03,contains embedded figure,4,provenance,dependency,Figure F03 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F03,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F03A,contains embedded figure,4,provenance,dependency,Figure F03A extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F03A,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F03B,contains embedded figure,4,provenance,dependency,Figure F03B extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F03B,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F03C,contains embedded figure,4,provenance,dependency,Figure F03C extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F03C,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F03D,contains embedded figure,4,provenance,dependency,Figure F03D extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F03D,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F03E,contains embedded figure,4,provenance,dependency,Figure F03E extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F03E,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F04,contains embedded figure,4,provenance,dependency,Figure F04 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F04,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F05,contains embedded figure,4,provenance,dependency,Figure F05 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F05,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F06,contains embedded figure,4,provenance,dependency,Figure F06 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F06,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F07,contains embedded figure,4,provenance,dependency,Figure F07 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F07,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F08,contains embedded figure,4,provenance,dependency,Figure F08 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F08,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F09,contains embedded figure,4,provenance,dependency,Figure F09 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F09,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F10,contains embedded figure,4,provenance,dependency,Figure F10 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F10,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F11,contains embedded figure,4,provenance,dependency,Figure F11 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F11,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F12,contains embedded figure,4,provenance,dependency,Figure F12 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F12,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F13,contains embedded figure,4,provenance,dependency,Figure F13 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F13,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F14,contains embedded figure,4,provenance,dependency,Figure F14 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F14,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F15,contains embedded figure,4,provenance,dependency,Figure F15 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F15,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F16,contains embedded figure,4,provenance,dependency,Figure F16 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F16,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F17,contains embedded figure,4,provenance,dependency,Figure F17 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F17,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F18,contains embedded figure,4,provenance,dependency,Figure F18 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F18,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F19,contains embedded figure,4,provenance,dependency,Figure F19 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F19,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F20,contains embedded figure,4,provenance,dependency,Figure F20 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F20,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F21,contains embedded figure,4,provenance,dependency,Figure F21 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F21,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F22,contains embedded figure,4,provenance,dependency,Figure F22 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F22,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F23,contains embedded figure,4,provenance,dependency,Figure F23 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F23,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F24,contains embedded figure,4,provenance,dependency,Figure F24 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F24,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F25,contains embedded figure,4,provenance,dependency,Figure F25 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F25,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F26,contains embedded figure,4,provenance,dependency,Figure F26 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F26,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F27,contains embedded figure,4,provenance,dependency,Figure F27 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F27,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F28,contains embedded figure,4,provenance,dependency,Figure F28 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F28,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F29,contains embedded figure,4,provenance,dependency,Figure F29 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F29,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F30,contains embedded figure,4,provenance,dependency,Figure F30 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F30,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F31,contains embedded figure,4,provenance,dependency,Figure F31 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F31,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F32,contains embedded figure,4,provenance,dependency,Figure F32 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F32,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-NOTEBOOK,FIG-F33,contains embedded figure,4,provenance,dependency,Figure F33 extracted from existing notebook output at recorded cell.
+SRC-NOTEBOOK,Q-F33,documents visual question,4,provenance,dependency,Notebook Markdown records the intent of this figure; generated question marked interpretive where absent.
+SRC-CLEAN,DATA-HISTORY,contains,4,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-CLEAN,FIG-F01,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-CLEAN,FIG-F02,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-CLEAN,FIG-F03,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-CLEAN,FIG-F03A,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-CLEAN,FIG-F03B,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-CLEAN,FIG-F03C,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-CLEAN,FIG-F03D,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-CLEAN,FIG-F03E,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-CLEAN,FIG-F04,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-CLEAN,FIG-F05,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-CLEAN,FIG-F06,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-CLEAN,FIG-F07,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-CLEAN,FIG-F08,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-CLEAN,FIG-F09,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-CLEAN,FACT-HISTORY,documents numerical fact,4,provenance,dependency,Numerical datum derives from the indicated dataset or report.
+SRC-WEATHER,DATA-WEATHER,contains,4,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-PRED,DATA-SPLIT,covers test period,4,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-PRED,DATA-SHARED,enables common-hour evaluation,3,original-link,dependency,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-PRED,METHOD-HYBRID,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-PRED,FIND-OVERALL,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-PRED,FIG-F10,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-PRED,FIG-F11,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-PRED,FIG-F12,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-PRED,FIG-F13,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-PRED,FIG-F14,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-PRED,FIG-F15,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-PRED,FIG-F16,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-PRED,FIG-F17,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-PRED,FIG-F18,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-PRED,FIG-F19,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-PRED,FIG-F20,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-PRED,FIG-F21,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-PRED,FIG-F22,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-PRED,FIG-F23,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-PRED,FIG-F24,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-PRED,FIG-F25,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-PRED,FIG-F26,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-PRED,FIG-F27,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-PRED,FIG-F28,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-PRED,FIG-F29,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-PRED,FIG-F30,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-PRED,FIG-F31,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-PRED,FIG-F32,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-PRED,FIG-F33,provides input values for visual,4,provenance,dependency,Figure sources are mapped from notebook narrative and source CSV roles; check exact code for additional inputs.
+SRC-PRED,METRIC-OVERALL-ERCOT_DAY_AHEAD,used to calculate exact MAE,5,provenance,dependency,"Calculated directly on the shared prediction export, not transcribed from image."
+SRC-PRED,METRIC-OVERALL-HYBRID_50_50,used to calculate exact MAE,5,provenance,dependency,"Calculated directly on the shared prediction export, not transcribed from image."
+SRC-PRED,METRIC-OVERALL-WEATHER_XGBOOST,used to calculate exact MAE,5,provenance,dependency,"Calculated directly on the shared prediction export, not transcribed from image."
+SRC-PRED,METRIC-OVERALL-XGBOOST,used to calculate exact MAE,5,provenance,dependency,"Calculated directly on the shared prediction export, not transcribed from image."
+SRC-PRED,METRIC-OVERALL-ROLLING_SARIMA,used to calculate exact MAE,5,provenance,dependency,"Calculated directly on the shared prediction export, not transcribed from image."
+SRC-PRED,METRIC-OVERALL-WEATHER_SARIMAX,used to calculate exact MAE,5,provenance,dependency,"Calculated directly on the shared prediction export, not transcribed from image."
+SRC-PRED,METRIC-OVERALL-SEASONAL_NAIVE,used to calculate exact MAE,5,provenance,dependency,"Calculated directly on the shared prediction export, not transcribed from image."
+SRC-PRED,METRIC-OVERALL-PROPHET,used to calculate exact MAE,5,provenance,dependency,"Calculated directly on the shared prediction export, not transcribed from image."
+SRC-PRED,METRIC-TOP_1PCT-ERCOT_DAY_AHEAD,used to calculate exact MAE,5,provenance,dependency,"Calculated directly on the shared prediction export, not transcribed from image."
+SRC-PRED,METRIC-TOP_1PCT-HYBRID_50_50,used to calculate exact MAE,5,provenance,dependency,"Calculated directly on the shared prediction export, not transcribed from image."
+SRC-PRED,METRIC-TOP_1PCT-WEATHER_XGBOOST,used to calculate exact MAE,5,provenance,dependency,"Calculated directly on the shared prediction export, not transcribed from image."
+SRC-PRED,METRIC-TOP_1PCT-XGBOOST,used to calculate exact MAE,5,provenance,dependency,"Calculated directly on the shared prediction export, not transcribed from image."
+SRC-PRED,METRIC-TOP_1PCT-ROLLING_SARIMA,used to calculate exact MAE,5,provenance,dependency,"Calculated directly on the shared prediction export, not transcribed from image."
+SRC-PRED,METRIC-TOP_1PCT-WEATHER_SARIMAX,used to calculate exact MAE,5,provenance,dependency,"Calculated directly on the shared prediction export, not transcribed from image."
+SRC-PRED,METRIC-TOP_1PCT-SEASONAL_NAIVE,used to calculate exact MAE,5,provenance,dependency,"Calculated directly on the shared prediction export, not transcribed from image."
+SRC-PRED,METRIC-TOP_1PCT-PROPHET,used to calculate exact MAE,5,provenance,dependency,"Calculated directly on the shared prediction export, not transcribed from image."
+SRC-PRED,FACT-TEST,documents numerical fact,5,provenance,dependency,Numerical datum derives from the indicated dataset or report.
+SRC-PRED,FACT-MATCHED,documents numerical fact,5,provenance,dependency,Numerical datum derives from the indicated dataset or report.
+SRC-PRED,FACT-MISSING,documents numerical fact,5,provenance,dependency,Numerical datum derives from the indicated dataset or report.
+SRC-PRED,FACT-TOP1,documents numerical fact,5,provenance,dependency,Numerical datum derives from the indicated dataset or report.
+SRC-PRED,FACT-CUTOFF,documents numerical fact,5,provenance,dependency,Numerical datum derives from the indicated dataset or report.
+SRC-PRED,FACT-HYBRID-IMPROVEMENT,documents numerical fact,5,provenance,dependency,Numerical datum derives from the indicated dataset or report.
+SRC-RUBRIC,OUT-MILESTONE3,defines,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-RUBRIC,OUT-MILESTONE3,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-STUDIO,OPEN-STUDIO,documents current status for,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-STUDIO,OPEN-STUDIO,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-TEAMCONTEXT,GOAL-PRESENTATION,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-TEAMCONTEXT,ROLE-MATTHEW,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+SRC-TEAMCONTEXT,OPEN-SCRIPT,supports / describes,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+GOAL-RESEARCH,METHOD-NAIVE,uses as baseline,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+GOAL-RESEARCH,METHOD-ERCOT,uses as benchmark,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+GOAL-RESEARCH,SEC-PROBLEM,explained in report section,4,communication,dependency,Report section discusses GOAL-RESEARCH.
+GOAL-RESEARCH,QA-02,addresses question,4,reasoning,dependency,The linked concept informs this appendix response.
+GOAL-BUSINESS,GOAL-RESEARCH,motivates,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+GOAL-BUSINESS,SEC-PROBLEM,explained in report section,4,communication,dependency,Report section discusses GOAL-BUSINESS.
+GOAL-BUSINESS,QA-01,addresses question,4,reasoning,dependency,The linked concept informs this appendix response.
+GOAL-PRESENTATION,OUT-MILESTONE3,aims to fulfill,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+GOAL-PRESENTATION,OPEN-SCRIPT,requires approval of,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+ROLE-SARAH,DATA-HISTORY,prepared,4,original-link,dependency,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+ROLE-SARAH,DATA-FEATURES,engineered,4,original-link,dependency,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+ROLE-SARAH,DATA-WEATHER,supported preparation of,4,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+ROLE-ANDREA,METHOD-SARIMA,developed,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+ROLE-ANDREA,METHOD-XGB,developed,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+ROLE-ANDREA,METHOD-WXGB,developed,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+ROLE-ANDREA,METHOD-SARIMAX,developed,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+ROLE-ANDREA,METHOD-HYBRID,officially exported,4,original-link,dependency,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+ROLE-MATTHEW,V-F03,analyzed,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+ROLE-MATTHEW,V-F17,analyzed,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+ROLE-MATTHEW,V-F20,analyzed,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+ROLE-MATTHEW,V-F26-33,developed,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+ROLE-MATTHEW,DEC-WEIGHT-TEST,explored,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+DATA-HISTORY,DATA-TIME,aligned using,4,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+DATA-HISTORY,DATA-FEATURES,supports,3,original-link,dependency,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+DATA-HISTORY,FIND-SEASONAL,reveals,3,original-link,dependency,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+DATA-HISTORY,SEC-DATA,explained in report section,4,communication,dependency,Report section discusses DATA-HISTORY.
+DATA-HISTORY,QA-02,addresses question,4,reasoning,dependency,The linked concept informs this appendix response.
+DATA-HISTORY,METHOD-SARIMA,training/forecast input,4,dataflow,dependency,Rolling time-series model uses observed demand history.
+DATA-TIME,V-F03-SEASONS,governs interpretation of,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+DATA-FEATURES,SEC-DATA,explained in report section,4,communication,dependency,Report section discusses DATA-FEATURES.
+DATA-FEATURES,METHOD-XGB,model input,4,dataflow,dependency,XGBoost uses calendar and historical lag predictors.
+DATA-FEATURES,METHOD-WXGB,model input,4,dataflow,dependency,Weather XGBoost also uses historical and calendar features.
+DATA-WEATHER,METHOD-WXGB,informs,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+DATA-WEATHER,METHOD-WXGB,observed-weather engineered predictors,4,dataflow,dependency,Historical observed weather features informed model comparison; future-available inputs still need auditing.
+DATA-WEATHER,METHOD-SARIMAX,informs,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+DATA-WEATHER,METHOD-SARIMAX,external regressors,4,dataflow,dependency,Historical weather regressors used in tested SARIMAX variant.
+DATA-WEATHER,SEC-DATA,explained in report section,4,communication,dependency,Report section discusses DATA-WEATHER.
+DATA-SHARED,FIND-OVERALL,defines denominator for,4,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+DATA-SHARED,FIND-PEAK,defines matched hours for,5,original-link,dependency,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+DATA-SHARED,METRIC-OVERALL-HYBRID_50_50,restricts common evaluation sample,5,dataflow,dependency,Exclude 120 missing ERCOT hours before leaderboard comparison.
+METHOD-NAIVE,FIND-OVERALL,provides comparison,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+METHOD-NAIVE,METRIC-OVERALL-SEASONAL_NAIVE,evaluated as,5,quantitative,dependency,Corresponds to predictions in column SEASONAL_NAIVE in overall subset.
+METHOD-NAIVE,METRIC-TOP_1PCT-SEASONAL_NAIVE,evaluated as,5,quantitative,dependency,Corresponds to predictions in column SEASONAL_NAIVE in top_1pct subset.
+METHOD-SARIMA,METHOD-HYBRID,contributes 50%,5,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+METHOD-SARIMA,METHOD-HYBRID,contributes 50% predictions,5,dataflow,dependency,Official hybrid averages these actual prediction columns.
+METHOD-SARIMA,METRIC-OVERALL-ROLLING_SARIMA,evaluated as,5,quantitative,dependency,Corresponds to predictions in column ROLLING_SARIMA in overall subset.
+METHOD-SARIMA,METRIC-TOP_1PCT-ROLLING_SARIMA,evaluated as,5,quantitative,dependency,Corresponds to predictions in column ROLLING_SARIMA in top_1pct subset.
+METHOD-SARIMA,SEC-MODELS,explained in report section,4,communication,dependency,Report section discusses METHOD-SARIMA.
+METHOD-PROPHET,METRIC-OVERALL-PROPHET,evaluated as,5,quantitative,dependency,Corresponds to predictions in column PROPHET in overall subset.
+METHOD-PROPHET,METRIC-TOP_1PCT-PROPHET,evaluated as,5,quantitative,dependency,Corresponds to predictions in column PROPHET in top_1pct subset.
+METHOD-XGB,METRIC-OVERALL-XGBOOST,evaluated as,5,quantitative,dependency,Corresponds to predictions in column XGBOOST in overall subset.
+METHOD-XGB,METRIC-TOP_1PCT-XGBOOST,evaluated as,5,quantitative,dependency,Corresponds to predictions in column XGBOOST in top_1pct subset.
+METHOD-WXGB,METHOD-HYBRID,contributes 50%,5,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+METHOD-WXGB,METHOD-HYBRID,contributes 50% predictions,5,dataflow,dependency,Official hybrid averages these actual prediction columns.
+METHOD-WXGB,FIND-WEATHER,contributes evidence to,3,original-link,dependency,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+METHOD-WXGB,METRIC-OVERALL-WEATHER_XGBOOST,evaluated as,5,quantitative,dependency,Corresponds to predictions in column WEATHER_XGBOOST in overall subset.
+METHOD-WXGB,METRIC-TOP_1PCT-WEATHER_XGBOOST,evaluated as,5,quantitative,dependency,Corresponds to predictions in column WEATHER_XGBOOST in top_1pct subset.
+METHOD-WXGB,SEC-MODELS,explained in report section,4,communication,dependency,Report section discusses METHOD-WXGB.
+METHOD-SARIMAX,METRIC-OVERALL-WEATHER_SARIMAX,evaluated as,5,quantitative,dependency,Corresponds to predictions in column WEATHER_SARIMAX in overall subset.
+METHOD-SARIMAX,METRIC-TOP_1PCT-WEATHER_SARIMAX,evaluated as,5,quantitative,dependency,Corresponds to predictions in column WEATHER_SARIMAX in top_1pct subset.
+METHOD-HYBRID,FIND-OVERALL,produces,5,original-link,dependency,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+METHOD-HYBRID,FIND-PEAK,exposes limitation in,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+METHOD-HYBRID,METRIC-OVERALL-HYBRID_50_50,evaluated as,5,quantitative,dependency,Corresponds to predictions in column HYBRID_50_50 in overall subset.
+METHOD-HYBRID,METRIC-TOP_1PCT-HYBRID_50_50,evaluated as,5,quantitative,dependency,Corresponds to predictions in column HYBRID_50_50 in top_1pct subset.
+METHOD-ERCOT,FIND-ERCOT,provides comparison,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+METHOD-ERCOT,METRIC-OVERALL-ERCOT_DAY_AHEAD,evaluated as,5,quantitative,dependency,Corresponds to predictions in column ERCOT_DAY_AHEAD in overall subset.
+METHOD-ERCOT,METRIC-TOP_1PCT-ERCOT_DAY_AHEAD,evaluated as,5,quantitative,dependency,Corresponds to predictions in column ERCOT_DAY_AHEAD in top_1pct subset.
+METHOD-ERCOT,QA-03,addresses question,4,reasoning,dependency,The linked concept informs this appendix response.
+DEC-ROLL,METHOD-SARIMA,changed implementation of,3,original-link,dependency,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+DEC-ROLL,SEC-MODELS,explained in report section,4,communication,dependency,Report section discusses DEC-ROLL.
+DEC-ERROR-DIRECTION,V-F12,visualized by,4,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+DEC-ERROR-DIRECTION,V-F20,enables,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+DEC-ERROR-DIRECTION,FIG-F12,communicated with,3,presentation,dependency,Changes to claim DEC-ERROR-DIRECTION may require a new annotation or review of figure F12.
+DEC-COMPLEMENT,METHOD-HYBRID,motivated exploration of,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+DEC-COMPLEMENT,FIG-F20,communicated with,3,presentation,dependency,Changes to claim DEC-COMPLEMENT may require a new annotation or review of figure F20.
+DEC-WEIGHT-TEST,V-F21-25,visualized by,4,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+DEC-WEIGHT-TEST,FIND-BLEND-TEST,produced,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+DEC-WEIGHT-TEST,QA-10,addresses question,4,reasoning,dependency,The linked concept informs this appendix response.
+FIND-SEASONAL,V-F03,visualized by,4,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+FIND-SEASONAL,V-F03-SEASONS,deepened by,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+FIND-SEASONAL,FIG-F01,communicated with,3,presentation,dependency,Changes to claim FIND-SEASONAL may require a new annotation or review of figure F01.
+FIND-SEASONAL,FIG-F02,communicated with,3,presentation,dependency,Changes to claim FIND-SEASONAL may require a new annotation or review of figure F02.
+FIND-SEASONAL,FIG-F03,communicated with,3,presentation,dependency,Changes to claim FIND-SEASONAL may require a new annotation or review of figure F03.
+FIND-SEASONAL,FIG-F03A,communicated with,3,presentation,dependency,Changes to claim FIND-SEASONAL may require a new annotation or review of figure F03A.
+FIND-SEASONAL,FIG-F03B,communicated with,3,presentation,dependency,Changes to claim FIND-SEASONAL may require a new annotation or review of figure F03B.
+FIND-SEASONAL,FIG-F03C,communicated with,3,presentation,dependency,Changes to claim FIND-SEASONAL may require a new annotation or review of figure F03C.
+FIND-SEASONAL,FIG-F03D,communicated with,3,presentation,dependency,Changes to claim FIND-SEASONAL may require a new annotation or review of figure F03D.
+FIND-SEASONAL,FIG-F03E,communicated with,3,presentation,dependency,Changes to claim FIND-SEASONAL may require a new annotation or review of figure F03E.
+FIND-SEASONAL,FIG-F04,communicated with,3,presentation,dependency,Changes to claim FIND-SEASONAL may require a new annotation or review of figure F04.
+FIND-SEASONAL,FIG-F05,communicated with,3,presentation,dependency,Changes to claim FIND-SEASONAL may require a new annotation or review of figure F05.
+FIND-SEASONAL,FIG-F06,communicated with,3,presentation,dependency,Changes to claim FIND-SEASONAL may require a new annotation or review of figure F06.
+FIND-SEASONAL,FIG-F07,communicated with,3,presentation,dependency,Changes to claim FIND-SEASONAL may require a new annotation or review of figure F07.
+FIND-SEASONAL,FIG-F08,communicated with,3,presentation,dependency,Changes to claim FIND-SEASONAL may require a new annotation or review of figure F08.
+FIND-SEASONAL,FIG-F09,communicated with,3,presentation,dependency,Changes to claim FIND-SEASONAL may require a new annotation or review of figure F09.
+FIND-WEATHER,QA-04,addresses question,4,reasoning,dependency,The linked concept informs this appendix response.
+FIND-OVERALL,V-F14,visualized by,4,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+FIND-OVERALL,FIG-F14,communicated with,3,presentation,dependency,Changes to claim FIND-OVERALL may require a new annotation or review of figure F14.
+FIND-OVERALL,FIG-F15,communicated with,3,presentation,dependency,Changes to claim FIND-OVERALL may require a new annotation or review of figure F15.
+FIND-OVERALL,FIG-F32,communicated with,3,presentation,dependency,Changes to claim FIND-OVERALL may require a new annotation or review of figure F32.
+FIND-OVERALL,SEC-RESULTS,explained in report section,4,communication,dependency,Report section discusses FIND-OVERALL.
+FIND-OVERALL,SEC-QA,explained in report section,4,communication,dependency,Report section discusses FIND-OVERALL.
+FIND-OVERALL,QA-05,addresses question,4,reasoning,dependency,The linked concept informs this appendix response.
+FIND-ERCOT,FIG-F10,communicated with,3,presentation,dependency,Changes to claim FIND-ERCOT may require a new annotation or review of figure F10.
+FIND-ERCOT,FIG-F11,communicated with,3,presentation,dependency,Changes to claim FIND-ERCOT may require a new annotation or review of figure F11.
+FIND-ERCOT,FIG-F14,communicated with,3,presentation,dependency,Changes to claim FIND-ERCOT may require a new annotation or review of figure F14.
+FIND-ERCOT,FIG-F15,communicated with,3,presentation,dependency,Changes to claim FIND-ERCOT may require a new annotation or review of figure F15.
+FIND-ERCOT,SEC-RESULTS,explained in report section,4,communication,dependency,Report section discusses FIND-ERCOT.
+FIND-ERCOT,QA-06,addresses question,4,reasoning,dependency,The linked concept informs this appendix response.
+FIND-SUMMER-WEEK,V-F16,visualized by,4,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+FIND-SUMMER-WEEK,FIG-F10,communicated with,3,presentation,dependency,Changes to claim FIND-SUMMER-WEEK may require a new annotation or review of figure F10.
+FIND-SUMMER-WEEK,FIG-F16,communicated with,3,presentation,dependency,Changes to claim FIND-SUMMER-WEEK may require a new annotation or review of figure F16.
+FIND-SUMMER-WEEK,FIG-F24,communicated with,3,presentation,dependency,Changes to claim FIND-SUMMER-WEEK may require a new annotation or review of figure F24.
+FIND-SUMMER-WEEK,FIG-F33,communicated with,3,presentation,dependency,Changes to claim FIND-SUMMER-WEEK may require a new annotation or review of figure F33.
+FIND-SUMMER-WEEK,SEC-BEHAVIOR,explained in report section,4,communication,dependency,Report section discusses FIND-SUMMER-WEEK.
+FIND-PEAK,V-F17,visualized by,4,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+FIND-PEAK,FIND-UNDER,contains,4,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+FIND-PEAK,FIG-F17,communicated with,3,presentation,dependency,Changes to claim FIND-PEAK may require a new annotation or review of figure F17.
+FIND-PEAK,SEC-BEHAVIOR,explained in report section,4,communication,dependency,Report section discusses FIND-PEAK.
+FIND-PEAK,SEC-PEAK,explained in report section,4,communication,dependency,Report section discusses FIND-PEAK.
+FIND-PEAK,SEC-QA,explained in report section,4,communication,dependency,Report section discusses FIND-PEAK.
+FIND-PEAK,QA-05,addresses question,4,reasoning,dependency,The linked concept informs this appendix response.
+FIND-PEAK,QA-07,addresses question,4,reasoning,dependency,The linked concept informs this appendix response.
+FIND-PEAK,SEC-RECOMMEND,motivates demand-regime caution,4,reasoning,dependency,"Peak errors support considering condition-aware evaluation, not deploying a switching rule."
+FIND-UNDER,FIND-CAUSE,suggests hypothesis,1,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+FIND-UNDER,FIG-F17,communicated with,3,presentation,dependency,Changes to claim FIND-UNDER may require a new annotation or review of figure F17.
+FIND-UNDER,SEC-PEAK,explained in report section,4,communication,dependency,Report section discusses FIND-UNDER.
+FIND-UNDER,QA-07,addresses question,4,reasoning,dependency,The linked concept informs this appendix response.
+FIND-CAUSE,LIMIT-CAUSAL,requires qualification,3,caveat,association,"Tree extrapolation is a plausible mechanism, not isolated by an experiment."
+FIND-CAUSE,SEC-PEAK,explained in report section,4,communication,dependency,Report section discusses FIND-CAUSE.
+FIND-ERCOT-PEAK,FIG-F13,communicated with,3,presentation,dependency,Changes to claim FIND-ERCOT-PEAK may require a new annotation or review of figure F13.
+FIND-BLEND-TEST,FIG-F21,communicated with,3,presentation,dependency,Changes to claim FIND-BLEND-TEST may require a new annotation or review of figure F21.
+FIND-BLEND-TEST,FIG-F22,communicated with,3,presentation,dependency,Changes to claim FIND-BLEND-TEST may require a new annotation or review of figure F22.
+FIND-BLEND-TEST,FIG-F23,communicated with,3,presentation,dependency,Changes to claim FIND-BLEND-TEST may require a new annotation or review of figure F23.
+FIND-BLEND-TEST,FIG-F24,communicated with,3,presentation,dependency,Changes to claim FIND-BLEND-TEST may require a new annotation or review of figure F24.
+FIND-BLEND-TEST,FIG-F25,communicated with,3,presentation,dependency,Changes to claim FIND-BLEND-TEST may require a new annotation or review of figure F25.
+FIND-DIVERGENCE,V-F26-33,visualized by,4,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+FIND-DIVERGENCE,FIG-F18,communicated with,3,presentation,dependency,Changes to claim FIND-DIVERGENCE may require a new annotation or review of figure F18.
+FIND-DIVERGENCE,FIG-F19,communicated with,3,presentation,dependency,Changes to claim FIND-DIVERGENCE may require a new annotation or review of figure F19.
+FIND-DIVERGENCE,FIG-F26,communicated with,3,presentation,dependency,Changes to claim FIND-DIVERGENCE may require a new annotation or review of figure F26.
+FIND-DIVERGENCE,FIG-F27,communicated with,3,presentation,dependency,Changes to claim FIND-DIVERGENCE may require a new annotation or review of figure F27.
+FIND-DIVERGENCE,FIG-F28,communicated with,3,presentation,dependency,Changes to claim FIND-DIVERGENCE may require a new annotation or review of figure F28.
+FIND-DIVERGENCE,FIG-F29,communicated with,3,presentation,dependency,Changes to claim FIND-DIVERGENCE may require a new annotation or review of figure F29.
+FIND-DIVERGENCE,FIG-F30,communicated with,3,presentation,dependency,Changes to claim FIND-DIVERGENCE may require a new annotation or review of figure F30.
+FIND-DIVERGENCE,FIG-F31,communicated with,3,presentation,dependency,Changes to claim FIND-DIVERGENCE may require a new annotation or review of figure F31.
+FIND-DIVERGENCE,FIG-F32,communicated with,3,presentation,dependency,Changes to claim FIND-DIVERGENCE may require a new annotation or review of figure F32.
+FIND-DIVERGENCE,FIG-F33,communicated with,3,presentation,dependency,Changes to claim FIND-DIVERGENCE may require a new annotation or review of figure F33.
+V-F13,FIND-ERCOT-PEAK,tests,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+V-F20,DEC-COMPLEMENT,informs question,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+LIMIT-ORIGIN,FIND-OVERALL,qualifies,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+LIMIT-ORIGIN,FIND-ERCOT,qualifies,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+LIMIT-ORIGIN,FIG-F10,qualifies interpretation of,4,caveat,dependency,LIMIT-ORIGIN applies when interpreting or presenting F10.
+LIMIT-ORIGIN,FIG-F14,qualifies interpretation of,4,caveat,dependency,LIMIT-ORIGIN applies when interpreting or presenting F14.
+LIMIT-ORIGIN,FIG-F15,qualifies interpretation of,4,caveat,dependency,LIMIT-ORIGIN applies when interpreting or presenting F15.
+LIMIT-ORIGIN,FIG-F20,qualifies interpretation of,4,caveat,dependency,LIMIT-ORIGIN applies when interpreting or presenting F20.
+LIMIT-ORIGIN,FIG-F21,qualifies interpretation of,4,caveat,dependency,LIMIT-ORIGIN applies when interpreting or presenting F21.
+LIMIT-ORIGIN,FIG-F22,qualifies interpretation of,4,caveat,dependency,LIMIT-ORIGIN applies when interpreting or presenting F22.
+LIMIT-ORIGIN,FIG-F25,qualifies interpretation of,4,caveat,dependency,LIMIT-ORIGIN applies when interpreting or presenting F25.
+LIMIT-ORIGIN,FIG-F26,qualifies interpretation of,4,caveat,dependency,LIMIT-ORIGIN applies when interpreting or presenting F26.
+LIMIT-ORIGIN,FIG-F27,qualifies interpretation of,4,caveat,dependency,LIMIT-ORIGIN applies when interpreting or presenting F27.
+LIMIT-ORIGIN,FIG-F32,qualifies interpretation of,4,caveat,dependency,LIMIT-ORIGIN applies when interpreting or presenting F32.
+LIMIT-ORIGIN,SEC-RECOMMEND,explained in report section,4,communication,dependency,Report section discusses LIMIT-ORIGIN.
+LIMIT-ORIGIN,SEC-RECOMMEND,qualifies deployment claim,5,caveat,dependency,Forecast issuance alignment remains unresolved.
+LIMIT-ORIGIN,SEC-QA,explained in report section,4,communication,dependency,Report section discusses LIMIT-ORIGIN.
+LIMIT-ORIGIN,QA-03,addresses question,4,reasoning,dependency,The linked concept informs this appendix response.
+LIMIT-ORIGIN,QA-08,addresses question,4,reasoning,dependency,The linked concept informs this appendix response.
+LIMIT-ORIGIN,QA-09,addresses question,4,reasoning,dependency,The linked concept informs this appendix response.
+LIMIT-ORIGIN,QA-10,addresses question,4,reasoning,dependency,The linked concept informs this appendix response.
+LIMIT-WEATHER,FIND-WEATHER,qualifies,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+LIMIT-WEATHER,METHOD-WXGB,applies to,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+LIMIT-WEATHER,FIG-F14,qualifies interpretation of,4,caveat,dependency,LIMIT-WEATHER applies when interpreting or presenting F14.
+LIMIT-WEATHER,SEC-RECOMMEND,explained in report section,4,communication,dependency,Report section discusses LIMIT-WEATHER.
+LIMIT-WEATHER,QA-04,addresses question,4,reasoning,dependency,The linked concept informs this appendix response.
+LIMIT-WEATHER,QA-06,addresses question,4,reasoning,dependency,The linked concept informs this appendix response.
+LIMIT-WEATHER,QA-08,addresses question,4,reasoning,dependency,The linked concept informs this appendix response.
+LIMIT-WEATHER,QA-10,addresses question,4,reasoning,dependency,The linked concept informs this appendix response.
+LIMIT-PEAK-BIN,FIND-PEAK,qualifies,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+LIMIT-PEAK-BIN,FIND-BLEND-TEST,qualifies any regime selection,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+LIMIT-PEAK-BIN,FIG-F13,qualifies interpretation of,4,caveat,dependency,LIMIT-PEAK-BIN applies when interpreting or presenting F13.
+LIMIT-PEAK-BIN,FIG-F17,qualifies interpretation of,4,caveat,dependency,LIMIT-PEAK-BIN applies when interpreting or presenting F17.
+LIMIT-PEAK-BIN,FIG-F23,qualifies interpretation of,4,caveat,dependency,LIMIT-PEAK-BIN applies when interpreting or presenting F23.
+LIMIT-PEAK-BIN,METRIC-TOP_1PCT-ERCOT_DAY_AHEAD,restricts operational interpretation,5,caveat,dependency,Selection uses observed future outcome and cannot be treated as advance-known regime.
+LIMIT-PEAK-BIN,METRIC-TOP_1PCT-HYBRID_50_50,restricts operational interpretation,5,caveat,dependency,Selection uses observed future outcome and cannot be treated as advance-known regime.
+LIMIT-PEAK-BIN,METRIC-TOP_1PCT-WEATHER_XGBOOST,restricts operational interpretation,5,caveat,dependency,Selection uses observed future outcome and cannot be treated as advance-known regime.
+LIMIT-PEAK-BIN,METRIC-TOP_1PCT-XGBOOST,restricts operational interpretation,5,caveat,dependency,Selection uses observed future outcome and cannot be treated as advance-known regime.
+LIMIT-PEAK-BIN,METRIC-TOP_1PCT-ROLLING_SARIMA,restricts operational interpretation,5,caveat,dependency,Selection uses observed future outcome and cannot be treated as advance-known regime.
+LIMIT-PEAK-BIN,METRIC-TOP_1PCT-WEATHER_SARIMAX,restricts operational interpretation,5,caveat,dependency,Selection uses observed future outcome and cannot be treated as advance-known regime.
+LIMIT-PEAK-BIN,METRIC-TOP_1PCT-SEASONAL_NAIVE,restricts operational interpretation,5,caveat,dependency,Selection uses observed future outcome and cannot be treated as advance-known regime.
+LIMIT-PEAK-BIN,METRIC-TOP_1PCT-PROPHET,restricts operational interpretation,5,caveat,dependency,Selection uses observed future outcome and cannot be treated as advance-known regime.
+LIMIT-CAUSAL,GOAL-BUSINESS,restricts implications for,3,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+LIMIT-CAUSAL,FIG-F03,qualifies interpretation of,4,caveat,dependency,LIMIT-CAUSAL applies when interpreting or presenting F03.
+LIMIT-CAUSAL,FIG-F03A,qualifies interpretation of,4,caveat,dependency,LIMIT-CAUSAL applies when interpreting or presenting F03A.
+LIMIT-CAUSAL,FIG-F03B,qualifies interpretation of,4,caveat,dependency,LIMIT-CAUSAL applies when interpreting or presenting F03B.
+LIMIT-CAUSAL,FIG-F03C,qualifies interpretation of,4,caveat,dependency,LIMIT-CAUSAL applies when interpreting or presenting F03C.
+LIMIT-CAUSAL,FIG-F03D,qualifies interpretation of,4,caveat,dependency,LIMIT-CAUSAL applies when interpreting or presenting F03D.
+LIMIT-CAUSAL,FIG-F03E,qualifies interpretation of,4,caveat,dependency,LIMIT-CAUSAL applies when interpreting or presenting F03E.
+LIMIT-CAUSAL,SEC-RECOMMEND,explained in report section,4,communication,dependency,Report section discusses LIMIT-CAUSAL.
+LIMIT-CAUSAL,QA-01,addresses question,4,reasoning,dependency,The linked concept informs this appendix response.
+LIMIT-CAUSAL,QA-09,addresses question,4,reasoning,dependency,The linked concept informs this appendix response.
+OPEN-UPSTREAM,LIMIT-ORIGIN,needed to resolve,2,original-link,association,Preserved from source-linked context web v1. Relationship strength is an editorial classification; inspect original source before asserting causality.
+FIG-F01,FIND-SEASONAL,visual evidence for interpretation,4,evidence,dependency,Figure F01 offers descriptive or diagnostic support; not necessarily causal proof.
+Q-F01,FIG-F01,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F02,FIND-SEASONAL,visual evidence for interpretation,4,evidence,dependency,Figure F02 offers descriptive or diagnostic support; not necessarily causal proof.
+Q-F02,FIG-F02,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F03,FIND-SEASONAL,visual evidence for interpretation,4,evidence,dependency,Figure F03 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F03,DATA-FEATURES,motivates engineered time features,3,reasoning,association,"Observed temporal patterns help justify, but do not validate, time features."
+FIG-F03,V-F03,belongs to figure collection,4,organization,dependency,Links a source figure to its original thematic summary without losing individual image identity.
+Q-F03,FIG-F03,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F03A,FIND-SEASONAL,visual evidence for interpretation,4,evidence,dependency,Figure F03A offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F03A,DATA-FEATURES,motivates engineered time features,3,reasoning,association,"Observed temporal patterns help justify, but do not validate, time features."
+FIG-F03A,V-F03-SEASONS,belongs to figure collection,4,organization,dependency,Links a source figure to its original thematic summary without losing individual image identity.
+Q-F03A,FIG-F03A,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F03B,FIND-SEASONAL,visual evidence for interpretation,4,evidence,dependency,Figure F03B offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F03B,DATA-FEATURES,motivates engineered time features,3,reasoning,association,"Observed temporal patterns help justify, but do not validate, time features."
+FIG-F03B,V-F03-SEASONS,belongs to figure collection,4,organization,dependency,Links a source figure to its original thematic summary without losing individual image identity.
+Q-F03B,FIG-F03B,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F03C,FIND-SEASONAL,visual evidence for interpretation,4,evidence,dependency,Figure F03C offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F03C,DATA-FEATURES,motivates engineered time features,3,reasoning,association,"Observed temporal patterns help justify, but do not validate, time features."
+FIG-F03C,V-F03-SEASONS,belongs to figure collection,4,organization,dependency,Links a source figure to its original thematic summary without losing individual image identity.
+Q-F03C,FIG-F03C,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F03D,FIND-SEASONAL,visual evidence for interpretation,4,evidence,dependency,Figure F03D offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F03D,DATA-FEATURES,motivates engineered time features,3,reasoning,association,"Observed temporal patterns help justify, but do not validate, time features."
+FIG-F03D,V-F03-SEASONS,belongs to figure collection,4,organization,dependency,Links a source figure to its original thematic summary without losing individual image identity.
+Q-F03D,FIG-F03D,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F03E,FIND-SEASONAL,visual evidence for interpretation,4,evidence,dependency,Figure F03E offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F03E,DATA-FEATURES,motivates engineered time features,3,reasoning,association,"Observed temporal patterns help justify, but do not validate, time features."
+FIG-F03E,V-F03-SEASONS,belongs to figure collection,4,organization,dependency,Links a source figure to its original thematic summary without losing individual image identity.
+Q-F03E,FIG-F03E,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F04,FIND-SEASONAL,visual evidence for interpretation,4,evidence,dependency,Figure F04 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F04,DATA-FEATURES,motivates engineered time features,3,reasoning,association,"Observed temporal patterns help justify, but do not validate, time features."
+Q-F04,FIG-F04,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F05,FIND-SEASONAL,visual evidence for interpretation,4,evidence,dependency,Figure F05 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F05,DATA-FEATURES,motivates engineered time features,3,reasoning,association,"Observed temporal patterns help justify, but do not validate, time features."
+Q-F05,FIG-F05,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F06,FIND-SEASONAL,visual evidence for interpretation,4,evidence,dependency,Figure F06 offers descriptive or diagnostic support; not necessarily causal proof.
+Q-F06,FIG-F06,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F07,FIND-SEASONAL,visual evidence for interpretation,4,evidence,dependency,Figure F07 offers descriptive or diagnostic support; not necessarily causal proof.
+Q-F07,FIG-F07,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F08,FIND-SEASONAL,visual evidence for interpretation,4,evidence,dependency,Figure F08 offers descriptive or diagnostic support; not necessarily causal proof.
+Q-F08,FIG-F08,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F09,FIND-SEASONAL,visual evidence for interpretation,4,evidence,dependency,Figure F09 offers descriptive or diagnostic support; not necessarily causal proof.
+Q-F09,FIG-F09,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F10,FIND-ERCOT,visual evidence for interpretation,4,evidence,dependency,Figure F10 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F10,FIND-SUMMER-WEEK,visual evidence for interpretation,4,evidence,dependency,Figure F10 offers descriptive or diagnostic support; not necessarily causal proof.
+Q-F10,FIG-F10,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F11,FIND-ERCOT,visual evidence for interpretation,4,evidence,dependency,Figure F11 offers descriptive or diagnostic support; not necessarily causal proof.
+Q-F11,FIG-F11,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F12,DEC-ERROR-DIRECTION,visual evidence for interpretation,4,evidence,dependency,Figure F12 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F12,V-F12,belongs to figure collection,4,organization,dependency,Links a source figure to its original thematic summary without losing individual image identity.
+Q-F12,FIG-F12,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F13,FIND-ERCOT-PEAK,visual evidence for interpretation,4,evidence,dependency,Figure F13 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F13,V-F13,belongs to figure collection,4,organization,dependency,Links a source figure to its original thematic summary without losing individual image identity.
+Q-F13,FIG-F13,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F14,FIND-OVERALL,visual evidence for interpretation,4,evidence,dependency,Figure F14 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F14,FIND-ERCOT,visual evidence for interpretation,4,evidence,dependency,Figure F14 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F14,V-F14,belongs to figure collection,4,organization,dependency,Links a source figure to its original thematic summary without losing individual image identity.
+Q-F14,FIG-F14,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F15,FIND-OVERALL,visual evidence for interpretation,4,evidence,dependency,Figure F15 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F15,FIND-ERCOT,visual evidence for interpretation,4,evidence,dependency,Figure F15 offers descriptive or diagnostic support; not necessarily causal proof.
+Q-F15,FIG-F15,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F16,FIND-SUMMER-WEEK,visual evidence for interpretation,4,evidence,dependency,Figure F16 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F16,V-F16,belongs to figure collection,4,organization,dependency,Links a source figure to its original thematic summary without losing individual image identity.
+Q-F16,FIG-F16,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F17,FIND-PEAK,visual evidence for interpretation,4,evidence,dependency,Figure F17 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F17,FIND-UNDER,visual evidence for interpretation,4,evidence,dependency,Figure F17 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F17,V-F17,belongs to figure collection,4,organization,dependency,Links a source figure to its original thematic summary without losing individual image identity.
+Q-F17,FIG-F17,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F18,FIND-DIVERGENCE,visual evidence for interpretation,4,evidence,dependency,Figure F18 offers descriptive or diagnostic support; not necessarily causal proof.
+Q-F18,FIG-F18,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F19,FIND-DIVERGENCE,visual evidence for interpretation,4,evidence,dependency,Figure F19 offers descriptive or diagnostic support; not necessarily causal proof.
+Q-F19,FIG-F19,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F20,DEC-COMPLEMENT,visual evidence for interpretation,4,evidence,dependency,Figure F20 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F20,V-F20,belongs to figure collection,4,organization,dependency,Links a source figure to its original thematic summary without losing individual image identity.
+Q-F20,FIG-F20,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F21,FIND-BLEND-TEST,visual evidence for interpretation,4,evidence,dependency,Figure F21 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F21,V-F21-25,belongs to figure collection,4,organization,dependency,Links a source figure to its original thematic summary without losing individual image identity.
+Q-F21,FIG-F21,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F22,FIND-BLEND-TEST,visual evidence for interpretation,4,evidence,dependency,Figure F22 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F22,V-F21-25,belongs to figure collection,4,organization,dependency,Links a source figure to its original thematic summary without losing individual image identity.
+Q-F22,FIG-F22,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F23,FIND-BLEND-TEST,visual evidence for interpretation,4,evidence,dependency,Figure F23 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F23,V-F21-25,belongs to figure collection,4,organization,dependency,Links a source figure to its original thematic summary without losing individual image identity.
+Q-F23,FIG-F23,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F24,FIND-BLEND-TEST,visual evidence for interpretation,4,evidence,dependency,Figure F24 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F24,FIND-SUMMER-WEEK,visual evidence for interpretation,4,evidence,dependency,Figure F24 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F24,V-F21-25,belongs to figure collection,4,organization,dependency,Links a source figure to its original thematic summary without losing individual image identity.
+Q-F24,FIG-F24,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F25,FIND-BLEND-TEST,visual evidence for interpretation,4,evidence,dependency,Figure F25 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F25,V-F21-25,belongs to figure collection,4,organization,dependency,Links a source figure to its original thematic summary without losing individual image identity.
+Q-F25,FIG-F25,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F26,FIND-DIVERGENCE,visual evidence for interpretation,4,evidence,dependency,Figure F26 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F26,V-F26-33,belongs to figure collection,4,organization,dependency,Links a source figure to its original thematic summary without losing individual image identity.
+Q-F26,FIG-F26,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F27,FIND-DIVERGENCE,visual evidence for interpretation,4,evidence,dependency,Figure F27 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F27,V-F26-33,belongs to figure collection,4,organization,dependency,Links a source figure to its original thematic summary without losing individual image identity.
+Q-F27,FIG-F27,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F28,FIND-DIVERGENCE,visual evidence for interpretation,4,evidence,dependency,Figure F28 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F28,V-F26-33,belongs to figure collection,4,organization,dependency,Links a source figure to its original thematic summary without losing individual image identity.
+Q-F28,FIG-F28,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F29,FIND-DIVERGENCE,visual evidence for interpretation,4,evidence,dependency,Figure F29 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F29,V-F26-33,belongs to figure collection,4,organization,dependency,Links a source figure to its original thematic summary without losing individual image identity.
+Q-F29,FIG-F29,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F30,FIND-DIVERGENCE,visual evidence for interpretation,4,evidence,dependency,Figure F30 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F30,V-F26-33,belongs to figure collection,4,organization,dependency,Links a source figure to its original thematic summary without losing individual image identity.
+Q-F30,FIG-F30,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F31,FIND-DIVERGENCE,visual evidence for interpretation,4,evidence,dependency,Figure F31 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F31,V-F26-33,belongs to figure collection,4,organization,dependency,Links a source figure to its original thematic summary without losing individual image identity.
+Q-F31,FIG-F31,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F32,FIND-DIVERGENCE,visual evidence for interpretation,4,evidence,dependency,Figure F32 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F32,FIND-OVERALL,visual evidence for interpretation,4,evidence,dependency,Figure F32 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F32,V-F26-33,belongs to figure collection,4,organization,dependency,Links a source figure to its original thematic summary without losing individual image identity.
+Q-F32,FIG-F32,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+FIG-F33,FIND-DIVERGENCE,visual evidence for interpretation,4,evidence,dependency,Figure F33 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F33,FIND-SUMMER-WEEK,visual evidence for interpretation,4,evidence,dependency,Figure F33 offers descriptive or diagnostic support; not necessarily causal proof.
+FIG-F33,V-F26-33,belongs to figure collection,4,organization,dependency,Links a source figure to its original thematic summary without losing individual image identity.
+Q-F33,FIG-F33,answered or illustrated by,4,reasoning,dependency,Notebook figure designed to investigate the attached question; it need not fully answer it.
+METRIC-OVERALL-ERCOT_DAY_AHEAD,FIND-ERCOT,contributes matched-error result,5,evidence,dependency,"MAE calculated on the 8,640 common forecast-available hours."
+METRIC-OVERALL-ERCOT_DAY_AHEAD,FIG-F14,shown on overall leaderboard,5,quantitative,dependency,F14 includes all matched-hour model MAE bars.
+METRIC-OVERALL-HYBRID_50_50,FIND-OVERALL,contributes matched-error result,5,evidence,dependency,"MAE calculated on the 8,640 common forecast-available hours."
+METRIC-OVERALL-HYBRID_50_50,FIG-F14,shown on overall leaderboard,5,quantitative,dependency,F14 includes all matched-hour model MAE bars.
+METRIC-OVERALL-HYBRID_50_50,FACT-HYBRID-IMPROVEMENT,used in improvement calculation,5,quantitative,dependency,100 × (1 - hybrid MAE / naive MAE).
+METRIC-OVERALL-WEATHER_XGBOOST,FIND-OVERALL,contributes matched-error result,5,evidence,dependency,"MAE calculated on the 8,640 common forecast-available hours."
+METRIC-OVERALL-WEATHER_XGBOOST,FIG-F14,shown on overall leaderboard,5,quantitative,dependency,F14 includes all matched-hour model MAE bars.
+METRIC-OVERALL-XGBOOST,FIND-OVERALL,contributes matched-error result,5,evidence,dependency,"MAE calculated on the 8,640 common forecast-available hours."
+METRIC-OVERALL-XGBOOST,FIG-F14,shown on overall leaderboard,5,quantitative,dependency,F14 includes all matched-hour model MAE bars.
+METRIC-OVERALL-ROLLING_SARIMA,FIND-OVERALL,contributes matched-error result,5,evidence,dependency,"MAE calculated on the 8,640 common forecast-available hours."
+METRIC-OVERALL-ROLLING_SARIMA,FIG-F14,shown on overall leaderboard,5,quantitative,dependency,F14 includes all matched-hour model MAE bars.
+METRIC-OVERALL-WEATHER_SARIMAX,FIND-OVERALL,contributes matched-error result,5,evidence,dependency,"MAE calculated on the 8,640 common forecast-available hours."
+METRIC-OVERALL-WEATHER_SARIMAX,FIG-F14,shown on overall leaderboard,5,quantitative,dependency,F14 includes all matched-hour model MAE bars.
+METRIC-OVERALL-SEASONAL_NAIVE,FIND-OVERALL,contributes matched-error result,5,evidence,dependency,"MAE calculated on the 8,640 common forecast-available hours."
+METRIC-OVERALL-SEASONAL_NAIVE,FIG-F14,shown on overall leaderboard,5,quantitative,dependency,F14 includes all matched-hour model MAE bars.
+METRIC-OVERALL-SEASONAL_NAIVE,FACT-HYBRID-IMPROVEMENT,baseline denominator in improvement,5,quantitative,dependency,Seasonal naive MAE is the denominator.
+METRIC-OVERALL-PROPHET,FIND-OVERALL,contributes matched-error result,5,evidence,dependency,"MAE calculated on the 8,640 common forecast-available hours."
+METRIC-OVERALL-PROPHET,FIG-F14,shown on overall leaderboard,5,quantitative,dependency,F14 includes all matched-hour model MAE bars.
+METRIC-TOP_1PCT-ERCOT_DAY_AHEAD,FIND-PEAK,supports retrospective peak ranking,5,evidence,dependency,"Top 1% defined on observed actual demand across full 8,760-hour test year."
+METRIC-TOP_1PCT-ERCOT_DAY_AHEAD,FIG-F17,supports demand-group comparison,4,quantitative,dependency,Top load category on F17 is aligned with retrospective high-demand performance.
+METRIC-TOP_1PCT-HYBRID_50_50,FIND-PEAK,supports retrospective peak ranking,5,evidence,dependency,"Top 1% defined on observed actual demand across full 8,760-hour test year."
+METRIC-TOP_1PCT-HYBRID_50_50,FIG-F17,supports demand-group comparison,4,quantitative,dependency,Top load category on F17 is aligned with retrospective high-demand performance.
+METRIC-TOP_1PCT-WEATHER_XGBOOST,FIND-PEAK,supports retrospective peak ranking,5,evidence,dependency,"Top 1% defined on observed actual demand across full 8,760-hour test year."
+METRIC-TOP_1PCT-WEATHER_XGBOOST,FIG-F17,supports demand-group comparison,4,quantitative,dependency,Top load category on F17 is aligned with retrospective high-demand performance.
+METRIC-TOP_1PCT-XGBOOST,FIND-PEAK,supports retrospective peak ranking,5,evidence,dependency,"Top 1% defined on observed actual demand across full 8,760-hour test year."
+METRIC-TOP_1PCT-XGBOOST,FIG-F17,supports demand-group comparison,4,quantitative,dependency,Top load category on F17 is aligned with retrospective high-demand performance.
+METRIC-TOP_1PCT-ROLLING_SARIMA,FIND-PEAK,supports retrospective peak ranking,5,evidence,dependency,"Top 1% defined on observed actual demand across full 8,760-hour test year."
+METRIC-TOP_1PCT-ROLLING_SARIMA,FIG-F17,supports demand-group comparison,4,quantitative,dependency,Top load category on F17 is aligned with retrospective high-demand performance.
+METRIC-TOP_1PCT-WEATHER_SARIMAX,FIND-PEAK,supports retrospective peak ranking,5,evidence,dependency,"Top 1% defined on observed actual demand across full 8,760-hour test year."
+METRIC-TOP_1PCT-WEATHER_SARIMAX,FIG-F17,supports demand-group comparison,4,quantitative,dependency,Top load category on F17 is aligned with retrospective high-demand performance.
+METRIC-TOP_1PCT-SEASONAL_NAIVE,FIND-PEAK,supports retrospective peak ranking,5,evidence,dependency,"Top 1% defined on observed actual demand across full 8,760-hour test year."
+METRIC-TOP_1PCT-SEASONAL_NAIVE,FIG-F17,supports demand-group comparison,4,quantitative,dependency,Top load category on F17 is aligned with retrospective high-demand performance.
+METRIC-TOP_1PCT-PROPHET,FIND-PEAK,supports retrospective peak ranking,5,evidence,dependency,"Top 1% defined on observed actual demand across full 8,760-hour test year."
+METRIC-TOP_1PCT-PROPHET,FIG-F17,supports demand-group comparison,4,quantitative,dependency,Top load category on F17 is aligned with retrospective high-demand performance.
+FACT-HISTORY,DATA-HISTORY,grounds numerical statement,5,evidence,dependency,This numeric fact supports the named research statement.
+FACT-TEST,DATA-SPLIT,grounds numerical statement,5,evidence,dependency,This numeric fact supports the named research statement.
+FACT-MATCHED,DATA-SHARED,grounds numerical statement,5,evidence,dependency,This numeric fact supports the named research statement.
+FACT-MISSING,DATA-SHARED,grounds numerical statement,5,evidence,dependency,This numeric fact supports the named research statement.
+FACT-TOP1,FIND-PEAK,grounds numerical statement,5,evidence,dependency,This numeric fact supports the named research statement.
+FACT-CUTOFF,LIMIT-PEAK-BIN,grounds numerical statement,5,evidence,dependency,This numeric fact supports the named research statement.
+FACT-HYBRID-IMPROVEMENT,FIND-OVERALL,grounds numerical statement,5,evidence,dependency,This numeric fact supports the named research statement.
+SEC-QA,QA-01,includes question,4,documentation,dependency,Approved appendix includes this question.
+SEC-QA,QA-02,includes question,4,documentation,dependency,Approved appendix includes this question.
+SEC-QA,QA-03,includes question,4,documentation,dependency,Approved appendix includes this question.
+SEC-QA,QA-04,includes question,4,documentation,dependency,Approved appendix includes this question.
+SEC-QA,QA-05,includes question,4,documentation,dependency,Approved appendix includes this question.
+SEC-QA,QA-06,includes question,4,documentation,dependency,Approved appendix includes this question.
+SEC-QA,QA-07,includes question,4,documentation,dependency,Approved appendix includes this question.
+SEC-QA,QA-08,includes question,4,documentation,dependency,Approved appendix includes this question.
+SEC-QA,QA-09,includes question,4,documentation,dependency,Approved appendix includes this question.
+SEC-QA,QA-10,includes question,4,documentation,dependency,Approved appendix includes this question.
