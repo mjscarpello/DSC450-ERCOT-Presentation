@@ -1,9 +1,7 @@
 name: Validate research explorer
 on:
   pull_request:
-  push:
-    branches:
-      - feature/research-explorer-milestone-1
+  workflow_dispatch:
 jobs:
   validate:
     runs-on: ubuntu-latest
