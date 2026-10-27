@@ -4,7 +4,7 @@ This is a **knowledge graph**, not a model of statistical relationships.
 
 ## Anatomy of a node
 
-Every node has `id`, `type`, `title`, `summary`, `status` and `sources`. Many also have numerical `value` and `unit`, a `research_question`, or a `asset_path` linked to an extracted PNG. The stable ID can be referenced from a future script or scene manifest.
+Every node has `id`, `type`, `title`, `summary`, `status` and `sources`. Many also have numerical `value` and `unit`, a `research_question`, or a `asset_path` linked to an extracted PNG. Stable IDs make it possible to find the same research concept again across views and updates.
 
 | Status | Interpretation |
 |---|---|
@@ -43,7 +43,7 @@ The `weight` is an **editorial closeness-of-relationship scale**:
 
 Other edge fields:
 
-- `kind`: `provenance`, `evidence`, `dataflow`, `quantitative`, `reasoning`, `caveat`, `organization`, `presentation`, and preserved original links.
+- `kind`: `provenance`, `evidence`, `dataflow`, `quantitative`, `reasoning`, `caveat`, `organization`, and historically preserved communication/presentation-related links. The modern interface is read-only and does not create scenes or slides.
 - `flow`: `dependency` when the target uses/depends upon the origin as documented; `association` for contextual links.
 - `rationale`: short explanation for why the link exists.
 - Links are **directed and can have multiple types between the same two nodes**. A shortest path can traverse associations in either direction for discovery only, and does not assert reverse causality. Downstream-impact queries follow only `dependency` edges in the stored direction.
@@ -58,4 +58,4 @@ Other edge fields:
 
 ## Updating or extending the graph
 
-The reproducible builder is `src/ercot_web/build.py`, supplied with static configuration and source-derived `data/figure_notes.json`, `data/model_metrics.json`. Add deliberate scientific concepts to its configuration or its reviewed foundation rather than modifying only the generated HTML. Rebuild JSON, run tests, review changed data, and regenerate HTML. For a new presentation scene, connect its stable ID to the exact `FIG-*` figures, `FIND-*` claims, relevant `LIMIT-*` caveats, and speaker-owned sections.
+The reproducible builder is `src/ercot_web/build.py`, supplied with static configuration and source-derived `data/figure_notes.json`, `data/model_metrics.json`. Add deliberate scientific concepts to its configuration or its reviewed foundation rather than modifying only the generated HTML. Rebuild JSON, run tests, review changed data, and regenerate HTML. For new research, link findings to the precise figures, metrics, source documents, research questions and limitations that justify showing them together.
