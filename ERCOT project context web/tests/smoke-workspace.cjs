@@ -37,6 +37,8 @@ const BASE="http://127.0.0.1:8765/ERCOT%20project%20context%20web/explorer.html"
   assert.equal(exported.title,"Peak-hour research narrative");
   assert.equal(exported.speaker,"Data Visualizer");
   assert.ok(exported.research_records.length>=3);
+  for(const required of ["FIND-PEAK","FIG-F17","LIMIT-PEAK-BIN"]){assert.ok(exported.selected_node_ids.includes(required),"missing core peak-demand evidence: "+required);}
+  assert.ok(exported.linked_relationships.some(e=>e.from==="FIG-F17"&&e.to==="FIND-PEAK"),"research graph figure-finding relation must be preserved");
   assert.deepEqual(exported.research_records.map(n=>n.id),exported.selected_node_ids);
   assert.ok(exported.limitation_ids.length>=1,"required caveat not exported");
   assert.ok(exported.metric_ids.length>=1,"required numerical evidence not exported");
