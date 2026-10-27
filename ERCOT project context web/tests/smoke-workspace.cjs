@@ -16,6 +16,7 @@ const BASE="http://127.0.0.1:8765/ERCOT%20project%20context%20web/explorer.html"
   assert.ok(await page.locator(".ws-evidence-card").count()>1);
   assert.match(await page.locator(".ws-main").innerText(),/Scientific qualifications/);
   await page.screenshot({path:"/tmp/ercot-workspace-desktop.png",fullPage:true});
+  console.log("WS_DESKTOP_PREVIEW="+(await page.screenshot({type:"jpeg",quality:27,fullPage:false})).toString("base64"));
   console.log("PASS: workspace loads selected finding, metrics, figures and caveats");
 
   await page.getByRole("button",{name:"Add connected evidence"}).click();
@@ -91,6 +92,7 @@ const BASE="http://127.0.0.1:8765/ERCOT%20project%20context%20web/explorer.html"
   const size=await mobile.evaluate(()=>({body:document.documentElement.scrollWidth,view:innerWidth}));
   assert.ok(size.body<=size.view+2,"mobile horizontal overflow "+JSON.stringify(size));
   await mobile.screenshot({path:"/tmp/ercot-workspace-mobile.png",fullPage:true});
+  console.log("WS_MOBILE_PREVIEW="+(await mobile.screenshot({type:"jpeg",quality:27,fullPage:false})).toString("base64"));
   assert.ok(await mobile.locator(".ws-packet").isVisible());
   assert.ok(await mobile.locator(".ws-evidence-card").count()>1);
   console.log("PASS: mobile evidence workspace and packet with no overflow");
