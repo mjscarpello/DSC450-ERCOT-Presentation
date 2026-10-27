@@ -14,6 +14,12 @@ The new interface fetches the existing `data/context_graph.json` and `data/model
 
 Development milestone details, known limitations, automated tests and next priorities are recorded in [EXPLORER_MILESTONE_1.md](docs/EXPLORER_MILESTONE_1.md).
 
+## Milestone 2: Evidence workspace
+
+The [Evidence workspace](explorer.html#workspace) adds a human-reviewed presentation research packet builder. Choose a claim, inspect connected numerical evidence, figures and limitations, trace source routes, review downstream dependencies, then export a structured JSON packet or readable Markdown review notes. It preserves original research IDs and does **not** claim compatibility with the Studio S importer. Local packet drafts stay in the browser until exported.
+
+See [Milestone 2 handoff](docs/EXPLORER_MILESTONE_2.md) for source-integrity safeguards, tests, known limits and the recommended third milestone.
+
 ## Start here
 
 1. Download/unzip this project; from its root run:
