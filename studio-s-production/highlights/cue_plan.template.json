@@ -1,0 +1,24 @@
+{
+  "schema_version": "0.1.0",
+  "status": "unmeasured-template",
+  "scene_id": "S01",
+  "line_id": "S01-L01",
+  "cue_id": "S01-C01",
+  "figure_id": "F09",
+  "spoken_anchor": "Tomorrow afternoon",
+  "source_image": "corrected F09 image path pending approval",
+  "source_sha256": null,
+  "region": {
+    "rect_pixels": null,
+    "rectNormalized": null,
+    "reviewed": false
+  },
+  "timing": {
+    "clip_id": null,
+    "speech_anchor": null,
+    "audio_sample": null,
+    "frame": null,
+    "status": "awaiting_audio"
+  },
+  "notes": "Demo template; not a completed or timed Studio S module."
+}
