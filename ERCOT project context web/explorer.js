@@ -2,7 +2,7 @@
    Source of truth: data/context_graph.json and data/model_metrics.json.
    Static website: no libraries, backend, tracking, or modification of research data. */
 "use strict";
-const state={graph:null,metrics:null,byId:new Map(),adj:new Map(),view:"overview",graphFocus:"FIND-OVERALL",graphFilter:"all",metricPeriod:"overall",selected:null,searchOpen:false,previousFocus:null};
+const state={graph:null,metrics:null,byId:new Map(),adj:new Map(),view:"graph",graphFocus:"FIND-OVERALL",graphFilter:"all",metricPeriod:"overall",selected:null,searchOpen:false,previousFocus:null};
 const VIEWS=new Set(["overview","findings","models","figures","questions","graph","sources"]);
 const $=id=>document.getElementById(id);
 const make=(tag,cls="",txt)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(txt!==undefined&&txt!==null)n.textContent=String(txt);return n;};
