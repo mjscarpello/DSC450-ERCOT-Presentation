@@ -14,7 +14,9 @@ jobs:
         with:
           node-version: '22'
       - name: Check JavaScript syntax
-        run: node --check "ERCOT project context web/explorer.js"
+        run: |
+          node --check "ERCOT project context web/explorer.js"
+          node --check "ERCOT project context web/research-workspace.js"
       - name: Install graph package
         run: python -m pip install -e "./ERCOT project context web[all]"
       - name: Run graph and explorer tests
@@ -30,6 +32,9 @@ jobs:
           python -m http.server 8765 &
           sleep 2
           node "ERCOT project context web/tests/smoke-explorer.cjs"
+          node "ERCOT project context web/tests/smoke-workspace.cjs"
+          cp /tmp/ercot-workspace-desktop.png /tmp/ercot-explorer-screenshots/
+          cp /tmp/ercot-workspace-mobile.png /tmp/ercot-explorer-screenshots/
       - name: Upload browser screenshots
         if: always()
         uses: actions/upload-artifact@v4
