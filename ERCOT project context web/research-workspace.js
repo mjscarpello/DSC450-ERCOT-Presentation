@@ -79,6 +79,7 @@ function wsPacketPanel(){const panel=make("aside","ws-packet");const header=make
  const recs=wsItems();if(!recs.length)put(sec,make("p","ws-no-edges","No records selected. Start with a finding, then add its evidence, figures, and scientific limitations."));
  else recs.forEach(n=>{const row=make("div","ws-packet-item"),txt=make("div");put(txt,make("strong","",n.title),make("small","",n.id+" · "+readable(n.type)));const rm=clickable("×",()=>wsRemove(n.id),"ws-remove");rm.setAttribute("aria-label","Remove "+n.title);put(row,txt,rm);put(sec,row);});
  put(panel,sec,wsPacketAudit(),wsControlTextarea("Narration planning notes (optional)","notes","What should the audience understand? Which wording needs teammate approval?"));
+ const sceneAction=clickable("Create presentation scene",sceneCreateFromPacket,"scene-primary");sceneAction.disabled=!ws.packet.items.length;sceneAction.title="Create an editable scene from the selected research packet";put(panel,sceneAction);
  const actions=make("div","ws-export-actions");const j=clickable("Export JSON",()=>wsExport("json"),"action-button"),md=clickable("Export review notes",()=>wsExport("md"),"action-button"),clear=clickable("Clear packet",wsClear,"action-button");
  j.disabled=!ws.packet.items.length;md.disabled=!ws.packet.items.length;
  put(actions,j,md,clear);put(panel,actions);
