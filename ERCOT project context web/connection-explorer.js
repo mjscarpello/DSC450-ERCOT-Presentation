@@ -115,7 +115,7 @@ function connPathView(root,focus){const panel=make("div","cx-trace-panel"),head=
  put(root,panel,make("div","cx-method-note","Explanation paths follow existing graph links in either direction for discovery. Paths do not establish a statistical result, causality or operational forecast equivalence."));}
 function renderConnectionExplorer(root){const focus=node(state.graphFocus)||node("FIND-OVERALL");if(!node(state.graphFocus))state.graphFocus=focus.id;
  connGraphHeading(root);const toolbar=make("div","cx-toolbar"),controls=make("div","cx-focus-control");
- put(controls,make("label","", "Research focus"),connOptions(focus.id,connGo,"Research focus concept"));put(toolbar,controls);
+ const mainPicker=connOptions(focus.id,connGo,"Research focus concept");mainPicker.id="cx-focus-picker";put(controls,make("label","", "Research focus"),mainPicker);put(toolbar,controls);
  const actions=make("div","cx-toolbar-actions");
  const back=clickable("← Back",connStepBack,"cx-btn");back.disabled=conn.trail.length<2;
  put(actions,back,clickable("Reset",connReset,"cx-btn"),clickable("Copy link",()=>copyText(location.origin+location.pathname+"#graph="+encodeURIComponent(focus.id)),"cx-btn primary"));put(toolbar,actions);put(root,toolbar);
