@@ -1,0 +1,35 @@
+{
+  "studio_s": "v0.2.0-dev.8",
+  "purpose": "Multi-scene native Studio S source/Canvas orchestration proof",
+  "cues": [
+    "S15-C01",
+    "S15-C02",
+    "S16-C03"
+  ],
+  "scenes": 3,
+  "frames": 315,
+  "fps": 30,
+  "duration_seconds": 10.5,
+  "canvas": [
+    1280,
+    760
+  ],
+  "tested": {
+    "official_cli_build": "passed",
+    "native_core_project_validation": "passed",
+    "canonical_json_schema": "passed",
+    "native_canvas_render": "passed",
+    "temporal_change_checks": 6,
+    "official_cli_validate": "blocked_missing_ajv",
+    "official_cli_render": "blocked_missing_playwright",
+    "modular_compile": "unverified",
+    "desktop_app": "unverified",
+    "audio_alignment": "awaiting_recorded_narration"
+  },
+  "assets": {
+    "D03R.png": "c170375976dd8ec06aed2c81179ae416c54db2797b3e2096522d1b3e59bc9326",
+    "D05.png": "c564cf0edd63cb65f01e096e962c415e267cfb2b6b7605868b02979405dc634c"
+  },
+  "review_provenance": "visual approvals supplied by project team in chat",
+  "notes": "Full source/compiled project/media/test scripts available in session-produced ERCOT_StudioS_Native_Integration_Review.zip. Not yet stored in GitHub."
+}
