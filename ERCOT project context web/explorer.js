@@ -3,7 +3,7 @@
    Static website: no libraries, backend, tracking, or modification of research data. */
 "use strict";
 const state={graph:null,metrics:null,byId:new Map(),adj:new Map(),view:"overview",graphFocus:"FIND-OVERALL",graphFilter:"all",metricPeriod:"overall",selected:null,searchOpen:false,previousFocus:null};
-const VIEWS=new Set(["overview","findings","models","figures","questions","graph","sources","workspace"]);
+const VIEWS=new Set(["overview","findings","models","figures","questions","graph","sources","workspace","scenes"]);
 const $=id=>document.getElementById(id);
 const make=(tag,cls="",txt)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(txt!==undefined&&txt!==null)n.textContent=String(txt);return n;};
 const put=(p,...items)=>{items.flat().forEach(n=>{if(n!==null&&n!==undefined)p.append(n)});return p;};
@@ -25,7 +25,7 @@ function uniqueNeighbors(id){const m=new Map();neighbors(id).forEach(e=>{const o
 function linkView(view){state.view=view;history.pushState(null,"","#"+view);route();}
 function navigateTo(id){if(!node(id))return;state.graphFocus=id;linkView("graph");}
 function figSrc(n){if(!n.asset_path||!/^assets\/figures\/F[0-9A-Z]+\.png$/.test(n.asset_path))return null;return "./"+n.asset_path;}
-function render(){const root=$("page-content");root.replaceChildren();document.querySelectorAll(".nav-item").forEach(a=>{const active=a.dataset.view===state.view;a.classList.toggle("active",active);if(active)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current");});const views={overview:renderOverview,findings:renderFindings,models:renderModels,figures:renderFigures,questions:renderQuestions,graph:renderGraph,sources:renderSources,workspace:renderWorkspace};views[state.view](root);}
+function render(){const root=$("page-content");root.replaceChildren();document.querySelectorAll(".nav-item").forEach(a=>{const active=a.dataset.view===state.view;a.classList.toggle("active",active);if(active)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current");});const views={overview:renderOverview,findings:renderFindings,models:renderModels,figures:renderFigures,questions:renderQuestions,graph:renderGraph,sources:renderSources,workspace:renderWorkspace,scenes:renderScenes};views[state.view](root);}
 function stat(label,value,help){const d=make("div","stat-card");put(d,make("p","stat-label",label),make("div","stat-value",value),make("p","stat-note",help));return d;}
 function renderOverview(root){
  const hero=make("div","hero"),left=make("div","hero-main"),right=make("div","hero-side");
@@ -102,7 +102,7 @@ async function boot(){
  try{
  const [g,m]=await Promise.all([fetch("./data/context_graph.json"),fetch("./data/model_metrics.json")]);if(!g.ok||!m.ok)throw Error("Unable to load research data (HTTP "+g.status+" / "+m.status+").");
  state.graph=await g.json();state.metrics=await m.json();if(!Array.isArray(state.graph.nodes)||!Array.isArray(state.graph.edges)||!state.metrics.overall)throw Error("Unexpected research data format.");
- state.graph.nodes.forEach(n=>state.byId.set(n.id,n));wsLoad();state.graph.edges.forEach(e=>{for(const id of [e.from,e.to]){if(!state.adj.has(id))state.adj.set(id,[]);state.adj.get(id).push(e);}});
+ state.graph.nodes.forEach(n=>state.byId.set(n.id,n));wsLoad();sceneLoad();state.graph.edges.forEach(e=>{for(const id of [e.from,e.to]){if(!state.adj.has(id))state.adj.set(id,[]);state.adj.get(id).push(e);}});
  $("count-findings").textContent=nodesOfType("finding").length;$("count-figures").textContent=nodesOfType("visual").length;$("count-questions").textContent=nodesOfType("question").length+nodesOfType("appendix_question").length;
  route();window.addEventListener("hashchange",route);window.addEventListener("popstate",route);
  document.addEventListener("keydown",e=>{const tag=document.activeElement?.tagName;const typing=tag==="INPUT"||tag==="TEXTAREA";if(e.key==="Escape"&&(state.selected||state.searchOpen)){closeOverlay();return;}
