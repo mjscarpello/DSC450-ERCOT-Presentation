@@ -42,6 +42,7 @@ try{
  assert.equal(await page.getByLabel("Narration draft").isDisabled(),true);
  console.log("PASS: named human sign-off, review checklist and approved-scene read-only lock");
  await page.screenshot({path:SHOTS+"/04-scene-reviewed-desktop.png",fullPage:true});
+ console.log("SCENE_DESKTOP_PREVIEW="+(await page.screenshot({type:"jpeg",quality:25,fullPage:false})).toString("base64"));
  const rev=await page.evaluate(()=>{const s=sceneCurrent();return {status:sceneStatus(s),stamp:s.review.contentStamp,approvedAt:s.review.reviewedAt,signature:sceneStamp(s)};});
  assert.equal(rev.status,"approved");assert.equal(rev.stamp,rev.signature);
  await page.reload({waitUntil:"networkidle"});
@@ -98,6 +99,7 @@ try{
  const sizing=await mobile.evaluate(()=>({page:document.documentElement.scrollWidth,view:innerWidth}));
  assert.ok(sizing.page<=sizing.view+2,"mobile horizontal overflow: "+JSON.stringify(sizing));
  await mobile.screenshot({path:SHOTS+"/05-scene-mobile.png",fullPage:true});
+ console.log("SCENE_MOBILE_PREVIEW="+(await mobile.screenshot({type:"jpeg",quality:25,fullPage:false})).toString("base64"));
  console.log("PASS: 390px mobile scene editor, no horizontal overflow");
  assert.deepEqual(errors,[]);
  console.log("PASS: no browser exceptions");
