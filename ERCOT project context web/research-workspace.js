@@ -67,7 +67,7 @@ function wsImpactsView(root,id){const list=wsImpact(id,3);const section=make("se
  const grid=make("div","ws-impact-list");list.forEach(item=>{const rec=node(item.id),button=make("button","related-item"),l=make("span");put(l,make("strong","",rec?.title||item.id),make("small","",readable(rec?.type)+" · "+item.relation+" · "+(item.path.length-1)+" steps"));put(button,l,make("span","","↗"));button.addEventListener("click",()=>wsSelect(item.id));put(grid,button);});put(section,grid);put(root,section);}
 function wsSelect(id){if(!node(id))return;ws.focus=id;render();const focus=$("ws-focus");if(focus)focus.focus();}
 function wsOptionSelect(){const select=make("select","ws-select");select.id="ws-focus";select.setAttribute("aria-label","Select research focus");
- const headings=[["Key findings",nodesOfType("finding")],["Figures",nodesOfType("visual")],["Models",nodesOfType("model")],["Metrics",nodesOfType("metric")],["Limitations",nodesOfType("limitation")]];
+ const primary=["finding","visual","model","metric","limitation"];const headings=[["Key findings",nodesOfType("finding")],["Figures",nodesOfType("visual")],["Models",nodesOfType("model")],["Metrics",nodesOfType("metric")],["Limitations",nodesOfType("limitation")],["Other graph records",state.graph.nodes.filter(n=>!primary.includes(n.type))]];
  if(!node(ws.focus))ws.focus="FIND-PEAK";
  headings.forEach(([label,items])=>{const optgroup=make("optgroup");optgroup.label=label;items.forEach(n=>{const option=make("option","",n.title);option.value=n.id;if(n.id===ws.focus)option.selected=true;put(optgroup,option);});put(select,optgroup);});
  select.value=ws.focus;select.addEventListener("change",()=>wsSelect(select.value));return select;}
