@@ -7,17 +7,15 @@
   <meta name="description" content="Explore evidence, forecasting models, notebook figures, research questions, and scientific boundaries from the DSC 450 ERCOT electricity demand project.">
   <title>ERCOT Research Explorer | DSC 450</title>
   <link rel="stylesheet" href="./explorer.css">
-  <link rel="stylesheet" href="./research-workspace.css">
-  <link rel="stylesheet" href="./scene-review.css">
+  <link rel="stylesheet" href="./connection-explorer.css">
   <script src="./explorer.js" defer></script>
-  <script src="./research-workspace.js" defer></script>
-  <script src="./scene-review.js" defer></script>
+  <script src="./connection-explorer.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to research</a>
   <div class="app-shell">
     <header class="topbar">
-      <a class="brand" href="#overview" aria-label="ERCOT Research Explorer home">
+      <a class="brand" href="#graph" aria-label="ERCOT Research Explorer home">
         <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
         <span class="brand-name">ERCOT <span>Research Explorer</span></span>
       </a>
@@ -33,23 +31,17 @@
     </header>
     <div class="body-layout">
       <nav class="sidebar" aria-label="Research sections">
-        <div class="sidebar-label">WORKSPACE</div>
-        <a class="nav-item" data-view="overview" href="#overview"><span class="nav-symbol" aria-hidden="true">▦</span> Overview</a>
+        <div class="sidebar-label">EXPLORE THE RESEARCH</div>
+        <a class="nav-item" data-view="graph" href="#graph"><span class="nav-symbol" aria-hidden="true">◎</span> Connection map</a>
+        <a class="nav-item" data-view="overview" href="#overview"><span class="nav-symbol" aria-hidden="true">▦</span> Project overview</a>
         <a class="nav-item" data-view="findings" href="#findings"><span class="nav-symbol" aria-hidden="true">✦</span> Research findings <span class="nav-count" id="count-findings"></span></a>
         <a class="nav-item" data-view="models" href="#models"><span class="nav-symbol" aria-hidden="true">▥</span> Model comparison</a>
         <a class="nav-item" data-view="figures" href="#figures"><span class="nav-symbol" aria-hidden="true">▧</span> Figure library <span class="nav-count" id="count-figures"></span></a>
         <a class="nav-item" data-view="questions" href="#questions"><span class="nav-symbol" aria-hidden="true">?</span> Research questions <span class="nav-count" id="count-questions"></span></a>
-        <div class="sidebar-divider"></div>
-        <div class="sidebar-label">DISCOVERY</div>
-        <a class="nav-item" data-view="graph" href="#graph"><span class="nav-symbol" aria-hidden="true">◎</span> Evidence connections</a>
-        <a class="nav-item" data-view="sources" href="#sources"><span class="nav-symbol" aria-hidden="true">≡</span> Source registry</a>
-        <div class="sidebar-divider"></div>
-        <div class="sidebar-label">PRESENTATION PREP</div>
-        <a class="nav-item" data-view="workspace" href="#workspace"><span class="nav-symbol" aria-hidden="true">▤</span> Evidence workspace</a>
-        <a class="nav-item" data-view="scenes" href="#scenes"><span class="nav-symbol" aria-hidden="true">▰</span> Scene composer <span class="nav-count">NEW</span></a>
+        <a class="nav-item" data-view="sources" href="#sources"><span class="nav-symbol" aria-hidden="true">≡</span> Sources & provenance</a>
         <div class="sidebar-bottom">
           <span class="sidebar-label">ABOUT THIS EXPLORER</span>
-          <p>The research stays source-linked. Relationship weights indicate editorial closeness, not confidence or causality.</p>
+          <p>Explore recorded links between research concepts. Arrows are documented dependencies, not proof of causality.</p>
           <a href="./outputs/ERCOT_CONTEXT_WEB.html">Open original network ↗</a>
         </div>
       </nav>

@@ -16,8 +16,7 @@ jobs:
       - name: Check JavaScript syntax
         run: |
           node --check "ERCOT project context web/explorer.js"
-          node --check "ERCOT project context web/research-workspace.js"
-          node --check "ERCOT project context web/scene-review.js"
+          node --check "ERCOT project context web/connection-explorer.js"
       - name: Install graph package
         run: python -m pip install -e "./ERCOT project context web[all]"
       - name: Run graph and explorer tests
@@ -33,24 +32,7 @@ jobs:
           python -m http.server 8765 &
           sleep 2
           node "ERCOT project context web/tests/smoke-explorer.cjs"
-          node "ERCOT project context web/tests/smoke-workspace.cjs"
-          node "ERCOT project context web/tests/smoke-scenes.cjs"
-          cp /tmp/ercot-workspace-desktop.png /tmp/ercot-explorer-screenshots/
-          cp /tmp/ercot-workspace-mobile.png /tmp/ercot-explorer-screenshots/
-      - name: Validate exported scenes against the published JSON Schema
-        run: |
-          python - <<'PY'
-          import json
-          from pathlib import Path
-          from jsonschema import Draft202012Validator
-          schema=json.loads(Path("ERCOT project context web/data/scene-sequence.schema.json").read_text())
-          export=json.loads(Path("/tmp/ercot-scene-export-qa.json").read_text())
-          Draft202012Validator.check_schema(schema)
-          errors=sorted(Draft202012Validator(schema).iter_errors(export),key=lambda e:list(map(str,e.path)))
-          if errors:
-              raise AssertionError("\\n".join(str(e) for e in errors))
-          print("PASS: browser-exported multi-scene research document validates against v1 JSON Schema")
-          PY
+          node "ERCOT project context web/tests/smoke-connections.cjs"
       - name: Upload browser screenshots
         if: always()
         uses: actions/upload-artifact@v4
