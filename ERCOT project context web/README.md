@@ -20,6 +20,12 @@ The [Evidence workspace](explorer.html#workspace) adds a human-reviewed presenta
 
 See [Milestone 2 handoff](docs/EXPLORER_MILESTONE_2.md) for source-integrity safeguards, tests, known limits and the recommended third milestone.
 
+## Milestone 3: Reviewed presentation scenes
+
+The [Scene composer](explorer.html#scenes) builds ordered, editable presentation scenes from the Evidence Workspace research packets. Each scene links source-preserving findings, metrics, figures and limitations with narration, on-screen text and a conceptual figure preview.
+
+Human editorial approval requires named reviewer checks and source/number/caveat attestations. Approved scenes lock their fields, and source-record changes are detected as stale approvals requiring a new review. Export custom, versioned JSON or Markdown; imported scenes always return to draft. These are **not native Studio S files**. Read [Milestone 3 checkpoint](docs/EXPLORER_MILESTONE_3.md) and the [Studio S importer audit](docs/STUDIO_S_CONTRACT_AUDIT.md) before planning integration.
+
 ## Start here
 
 1. Download/unzip this project; from its root run:
