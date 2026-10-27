@@ -1,0 +1,61 @@
+{
+  "schema_version": "ercot.highlight.v2",
+  "cue_id": "S16-C03",
+  "scene_id": "S16",
+  "line_id": "S16-L02",
+  "spoken_phrase": "6,504",
+  "figure_id": "D05",
+  "source_sha256": "c564cf0edd63cb65f01e096e962c415e267cfb2b6b7605868b02979405dc634c",
+  "source_size_px": [
+    1732,
+    796
+  ],
+  "review_status": "approved_visual_reference",
+  "audio_status": "awaiting_recordings",
+  "values_mwh": {
+    "actual": 90402,
+    "hybrid": 83898,
+    "difference": 6504
+  },
+  "geometry": {
+    "observed_bar_top": [
+      331,
+      152
+    ],
+    "hybrid_bar_top": [
+      1240,
+      189
+    ],
+    "bracket": {
+      "x": 1083,
+      "y0": 152,
+      "y1": 189,
+      "label": "6,504 MWh underforecast"
+    }
+  },
+  "source_relative_assets": [
+    "assets/D05.png",
+    "assets/S16_C03_markers.png",
+    "assets/S16_C03_bracket.png"
+  ],
+  "mapping": {
+    "supported_native_object": "image",
+    "strategy": "transparent_overlay_layers",
+    "shared_layout": {
+      "x": 35,
+      "y": 107,
+      "width": 1210,
+      "height": 556
+    },
+    "timing_frames_demo_only": {
+      "markers": 30,
+      "bracket": 67
+    }
+  },
+  "validation": {
+    "native_source_compile": "passed",
+    "native_canvas_render": "passed",
+    "complete_modular_workspace_compile": "not_tested",
+    "audio_sync": "not_tested"
+  }
+}
