@@ -80,6 +80,7 @@ function sceneEdit(s,key,value){if(sceneStatus(s)==="approved")return;value=scen
 function sceneSetRefs(s,field,values){if(sceneStatus(s)==="approved")return;s[field]=[...new Set(values)].slice(0,SCENE_NODE_MAX);sceneInvalidate(s);scenePersistence();render();}
 function sceneReviewSet(s,field,value){if(sceneStatus(s)==="approved")return;s.review[field]=field==="reviewer"?sceneTrim(value,120):Boolean(value);scenePersistence();}
 function sceneApprove(s){if(sceneStatus(s)==="approved"){toast("Already approved, return to draft before editing");return;}
+ if(sceneStatus(s)==="stale"){sceneShowIssues(["Research evidence changed. Reopen this scene and repeat the review before approval."]);return;}
  const issues=sceneValid(s);if(issues.length){sceneShowIssues(issues);return;}
  s.review.status="approved";s.review.reviewedAt=new Date().toISOString();s.review.contentStamp=sceneStamp(s);scenePersistence();render();toast("Editorial review recorded for "+s.id);}
 function sceneReopen(s){sceneInvalidate(s);scenePersistence();render();toast("Approval revoked; scene returned to draft");}
@@ -100,6 +101,7 @@ function sceneReviewPanel(s){const sec=sceneSection("Scientific and editorial re
  const status=sceneStatus(s),marker=make("div","scene-review-banner "+status);
  put(marker,make("strong","",status==="approved"?"Editorially approved":status==="stale"?"Previously approved evidence has changed":"Draft · not approved"),make("span","",status==="approved"?"Reviewed by "+s.review.reviewer+" on "+s.review.reviewedAt:"Approval is not automatic; resolve the checklist and confirm original sources."));put(sec,marker);
  if(status==="approved"){put(sec,clickable("Reopen scene for edits",()=>sceneReopen(s),"action-button"));return sec;}
+ if(status==="stale"){put(sec,wsInfo("The original evidence or scene content has changed since approval. This scene cannot be reapproved until a new review begins."),clickable("Reopen and recheck evidence",()=>sceneReopen(s),"action-button"));return sec;}
  const rv=make("label","scene-field"),rin=make("input","ws-input");rin.type="text";rin.maxLength=120;rin.value=s.review.reviewer||"";rin.placeholder="Name of person checking the original evidence";rin.addEventListener("input",()=>sceneReviewSet(s,"reviewer",rin.value));put(rv,make("span","","Reviewer name"),rin);put(sec,rv);
  const checks=[["sourceChecked","I checked the original source files and their relevant locations."],["numbersChecked","I checked the reported numbers, comparison sample and forecast conditions."],["limitationsChecked","I reviewed limitations, including retrospective peak categories and possible forecast-origin differences."]];
  checks.forEach(([key,label])=>{const line=make("label","scene-check"),input=make("input");input.type="checkbox";input.checked=Boolean(s.review[key]);input.addEventListener("change",()=>sceneReviewSet(s,key,input.checked));put(line,input,make("span","",label));put(sec,line);});
