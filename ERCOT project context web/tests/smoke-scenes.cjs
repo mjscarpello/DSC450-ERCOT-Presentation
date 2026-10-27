@@ -68,6 +68,7 @@ try{
   page.getByRole("button",{name:"Export JSON"}).click()
  ]).catch(async e=>{throw e});
  const data=JSON.parse(fs.readFileSync(await download.path(),"utf8"));
+ fs.writeFileSync("/tmp/ercot-scene-export-qa.json",JSON.stringify(data,null,2));
  assert.equal(data.schema,"ercot-scene-sequence/v1");
  assert.equal(data.status,"draft-human-review");
  assert.equal(data.scenes.length,2);
