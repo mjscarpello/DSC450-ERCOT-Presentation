@@ -4,12 +4,12 @@
 "use strict";
 const conn={filter:"all",limit:10,selected:null,mode:"map",trail:[],target:"SRC-PRED",observer:null};
 const CONN_GROUPS=[
- ["finding","Findings","#77c7d9"],["metric","Metrics","#6dc8ad"],
+ ["finding","Findings","#77c7d9"],["model","Models","#82b9e4"],["metric","Metrics","#6dc8ad"],
  ["visual","Figures","#9a96e7"],["limitation","Caveats","#e4ae7a"],
  ["source","Sources & data","#7c9ec9"],["question","Questions & context","#c8a0c7"]
 ];
-const CONN_FILTERS=["all","finding","metric","visual","limitation","source","question"];
-function connGroup(n){if(!n)return"question";if(n.type==="finding")return"finding";if(n.type==="metric")return"metric";if(n.type==="visual"||n.type==="visual_collection")return"visual";if(n.type==="limitation"||n.type==="open")return"limitation";if(n.type==="source"||n.type==="data")return"source";return"question";}
+const CONN_FILTERS=["all","finding","model","metric","visual","limitation","source","question"];
+function connGroup(n){if(!n)return"question";if(n.type==="finding")return"finding";if(n.type==="model")return"model";if(n.type==="metric")return"metric";if(n.type==="visual"||n.type==="visual_collection")return"visual";if(n.type==="limitation"||n.type==="open")return"limitation";if(n.type==="source"||n.type==="data")return"source";return"question";}
 function connGroupName(g){return CONN_GROUPS.find(x=>x[0]===g)?.[1]||"Related context";}
 function connColor(g){return CONN_GROUPS.find(x=>x[0]===g)?.[2]||"#a9c2da";}
 function connLinks(id){const m=new Map();for(const e of state.adj.get(id)||[]){
