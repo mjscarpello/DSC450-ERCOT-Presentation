@@ -1,0 +1,319 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/mjscarpello/DSC450-ERCOT-Presentation/blob/main/ERCOT%20project%20context%20web/data/scene-sequence.schema.json",
+  "title": "ERCOT Research Explorer reviewable scene sequence (NOT Studio S native)",
+  "description": "Human-review scene authoring export, distinct from any Studio S compiler/import contract.",
+  "type": "object",
+  "required": [
+    "schema",
+    "status",
+    "exported_at",
+    "origin",
+    "research_sources",
+    "studio_s_compatibility",
+    "scientific_review_rules",
+    "scenes"
+  ],
+  "properties": {
+    "schema": {
+      "const": "ercot-scene-sequence/v1"
+    },
+    "status": {
+      "enum": [
+        "editorially-reviewed",
+        "draft-human-review"
+      ]
+    },
+    "exported_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "origin": {
+      "type": "string"
+    },
+    "research_sources": {
+      "type": "object",
+      "required": [
+        "graph",
+        "metrics"
+      ],
+      "properties": {
+        "graph": {
+          "type": "string"
+        },
+        "metrics": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "studio_s_compatibility": {
+      "type": "string",
+      "minLength": 3
+    },
+    "scientific_review_rules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "scenes": {
+      "type": "array",
+      "maxItems": 30,
+      "items": {
+        "$ref": "#/$defs/scene"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "refs": {
+      "type": "array",
+      "uniqueItems": true,
+      "maxItems": 25,
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9_\\-]+$"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "file",
+          "locator"
+        ],
+        "properties": {
+          "file": {
+            "type": "string"
+          },
+          "locator": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "record": {
+      "type": "object",
+      "required": [
+        "id",
+        "type",
+        "title",
+        "summary",
+        "status",
+        "sources",
+        "research_question"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "sources": {
+          "$ref": "#/$defs/sources"
+        },
+        "value": {
+          "type": "number"
+        },
+        "unit": {
+          "type": "string"
+        },
+        "metric": {
+          "type": "string"
+        },
+        "asset_path": {
+          "type": "string"
+        },
+        "research_question": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "relationship": {
+      "type": "object",
+      "required": [
+        "from",
+        "to",
+        "kind",
+        "relation",
+        "flow",
+        "editorial_weight"
+      ],
+      "properties": {
+        "from": {
+          "type": "string"
+        },
+        "to": {
+          "type": "string"
+        },
+        "kind": {
+          "type": "string"
+        },
+        "relation": {
+          "type": "string"
+        },
+        "flow": {
+          "type": "string"
+        },
+        "editorial_weight": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        }
+      },
+      "additionalProperties": false
+    },
+    "review": {
+      "type": "object",
+      "required": [
+        "status",
+        "reviewer",
+        "sourceChecked",
+        "numbersChecked",
+        "limitationsChecked",
+        "reviewedAt",
+        "contentStamp"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "approved",
+            "draft",
+            "stale"
+          ]
+        },
+        "reviewer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sourceChecked": {
+          "type": "boolean"
+        },
+        "numbersChecked": {
+          "type": "boolean"
+        },
+        "limitationsChecked": {
+          "type": "boolean"
+        },
+        "reviewedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "contentStamp": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "scene": {
+      "type": "object",
+      "required": [
+        "scene_id",
+        "order",
+        "title",
+        "objective",
+        "narrator",
+        "narration",
+        "on_screen_text",
+        "notes",
+        "selected_ids",
+        "records",
+        "authored_relationships",
+        "review"
+      ],
+      "properties": {
+        "scene_id": {
+          "type": "string",
+          "pattern": "^SCENE-[0-9]{3}$"
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "title": {
+          "type": "string"
+        },
+        "objective": {
+          "type": "string"
+        },
+        "narrator": {
+          "type": "string"
+        },
+        "narration": {
+          "type": "string"
+        },
+        "on_screen_text": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "selected_ids": {
+          "type": "object",
+          "required": [
+            "claims",
+            "metrics",
+            "figures",
+            "limitations"
+          ],
+          "properties": {
+            "claims": {
+              "$ref": "#/$defs/refs"
+            },
+            "metrics": {
+              "$ref": "#/$defs/refs"
+            },
+            "figures": {
+              "$ref": "#/$defs/refs"
+            },
+            "limitations": {
+              "$ref": "#/$defs/refs"
+            }
+          },
+          "additionalProperties": false
+        },
+        "records": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/record"
+          }
+        },
+        "authored_relationships": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/relationship"
+          }
+        },
+        "review": {
+          "$ref": "#/$defs/review"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
