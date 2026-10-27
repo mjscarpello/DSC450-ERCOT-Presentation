@@ -1,0 +1,125 @@
+{
+  "format": "studio-s-source",
+  "schemaVersion": "0.2",
+  "id": "ercot-s16-c03-hybrid-error-pilot",
+  "title": "ERCOT | S16-C03 6,504 MWh underforecast (visual pilot, no audio)",
+  "fps": {
+    "num": 30,
+    "den": 1
+  },
+  "canvas": {
+    "width": 1280,
+    "height": 760
+  },
+  "checks": {
+    "requireReviewedTranscript": false,
+    "requireResolvedSpeechMarkers": false
+  },
+  "assets": [
+    {
+      "id": "chart_asset",
+      "path": "assets/D05.png",
+      "type": "image",
+      "sha256": "c564cf0edd63cb65f01e096e962c415e267cfb2b6b7605868b02979405dc634c"
+    },
+    {
+      "id": "observed_hybrid_markers_asset",
+      "path": "assets/S16_C03_markers.png",
+      "type": "image",
+      "sha256": "d0c3802143ae3bcf46d786277ceeaff90db2d1bc976e7caca9b68e784397a801"
+    },
+    {
+      "id": "difference_bracket_asset",
+      "path": "assets/S16_C03_bracket.png",
+      "type": "image",
+      "sha256": "d78cd339f3230742ac97654fbecfc5b35cfd8182a20eab1af24d596d27b268bd"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "S16_C03",
+      "title": "Actual versus hybrid: July high-demand hour",
+      "durationFrames": 150,
+      "background": "#f5f8fc",
+      "objects": [
+        {
+          "id": "chart",
+          "type": "image",
+          "assetId": "chart_asset",
+          "layout": {
+            "x": 35,
+            "y": 107,
+            "width": 1210,
+            "height": 556
+          },
+          "style": {
+            "opacity": 1
+          }
+        },
+        {
+          "id": "observed_hybrid_markers",
+          "type": "image",
+          "assetId": "observed_hybrid_markers_asset",
+          "layout": {
+            "x": 35,
+            "y": 107,
+            "width": 1210,
+            "height": 556
+          },
+          "style": {
+            "opacity": 1
+          },
+          "clip": {
+            "inFrame": 30,
+            "outFrame": 150
+          },
+          "entrance": {
+            "type": "fade",
+            "durationFrames": 9
+          }
+        },
+        {
+          "id": "difference_bracket",
+          "type": "image",
+          "assetId": "difference_bracket_asset",
+          "layout": {
+            "x": 35,
+            "y": 107,
+            "width": 1210,
+            "height": 556
+          },
+          "style": {
+            "opacity": 1
+          },
+          "clip": {
+            "inFrame": 67,
+            "outFrame": 150
+          },
+          "entrance": {
+            "type": "fade",
+            "durationFrames": 9
+          }
+        },
+        {
+          "id": "footnote",
+          "type": "text",
+          "content": "DEMONSTRATION TIMING ONLY \u2014 no recorded narration linked",
+          "layout": {
+            "x": 70,
+            "y": 702,
+            "width": 1130,
+            "height": 34
+          },
+          "style": {
+            "fontSize": 18,
+            "fill": "#405a71",
+            "textAlign": "center"
+          }
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "captions": [],
+  "markers": []
+}

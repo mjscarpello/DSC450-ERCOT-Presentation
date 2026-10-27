@@ -1,0 +1,225 @@
+{
+  "format": "studio-s-project",
+  "version": 2,
+  "id": "ercot-s16-c03-hybrid-error-pilot",
+  "title": "ERCOT | S16-C03 6,504 MWh underforecast (visual pilot, no audio)",
+  "fps": {
+    "num": 30,
+    "den": 1
+  },
+  "canvas": {
+    "width": 1280,
+    "height": 760
+  },
+  "assets": [
+    {
+      "id": "chart_asset",
+      "path": "assets/D05.png",
+      "type": "image",
+      "sha256": "c564cf0edd63cb65f01e096e962c415e267cfb2b6b7605868b02979405dc634c"
+    },
+    {
+      "id": "observed_hybrid_markers_asset",
+      "path": "assets/S16_C03_markers.png",
+      "type": "image",
+      "sha256": "d0c3802143ae3bcf46d786277ceeaff90db2d1bc976e7caca9b68e784397a801"
+    },
+    {
+      "id": "difference_bracket_asset",
+      "path": "assets/S16_C03_bracket.png",
+      "type": "image",
+      "sha256": "d78cd339f3230742ac97654fbecfc5b35cfd8182a20eab1af24d596d27b268bd"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "S16_C03",
+      "title": "Actual versus hybrid: July high-demand hour",
+      "durationFrames": 150,
+      "background": "#f5f8fc",
+      "transitionOut": {
+        "type": "none",
+        "durationFrames": 0
+      },
+      "notes": "",
+      "objects": [
+        {
+          "id": "chart",
+          "type": "image",
+          "name": "chart",
+          "layout": {
+            "x": 35,
+            "y": 107,
+            "width": 1210,
+            "height": 556
+          },
+          "style": {
+            "fill": "#ffffff",
+            "stroke": "#ffffff",
+            "strokeWidth": 0,
+            "fontSize": 58,
+            "fontFamily": "Arial",
+            "bold": false,
+            "textAlign": "center",
+            "opacity": 1,
+            "rotation": 0,
+            "scale": 1
+          },
+          "content": "",
+          "clip": {
+            "inFrame": 0,
+            "outFrame": 150
+          },
+          "entrance": {
+            "type": "none",
+            "durationFrames": 15
+          },
+          "exit": {
+            "type": "none",
+            "durationFrames": 15
+          },
+          "keyframes": [],
+          "assetId": "chart_asset",
+          "easing": "easeInOut",
+          "bindings": {}
+        },
+        {
+          "id": "observed_hybrid_markers",
+          "type": "image",
+          "name": "observed_hybrid_markers",
+          "layout": {
+            "x": 35,
+            "y": 107,
+            "width": 1210,
+            "height": 556
+          },
+          "style": {
+            "fill": "#ffffff",
+            "stroke": "#ffffff",
+            "strokeWidth": 0,
+            "fontSize": 58,
+            "fontFamily": "Arial",
+            "bold": false,
+            "textAlign": "center",
+            "opacity": 1,
+            "rotation": 0,
+            "scale": 1
+          },
+          "content": "",
+          "clip": {
+            "inFrame": 30,
+            "outFrame": 150
+          },
+          "entrance": {
+            "type": "fade",
+            "durationFrames": 9
+          },
+          "exit": {
+            "type": "none",
+            "durationFrames": 15
+          },
+          "keyframes": [],
+          "assetId": "observed_hybrid_markers_asset",
+          "easing": "easeInOut",
+          "bindings": {}
+        },
+        {
+          "id": "difference_bracket",
+          "type": "image",
+          "name": "difference_bracket",
+          "layout": {
+            "x": 35,
+            "y": 107,
+            "width": 1210,
+            "height": 556
+          },
+          "style": {
+            "fill": "#ffffff",
+            "stroke": "#ffffff",
+            "strokeWidth": 0,
+            "fontSize": 58,
+            "fontFamily": "Arial",
+            "bold": false,
+            "textAlign": "center",
+            "opacity": 1,
+            "rotation": 0,
+            "scale": 1
+          },
+          "content": "",
+          "clip": {
+            "inFrame": 67,
+            "outFrame": 150
+          },
+          "entrance": {
+            "type": "fade",
+            "durationFrames": 9
+          },
+          "exit": {
+            "type": "none",
+            "durationFrames": 15
+          },
+          "keyframes": [],
+          "assetId": "difference_bracket_asset",
+          "easing": "easeInOut",
+          "bindings": {}
+        },
+        {
+          "id": "footnote",
+          "type": "text",
+          "name": "footnote",
+          "layout": {
+            "x": 70,
+            "y": 702,
+            "width": 1130,
+            "height": 34
+          },
+          "style": {
+            "fill": "#405a71",
+            "stroke": "#ffffff",
+            "strokeWidth": 0,
+            "fontSize": 18,
+            "fontFamily": "Arial",
+            "bold": false,
+            "textAlign": "center",
+            "opacity": 1,
+            "rotation": 0,
+            "scale": 1
+          },
+          "content": "DEMONSTRATION TIMING ONLY — no recorded narration linked",
+          "clip": {
+            "inFrame": 0,
+            "outFrame": 150
+          },
+          "entrance": {
+            "type": "none",
+            "durationFrames": 15
+          },
+          "exit": {
+            "type": "none",
+            "durationFrames": 15
+          },
+          "keyframes": [],
+          "easing": "easeInOut",
+          "bindings": {}
+        }
+      ]
+    }
+  ],
+  "audio": [],
+  "markers": [],
+  "captions": [],
+  "checks": {
+    "requireReviewedTranscript": false,
+    "requireResolvedSpeechMarkers": false
+  },
+  "captionStyle": {
+    "fontSize": 28,
+    "fill": "#ffffff",
+    "background": "#102033"
+  },
+  "export": {},
+  "source": {
+    "format": "studio-s-source",
+    "filename": "pilot.source.json"
+  }
+}

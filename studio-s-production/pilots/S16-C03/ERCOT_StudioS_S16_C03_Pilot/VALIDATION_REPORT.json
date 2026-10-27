@@ -1,0 +1,56 @@
+{
+  "test": "S16-C03 hybrid underforecast scene pilot",
+  "studio_s_source_version": "0.2.0-dev.8_M01F",
+  "status": "native single-file source compile and Canvas render success; modular workspace build unverified",
+  "checks": {
+    "native_studio_s_core_compiler": "PASS (compileSource output with zero validation errors)",
+    "runtime_canvas_renderer": "PASS (original timebase.js/animation.js/canvas.js code used)",
+    "rendered_video": "PASS 150 frames at 30fps, 1280x760, 5sec H264",
+    "source_hash_matches": "PASS",
+    "bar_top_positions": "PASS 331,152 and 1240,189 pixels on original 1732x796 source",
+    "numerical_difference": "PASS 90,402 - 83,898 = 6,504 MWh",
+    "animation_sequence": "PASS distinct changed-pixel bounds for overlay phases",
+    "word_alignment": "NOT TESTED (audio not provided; demo timings clearly marked)",
+    "full_modular_workspace_compiler": "NOT TESTED (npm installation blocked EAI_AGAIN)",
+    "official_studio_s_cli_encoder": "NOT TESTED (native Canvas frames rendered with Python browser harness + FFmpeg)",
+    "real_studio_s_desktop_editor": "NOT TESTED"
+  },
+  "pixel_change_bounds": {
+    "markers_added": [
+      261,
+      208,
+      907,
+      245
+    ],
+    "bracket_added": [
+      726,
+      161,
+      937,
+      241
+    ]
+  },
+  "video": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1280,
+        "height": 760,
+        "r_frame_rate": "30/1",
+        "nb_frames": "150"
+      }
+    ],
+    "format": {
+      "duration": "5.000000"
+    }
+  },
+  "approved_visual_cues": 10,
+  "source_cue_count": 59,
+  "tested_project": "studio_s_project/pilot.source.json",
+  "limitations": [
+    "All source code compilation and native Canvas rendering verified; not a desktop or full modular project build",
+    "Transparent overlays retain their pixel mapping only when layer images share exactly the same object layout and fit",
+    "No actual narration audio or sample-level timing yet",
+    "Approved preview images not automatically native animations until converted and individually QAed"
+  ]
+}

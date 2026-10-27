@@ -1,0 +1,14 @@
+'use strict';
+const fs=require('node:fs');const path=require('node:path');
+const SROOT=process.env.STUDIO_S_SOURCE;
+if(!SROOT)throw new Error('Set STUDIO_S_SOURCE to original Studio S checkpoint source');
+const S=require(path.join(SROOT,'src/core/compiler.js'));
+const M=require(path.join(SROOT,'src/core/model.js'));
+const source=JSON.parse(fs.readFileSync(path.join(__dirname,'pilot.source.json'),'utf8'));
+const compiled=S.compileSource(source,{filename:'pilot.source.json'});
+const project=compiled.project;
+const issues=M.validateProject(project,{final:true});
+if(issues.some(x=>x.severity==='error')) throw Error('Native core validation failed: '+JSON.stringify(issues));
+const out=path.join(__dirname,'pilot.sproj');
+fs.writeFileSync(out,JSON.stringify(project,null,2)+'\n');
+console.log(JSON.stringify({compiler:'STUDIO S native source compiler',passes:true,objects:project.scenes[0].objects.map(o=>({id:o.id,type:o.type,clip:o.clip,entrance:o.entrance})),issues,output:out},null,2));

@@ -1,0 +1,94 @@
+{
+  "spec_version": "ercot.highlight.v2",
+  "cue_id": "S16-C03",
+  "scene_id": "S16",
+  "line_id": "S16-L02",
+  "spoken_phrase": "6,504",
+  "figure_id": "D05",
+  "source_sha256": "c564cf0edd63cb65f01e096e962c415e267cfb2b6b7605868b02979405dc634c",
+  "source_image_size_px": [
+    1732,
+    796
+  ],
+  "review_status": "approved_in_visual_review",
+  "timing_status": "demo_only_waiting_for_audio",
+  "media": [
+    {
+      "file": "D05.png",
+      "sha256": "c564cf0edd63cb65f01e096e962c415e267cfb2b6b7605868b02979405dc634c"
+    },
+    {
+      "file": "S16_C03_markers.png",
+      "sha256": "d0c3802143ae3bcf46d786277ceeaff90db2d1bc976e7caca9b68e784397a801"
+    },
+    {
+      "file": "S16_C03_bracket.png",
+      "sha256": "d78cd339f3230742ac97654fbecfc5b35cfd8182a20eab1af24d596d27b268bd"
+    }
+  ],
+  "data_values_mwh": {
+    "observed": 90402,
+    "hybrid": 83898,
+    "delta": 6504
+  },
+  "targets": [
+    {
+      "name": "observed_bar_top",
+      "type": "point_marker",
+      "source_xy_px": [
+        331,
+        152
+      ],
+      "normalized": [
+        0.1911085,
+        0.1909548
+      ]
+    },
+    {
+      "name": "hybrid_bar_top",
+      "type": "point_marker",
+      "source_xy_px": [
+        1240,
+        189
+      ],
+      "normalized": [
+        0.7159353,
+        0.2374372
+      ]
+    },
+    {
+      "name": "difference_bracket",
+      "type": "comparison_bracket",
+      "source_x_px": 1083,
+      "y0_px": 152,
+      "y1_px": 189,
+      "value_mwh": 6504,
+      "label": "6,504 MWh underforecast"
+    }
+  ],
+  "studio_s_mapping": {
+    "native_supported_primitive": "image",
+    "strategy": "transparent_overlay_png_layers",
+    "image_object_layout": {
+      "x": 35,
+      "y": 107,
+      "width": 1210,
+      "height": 556
+    },
+    "coordinate_fit": "all_layers_same_object_rectangle",
+    "runtime_status": "not_full_modular_workspace_until_dependency_install"
+  },
+  "demo_timings_frames": {
+    "base_chart": 0,
+    "bar_markers": 30,
+    "bracket": 67,
+    "duration": 150
+  },
+  "animation": {
+    "base_chart": "fade",
+    "bar_markers": "fade",
+    "bracket": "fade",
+    "transition_frames": 9
+  },
+  "scientific_note": "A difference in demand predictions is not evidence of shortages or dispatch costs."
+}
