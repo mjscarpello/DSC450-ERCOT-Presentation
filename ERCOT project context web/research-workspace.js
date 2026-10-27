@@ -122,4 +122,3 @@ function renderWorkspace(root){
  put(content,left,wsPacketPanel());put(root,content);
  put(root,note("This workspace helps assemble evidence for human review. No research numbers or graph relationships are changed, and exported packets are not native Studio S files.",true));
 }
-wsLoad();
