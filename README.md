@@ -6,12 +6,14 @@ Hali Sarah Parsons, Andrea Barfield and Matthew Scarpello
 
 This project examines hourly electricity demand, compares statistical and machine-learning forecasts, and evaluates a hybrid forecast across the full test year and the highest-demand hours. The report and presentation discuss both the results and the limits of applying retrospective experiments to operational decisions.
 
+[Open the project website and watch the presentation](https://mjscarpello.github.io/DSC450-ERCOT-Presentation/)
+
 ## Final deliverables
 
 | Deliverable | Location |
 |---|---|
 | Report / white paper | [Final Milestone 2 report (PDF)](research/reports/Milestone_2_ERCOT_Demand_Prediction_FINAL.pdf) |
-| Recorded presentation | [Final presentation release](https://github.com/mjscarpello/DSC450-ERCOT-Presentation/releases/tag/project2-milestone3-final) · [Download MP4](https://github.com/mjscarpello/DSC450-ERCOT-Presentation/releases/download/project2-milestone3-final/ERCOT.electricity.demand.forcasting.project.2.mp4) · 18 minutes 39 seconds |
+| Recorded presentation | [Watch on the website](https://mjscarpello.github.io/DSC450-ERCOT-Presentation/#presentation) · [Final presentation release](https://github.com/mjscarpello/DSC450-ERCOT-Presentation/releases/tag/project2-milestone3-final) · [Download MP4](https://github.com/mjscarpello/DSC450-ERCOT-Presentation/releases/download/project2-milestone3-final/ERCOT.electricity.demand.forcasting.project.2.mp4) · 18 minutes 39 seconds |
 | Q&A | [Ten stakeholder questions and answers](research/qa/stakeholder_questions.md) |
 | Final visualization notebook | [Complete final notebook with saved outputs](research/notebooks/originals/DSC450_ERCOT_Full_Visualization_Hybrid_model.ipynb) |
 | Code and reproduction | [Notebook guide](research/docs/NOTEBOOK_GUIDE.md) · [Data guide](research/data/README.md) · [Validation results](research/validation/REPOSITORY_CHECKS.json) |
@@ -45,4 +47,4 @@ The [source inventory](research/SOURCE_INVENTORY.json) records original filename
 
 ## Reference website
 
-The [ERCOT project context website](ERCOT%20project%20context%20web/README.md) provides an additional way to explore the research questions, figures and conclusions.
+The [ERCOT project website](https://mjscarpello.github.io/DSC450-ERCOT-Presentation/) provides an additional way to explore the research questions, figures and conclusions.

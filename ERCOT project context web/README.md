@@ -10,15 +10,9 @@ The original evidence has **178 nodes, 591 recorded graph edges and 38 notebook 
 
 ## Start exploring
 
-Open [the Research Explorer](explorer.html), or start a local server from the **outer repository root**:
+[Open the project website](https://mjscarpello.github.io/DSC450-ERCOT-Presentation/) to watch the recorded presentation and access the final report, Q&A and notebooks.
 
-```bash
-python -m http.server 8765
-```
-
-Then visit:
-
-`http://localhost:8765/ERCOT%20project%20context%20web/explorer.html`
+[Open the interactive Research Explorer](https://mjscarpello.github.io/DSC450-ERCOT-Presentation/ERCOT%20project%20context%20web/explorer.html) to explore the research connections directly. No installation or local server is required.
 
 The viewer opens on the **Connection map**. Choose a concept at the top, then:
 
@@ -30,7 +24,7 @@ The viewer opens on the **Connection map**. Choose a concept at the top, then:
 
 Other sidebar sections retain overview metrics, model comparisons, the full figure gallery, research questions and a source registry. All of these are **read-only reference views**.
 
-The [original standalone network viewer](outputs/ERCOT_CONTEXT_WEB.html) remains available for offline use with its full Plotly graph. The new modular explorer requires a local HTTP server or GitHub Pages because it loads the JSON data with browser fetch.
+The [original standalone network viewer](https://mjscarpello.github.io/DSC450-ERCOT-Presentation/ERCOT%20project%20context%20web/outputs/ERCOT_CONTEXT_WEB.html) remains available for offline use with its full Plotly graph. The new modular explorer requires a local HTTP server or GitHub Pages because it loads the JSON data with browser fetch.
 
 ## How to read the connections
 
@@ -48,7 +42,7 @@ See [Connection Model](docs/CONNECTION_MODEL.md) and [Scientific Boundaries](doc
 
 The team's 50/50 hybrid was strongest **among the team's own models** on the common comparison period; the published ERCOT day-ahead benchmark had lower overall MAE. The *highest 1% demand* subset was chosen **after observing actual demand**; it is a retrospective diagnostic, not an advance-known operational condition. Equal target hours also do not guarantee equivalent forecast issue times and predictor availability.
 
-The report, notebook and prediction CSV sources are referenced in the graph, but not all underlying files are included in this public repository. Verify originals before relying on source statements.
+The final report, notebooks and supplied CSVs are available in [research](../research). The original raw EIA snapshot and failed static SARIMA prediction trace remain unavailable; see the [documented limitations](../research/docs/LIMITATIONS.md).
 
 ## Data and project layout
 
@@ -62,6 +56,10 @@ The report, notebook and prediction CSV sources are referenced in the graph, but
 - `tests/` — figure/graph integrity and browser navigation checks.
 
 No original scientific graph nodes, source references or figures were removed when presentation authoring was retired.
+
+## Local development
+
+For developers working from a clone, run `python -m http.server 8765` from the repository root, then open `http://localhost:8765/`. This is optional and is not needed to visit the published website.
 
 ## Optional Python inspection
 
