@@ -21,7 +21,7 @@
     {
       "path": "research/reports/Milestone_2_ERCOT_Hybrid_Updated.docx",
       "original_filename": "Milestone_2_ERCOT_Hybrid_Updated.docx",
-      "role": "Latest hybrid-updated report available in source handoff; unchanged",
+      "role": "Earlier editable hybrid report; unchanged",
       "sha256": "0276a7379e7136065a048d07b9b42e490ba25ba202c91b5233c7493299be7f22"
     },
     {
@@ -70,7 +70,7 @@
     {
       "path": "research/notebooks/originals/DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
       "original_filename": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
-      "role": "Unmodified original full hybrid visualization notebook from handoff, before F09 label fix",
+      "role": "Unmodified original full hybrid visualization notebook before F09 label fix",
       "sha256": "567678437ef83089600937c2a28b3c0cfa25d7509aaceb4383280078847a49c1"
     },
     {
@@ -87,7 +87,6 @@
     }
   ],
   "final_video_received": true,
-  "latest_user_local_edits_received": false,
   "approved_final_report": "research/reports/Milestone_2_ERCOT_Demand_Prediction_FINAL.pdf",
   "approved_final_visualization_notebook": "research/notebooks/originals/DSC450_ERCOT_Full_Visualization_Hybrid_model.ipynb",
   "latest_final_notebook_received": true,
@@ -101,8 +100,12 @@
     "fps": 30,
     "video_codec": "h264",
     "audio_codec": "aac",
-    "storage": "GitHub Release asset intended; not stored in Git history",
-    "publication_status": "draft prepared; upload blocked by disabled browser file-upload permission",
-    "public_video_url": null
-  }
+    "storage": "Published GitHub Release asset; not stored in Git history",
+    "publication_status": "published",
+    "public_video_url": "https://github.com/mjscarpello/DSC450-ERCOT-Presentation/releases/download/project2-milestone3-final/ERCOT.electricity.demand.forcasting.project.2.mp4",
+    "release_url": "https://github.com/mjscarpello/DSC450-ERCOT-Presentation/releases/tag/project2-milestone3-final",
+    "release_tag": "project2-milestone3-final",
+    "github_asset_sha256_matches_original": true
+  },
+  "final_studio_s_project_included": false
 }

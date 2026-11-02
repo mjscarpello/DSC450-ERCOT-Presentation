@@ -1,16 +1,23 @@
 # Final recorded presentation
 
-Matthew supplied the final MP4, **ERCOT electricity demand forcasting project 2.mp4**, unchanged.
+[Open the final presentation release](https://github.com/mjscarpello/DSC450-ERCOT-Presentation/releases/tag/project2-milestone3-final) or [download the MP4](https://github.com/mjscarpello/DSC450-ERCOT-Presentation/releases/download/project2-milestone3-final/ERCOT.electricity.demand.forcasting.project.2.mp4).
 
-- Duration: 18 minutes 39.2 seconds.
-- Size: 40,201,171 bytes (about 40 MB).
-- Video: H.264, 1280 by 760, 30 fps.
-- Audio: AAC.
-- Full video/audio decode: completed without reported decoder errors. This is a technical file check, not a new human listening or scientific-content approval.
-- SHA-256: `27596c46462d8777c5ebb4558d0ec641ae6bc1fd1f922c868d5ad11cb39906d8`.
+**Project 2 Milestone 3 - Final presentation**
 
-A GitHub Release draft named **Project 2 Milestone 3 - Final presentation** is prepared, with planned tag `project2-milestone3-final`. The MP4 has not been attached or published: Chrome's ChatGPT extension file-upload permission is disabled. No public playback/download URL is claimed yet.
+Matthew Scarpello, Andrea Barfield and Sarah Parsons
 
-After attaching the supplied MP4 and publishing the release, add its actual asset/release URL here and in the root README. The draft is not a public submission link. The MP4 can also be uploaded directly to the course portal.
+| Property | Value |
+|---|---|
+| Duration | 18 minutes 39.2 seconds |
+| File size | 40,201,171 bytes (about 40 MB) |
+| Video | H.264, 1280 × 760, 30 fps |
+| Audio | AAC |
+| Release tag | `project2-milestone3-final` |
 
-Large videos stay outside ordinary Git commits. The final report, Q&A, notebooks and data are already linked in the repository. No video edits, recompression or changes to Matthew's local Studio S project were made.
+The video is hosted as a published GitHub Release asset. GitHub's SHA-256 digest matches the supplied original, confirming that the published file is unchanged:
+
+`27596c46462d8777c5ebb4558d0ec641ae6bc1fd1f922c868d5ad11cb39906d8`
+
+A complete audio/video decode reported no decoder errors. This technical validation does not constitute an additional human listening or scientific-content review. Details are recorded in [FINAL_VIDEO.json](../validation/FINAL_VIDEO.json).
+
+The [final report](../reports/Milestone_2_ERCOT_Demand_Prediction_FINAL.pdf), [written Q&A](../qa/stakeholder_questions.md) and [notebook guide](../docs/NOTEBOOK_GUIDE.md) accompany the presentation in this repository.

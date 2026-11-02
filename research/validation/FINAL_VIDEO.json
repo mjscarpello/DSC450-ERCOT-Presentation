@@ -14,5 +14,11 @@
   "audio_codec": "aac",
   "full_decode_errors": false,
   "human_listening_review_performed": false,
-  "github_release_asset_uploaded": false
+  "github_release_asset_uploaded": true,
+  "github_release_published": true,
+  "release_url": "https://github.com/mjscarpello/DSC450-ERCOT-Presentation/releases/tag/project2-milestone3-final",
+  "public_video_url": "https://github.com/mjscarpello/DSC450-ERCOT-Presentation/releases/download/project2-milestone3-final/ERCOT.electricity.demand.forcasting.project.2.mp4",
+  "github_asset_size_bytes": 40201171,
+  "github_asset_sha256": "27596c46462d8777c5ebb4558d0ec641ae6bc1fd1f922c868d5ad11cb39906d8",
+  "github_asset_sha256_matches_original": true
 }

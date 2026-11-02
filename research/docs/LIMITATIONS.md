@@ -9,4 +9,4 @@
 7. Original rolling model training was not rerun here. Code syntax validation is not model retraining or leakage verification. The merged observed-weather source is now included, but the old temperature figures have not been reverse-engineered or silently certified as source-reproduced.
 8. The failed year-long static SARIMA prediction trace is unavailable. The final rolling forecast cannot reconstruct that failed experiment; it is not fabricated.
 9. The report versions are preserved unchanged. Earlier versions predate hybrid results; consult reports/README.md. Hypotheses about why models differ should not be treated as causal proof.
-10. Matthew's final exported video and latest local Studio S edits were not received in this pass. No older preview is claimed to be the finished presentation.
+10. The published final video is preserved as supplied and technically validated. The final editable Studio S project is maintained separately; this repository does not claim to reproduce its rendering or certify the latest local project edits.

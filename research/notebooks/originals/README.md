@@ -1,11 +1,13 @@
-# Original notebooks
+# Original research notebooks
 
-## Matthew's true final visualization notebook
+## Final visualization notebook
 
-[DSC450_ERCOT_Full_Visualization_Hybrid_model.ipynb](DSC450_ERCOT_Full_Visualization_Hybrid_model.ipynb) is the complete user-designated final visualization notebook. It was copied verbatim, including all 104 cells (45 code cells), saved figures, Markdown, metadata and execution counts. It was not condensed, reformatted, rerun or substituted with a numbered repository adaptation. It contains no saved error outputs. Original filename and SHA-256 are in ../../SOURCE_INVENTORY.json.
+[DSC450_ERCOT_Full_Visualization_Hybrid_model.ipynb](DSC450_ERCOT_Full_Visualization_Hybrid_model.ipynb) is the approved final visualization source. All 104 cells, including 45 code cells, saved outputs and notebook metadata are preserved unchanged. The file passes notebook-format and code-syntax validation and contains no saved error outputs.
 
-This is the primary visualization source to review for the final submission. It retains the original CSV-selection workflow; select the supplied CSVs in ../../data if prompted.
+The original CSV-selection workflow remains available. Input files are provided in [the data folder](../../data). File hashes are recorded in the [source inventory](../../SOURCE_INVENTORY.json).
 
 ## Earlier research sources
 
-The other notebooks remain unchanged historical sources: Sarah's cleaning notebook, Andrea's modeling notebook, the earlier full hybrid notebook, its F09-label-fixed edition and the original Studio S asset-build notebook. The numbered notebooks one level up provide separately adapted reproduction workflows. See ../../docs/NOTEBOOK_GUIDE.md for their roles and execution limits.
+The remaining notebooks preserve Sarah's cleaning workflow, Andrea's model-training workflow, earlier hybrid visualization versions and the original Studio S asset-build workflow. They are retained for research provenance.
+
+The numbered notebooks one level up provide separately adapted reproduction workflows. Their roles and execution limits are documented in the [notebook guide](../../docs/NOTEBOOK_GUIDE.md).

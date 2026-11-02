@@ -1,7 +1,7 @@
-# Final report and earlier versions
+# Reports
 
-**The authoritative report for submission is [Milestone_2_ERCOT_Demand_Prediction_FINAL.pdf](Milestone_2_ERCOT_Demand_Prediction_FINAL.pdf).** Matthew explicitly designated the uploaded `Milestone+2+ERCOT+demand+prediction.pdf` as the final actual report. The repository copy has a clean filename and identical bytes. No content, figures, pagination or formatting was edited.
+The final report is [Milestone_2_ERCOT_Demand_Prediction_FINAL.pdf](Milestone_2_ERCOT_Demand_Prediction_FINAL.pdf). This is the complete approved PDF, preserved without changes to its content or formatting.
 
-`Milestone_2_ERCOT_Hybrid_Updated.docx` remains as earlier editable report context, not the designated final report. The pre-hybrid `DSC450_Project2_Milestone2_FINAL.docx` and PDF remain in archive. The word FINAL in those older filenames does not supersede Matthew's explicit choice above.
+`Milestone_2_ERCOT_Hybrid_Updated.docx` is an earlier editable version. The pre-hybrid report files in `archive` are historical references; their original filenames do not indicate the current final report.
 
-The standalone written Q&A corresponds to the ten questions and answers in the authoritative PDF. Page 13 is otherwise blank, with only its footer. It is preserved because this is the user's approved final file. Removing that page would be an optional formatting edit, not a research requirement.
+The [written Q&A](../qa/stakeholder_questions.md) corresponds to the ten stakeholder questions and answers in the final PDF.
