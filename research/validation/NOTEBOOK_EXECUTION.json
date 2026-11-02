@@ -1,0 +1,20 @@
+{
+  "status": "pass",
+  "engine": "Sequential cells in a fresh socket-free IPython subprocess for each analysis notebook; not a Jupyter-server acceptance test",
+  "notebooks": [
+    {
+      "path": "notebooks/03_visualization.ipynb",
+      "code_cells": 44,
+      "has_saved_execution_counts": true,
+      "executed_this_pass": true
+    },
+    {
+      "path": "notebooks/04_presentation_research.ipynb",
+      "code_cells": 2,
+      "has_saved_execution_counts": true,
+      "executed_this_pass": true
+    }
+  ],
+  "wrangling_executed": false,
+  "model_training_executed": false
+}

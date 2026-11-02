@@ -1,0 +1,113 @@
+{
+  "status": "pass",
+  "historical_hours": 41616,
+  "holdout_hours": 8760,
+  "matched_hours": 8640,
+  "historical_span_utc": [
+    "2022-01-01 00:00:00+00:00",
+    "2026-09-30 23:00:00+00:00"
+  ],
+  "missing_by_original_column": {
+    "period_utc": 0,
+    "demand_mwh": 0,
+    "demand_forecast_mwh": 120,
+    "net_generation_mwh": 24,
+    "interchange_mwh": 127,
+    "was_missing_hour": 0,
+    "demand_raw_mwh": 0,
+    "demand_imputed": 0,
+    "period_central": 0,
+    "hour": 0,
+    "day_of_week": 0,
+    "is_weekend": 0,
+    "month": 0,
+    "year": 0,
+    "season": 0,
+    "is_holiday": 0,
+    "demand_lag_24": 24,
+    "demand_lag_168": 168,
+    "demand_roll_mean_24": 47,
+    "ercot_forecast_error_mwh": 120
+  },
+  "overall_mae": {
+    "ERCOT_DAY_AHEAD": 1134.7952546296297,
+    "SEASONAL_NAIVE": 4205.285416666667,
+    "ROLLING_SARIMA": 2661.576905984087,
+    "PROPHET": 4846.274139665571,
+    "XGBOOST": 2647.4153762731476,
+    "WEATHER_SARIMAX": 2729.8387356434664,
+    "WEATHER_XGBOOST": 2476.6842995370366,
+    "HYBRID_50_50": 2005.8493316279978
+  },
+  "signed_bias": {
+    "ERCOT_DAY_AHEAD": 311.0883101851852,
+    "SEASONAL_NAIVE": -145.0724537037037,
+    "ROLLING_SARIMA": -0.8214170579695275,
+    "PROPHET": -1441.0954244227776,
+    "XGBOOST": -799.4261653935185,
+    "WEATHER_SARIMAX": -1.2062017812393218,
+    "WEATHER_XGBOOST": -1200.2727731481484,
+    "HYBRID_50_50": -600.5470951030585
+  },
+  "high_load_mae": {
+    "ERCOT_DAY_AHEAD": 1157.5795454545455,
+    "SEASONAL_NAIVE": 4075.1477272727275,
+    "ROLLING_SARIMA": 1241.9586223104163,
+    "PROPHET": 14908.424018500633,
+    "XGBOOST": 8018.775704545455,
+    "WEATHER_SARIMAX": 1175.892818656792,
+    "WEATHER_XGBOOST": 6421.161363636363,
+    "HYBRID_50_50": 3188.6401899272823
+  },
+  "load_cutoffs_mwh": {
+    "0.5": 55206.0,
+    "0.9": 76966.5,
+    "0.95": 82069.25,
+    "0.99": 87965.69
+  },
+  "load_group_counts": {
+    "Bottom 50%": 4334,
+    "50\u201390%": 3456,
+    "90\u201395%": 428,
+    "95\u201399%": 334,
+    "Top 1%": 88
+  },
+  "opposite_sign_hours": 4022,
+  "signed_error_correlation": 0.21307812720660085,
+  "high_load_month_counts": {
+    "7": 24,
+    "8": 64
+  },
+  "high_load_hour_counts": {
+    "15": 10,
+    "16": 17,
+    "17": 21,
+    "18": 23,
+    "19": 14,
+    "20": 3
+  },
+  "hybrid_max_arithmetic_difference": 7.275957614183426e-12,
+  "hybrid_reduction_vs_naive_pct": 52.30170766344937,
+  "july_case": {
+    "ACTUAL_DEMAND_MWH": 90402.0,
+    "ERCOT_DAY_AHEAD": 89897.0,
+    "SEASONAL_NAIVE": 64949.0,
+    "ROLLING_SARIMA": 88882.91811854532,
+    "PROPHET": 71585.8393826131,
+    "XGBOOST": 77564.65,
+    "WEATHER_SARIMAX": 90079.2815033404,
+    "WEATHER_XGBOOST": 78913.32,
+    "HYBRID_50_50": 83898.11905927266
+  },
+  "july_case_utc": "2026-07-22 21:00:00+00:00",
+  "july_case_local": "2026-07-22 16:00:00-05:00",
+  "july_hybrid_underforecast": 6503.880940727337,
+  "rolling_mean_reconciliation": [
+    {
+      "shift_hours": 24,
+      "window_hours": 24,
+      "min_periods": 24
+    }
+  ],
+  "source_limitations": "Retrospective supplied predictions. Equal target hours do not establish equal forecast issue times, horizons or advance-available inputs. Observed weather is not an operational weather forecast. Observed-load groups are selected afterward. No costs, reserves or outages were measured. No independent raw-EIA snapshot authentication or model leakage audit is available."
+}

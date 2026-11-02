@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "matched_hours": 8640,
+  "opposite_sign_hours": 4022,
+  "same_sign_hours": 4618,
+  "zero_error_hours": 0,
+  "opposite_sign_percent": 46.550925925925924,
+  "pearson_r": 0.21307812720660085,
+  "definition": "Forecast minus actual, MWh",
+  "classification": "Opposite only when error product < 0; neither model is a color category",
+  "source_sha256": "04bce37eb43a9e4228cfe5077d77bd8300dcae868fea697a1a7802a73573af3d",
+  "scope": "The same 8640 shared-hour sample as the presentation, not the larger model-pair-only sample",
+  "project_updated": false
+}

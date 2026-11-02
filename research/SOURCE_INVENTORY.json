@@ -1,0 +1,79 @@
+{
+  "sources": [
+    {
+      "path": "research/data/eia930_erco_cleaned.csv",
+      "original_filename": "eia930_erco_cleaned.csv",
+      "role": "Frozen team input, unchanged bytes",
+      "sha256": "eabc181b59d5cff82c47111d06833dc29b43ca813940a1d8fde157ae17340abd"
+    },
+    {
+      "path": "research/data/ercot_model_predicitons_comparison_with_hybrid.csv",
+      "original_filename": "ercot_model_predicitons_comparison_with_hybrid.csv",
+      "role": "Frozen team input, unchanged bytes",
+      "sha256": "998cd446d87429029a1c1060fe5fe365cca72f5b40dec4fb15e8ac5ac63f5ed6"
+    },
+    {
+      "path": "research/data/eia930_erco_weather.csv",
+      "original_filename": "eia930_erco_weather.csv",
+      "role": "Supplied observed-weather merged data; not advance forecasts",
+      "sha256": "b8aacd872f2ffd2a29c6ae1bfac12cf89302bf2be1fe8845004627f8d987e64b"
+    },
+    {
+      "path": "research/reports/Milestone_2_ERCOT_Hybrid_Updated.docx",
+      "original_filename": "Milestone_2_ERCOT_Hybrid_Updated.docx",
+      "role": "Latest hybrid-updated report available in source handoff; unchanged",
+      "sha256": "0276a7379e7136065a048d07b9b42e490ba25ba202c91b5233c7493299be7f22"
+    },
+    {
+      "path": "research/reports/archive/DSC450_Project2_Milestone2_FINAL.docx",
+      "original_filename": "DSC450_Project2_Milestone2_FINAL.docx",
+      "role": "Earlier pre-hybrid report; preserve original FINAL filename as historical, not newest findings",
+      "sha256": "46825f098dd8a8a9e21fd126cb4fd8896855c709fb0ab9ff28e41a39abb16ba5"
+    },
+    {
+      "path": "research/reports/archive/DSC450_Project2_Milestone2_FINAL.pdf",
+      "original_filename": "DSC450_Project2_Milestone2_FINAL.pdf",
+      "role": "Earlier pre-hybrid report; preserve original FINAL filename as historical, not newest findings",
+      "sha256": "fef6e647936c05e309c45fcc2f3941cd20e36ab01f47fb67d06980829f042ba6"
+    },
+    {
+      "path": "research/notebooks/originals/DSC450_Project2_EIA930_Data_Wrangling.ipynb",
+      "original_filename": "DSC450_Project2_EIA930_Data_Wrangling.ipynb",
+      "role": "Original notebook, unmodified",
+      "sha256": "fc6c6b44f0d5fd19e5ac2921ee282ee6147626373bfba934760157e0794d3eb6"
+    },
+    {
+      "path": "research/notebooks/originals/forecasting_electricy_demand_model_building 1(1).ipynb",
+      "original_filename": "forecasting_electricy_demand_model_building 1(1).ipynb",
+      "role": "Original notebook, unmodified",
+      "sha256": "78a3b1e3ed8ff9eda0b8fc05e668f2815a94ba7b80af1f805a1969199cbf0ceb"
+    },
+    {
+      "path": "research/notebooks/originals/DSC450_ERCOT_Full_Visualization_Hybrid_F09_FIXED.ipynb",
+      "original_filename": "DSC450_ERCOT_Full_Visualization_Hybrid_F09_FIXED.ipynb",
+      "role": "Original notebook, unmodified",
+      "sha256": "240fb6a1c29ffb7f2e6e9cba5c42e7fe289f3f458bbcb510ce857d4ddba45431"
+    },
+    {
+      "path": "research/notebooks/originals/DSC450_ERCOT_Storyboard_Visuals.ipynb",
+      "original_filename": "DSC450_ERCOT_Storyboard_Visuals.ipynb",
+      "role": "Original Studio S asset-build notebook; preserved, requires historical storyboard bundle",
+      "sha256": "ac71d65db1d2320091dada51756bae561cd1f8fff6b6eb2379a99d603e2420a7"
+    },
+    {
+      "path": "research/src/storyboard_research.py",
+      "original_filename": "storyboard_research.py",
+      "role": "Adapted deterministic extraction, with repository output paths fixed; not an unchanged original",
+      "sha256": "30dde1656c632614bcb19eb49b4ce26be91563b7873a89aef5b214591ce2b33a",
+      "source_before_repository_path_fixes_sha256": "23c18972d0d99125deb7f7865dba1d63c88da3c9c7f388991bb9b7a2619b5f3b"
+    },
+    {
+      "path": "research/notebooks/originals/DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+      "original_filename": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+      "role": "Unmodified original full hybrid visualization notebook from handoff, before F09 label fix",
+      "sha256": "567678437ef83089600937c2a28b3c0cfa25d7509aaceb4383280078847a49c1"
+    }
+  ],
+  "final_video_received": false,
+  "latest_user_local_edits_received": false
+}

@@ -1,0 +1,8 @@
+.DS_Store
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+research/outputs/
+research/data/eia930_erco_hourly.csv
+research/presentation/*.mp4
+research/presentation/*.mov

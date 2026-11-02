@@ -1,0 +1,68 @@
+{
+  "status": "pass",
+  "source_hashes_verified": 12,
+  "notebooks_validated": [
+    {
+      "path": "notebooks/01_data_wrangling.ipynb",
+      "code_cells": 23,
+      "has_saved_execution_counts": false,
+      "executed_this_pass": false
+    },
+    {
+      "path": "notebooks/02_model_training.ipynb",
+      "code_cells": 67,
+      "has_saved_execution_counts": false,
+      "executed_this_pass": false
+    },
+    {
+      "path": "notebooks/03_visualization.ipynb",
+      "code_cells": 44,
+      "has_saved_execution_counts": true,
+      "executed_this_pass": true
+    },
+    {
+      "path": "notebooks/04_presentation_research.ipynb",
+      "code_cells": 2,
+      "has_saved_execution_counts": true,
+      "executed_this_pass": true
+    },
+    {
+      "path": "notebooks/originals/DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
+      "code_cells": 43,
+      "has_saved_execution_counts": true,
+      "executed_this_pass": false
+    },
+    {
+      "path": "notebooks/originals/DSC450_ERCOT_Full_Visualization_Hybrid_F09_FIXED.ipynb",
+      "code_cells": 43,
+      "has_saved_execution_counts": true,
+      "executed_this_pass": false
+    },
+    {
+      "path": "notebooks/originals/DSC450_ERCOT_Storyboard_Visuals.ipynb",
+      "code_cells": 9,
+      "has_saved_execution_counts": true,
+      "executed_this_pass": false
+    },
+    {
+      "path": "notebooks/originals/DSC450_Project2_EIA930_Data_Wrangling.ipynb",
+      "code_cells": 22,
+      "has_saved_execution_counts": false,
+      "executed_this_pass": false
+    },
+    {
+      "path": "notebooks/originals/forecasting_electricy_demand_model_building 1(1).ipynb",
+      "code_cells": 66,
+      "has_saved_execution_counts": false,
+      "executed_this_pass": false
+    }
+  ],
+  "ten_written_questions_present": true,
+  "markdown_links_valid": true,
+  "unchanged_final_media": true,
+  "final_video_received": false,
+  "missing_raw_snapshot": "eia930_erco_hourly.csv",
+  "training_reexecuted": false,
+  "report_version_review_required": true,
+  "scope": "Source/analysis repository; pending media and report-version signoff are not certified complete."
+}
