@@ -72,8 +72,23 @@
       "original_filename": "DSC450_ERCOT_Full_Visualization_Hybrid.ipynb",
       "role": "Unmodified original full hybrid visualization notebook from handoff, before F09 label fix",
       "sha256": "567678437ef83089600937c2a28b3c0cfa25d7509aaceb4383280078847a49c1"
+    },
+    {
+      "path": "research/reports/Milestone_2_ERCOT_Demand_Prediction_FINAL.pdf",
+      "original_filename": "Milestone+2+ERCOT+demand+prediction.pdf",
+      "role": "User-designated authoritative final report; unchanged PDF bytes",
+      "sha256": "32df308b9380bce16e76a2d68a12385e415ef0c8df697fc4ae837d3342b44c9f"
+    },
+    {
+      "path": "research/notebooks/originals/DSC450_ERCOT_Full_Visualization_Hybrid_model.ipynb",
+      "original_filename": "DSC450_ERCOT_Full_Visualization_Hybrid_model.ipynb",
+      "role": "User-designated true final visualization notebook; unchanged complete original with saved outputs",
+      "sha256": "d00ff8e65837c826cdf100edc2cbced8d7ef4c229f84a2081d68b355213a9ddc"
     }
   ],
   "final_video_received": false,
-  "latest_user_local_edits_received": false
+  "latest_user_local_edits_received": false,
+  "approved_final_report": "research/reports/Milestone_2_ERCOT_Demand_Prediction_FINAL.pdf",
+  "approved_final_visualization_notebook": "research/notebooks/originals/DSC450_ERCOT_Full_Visualization_Hybrid_model.ipynb",
+  "latest_final_notebook_received": true
 }

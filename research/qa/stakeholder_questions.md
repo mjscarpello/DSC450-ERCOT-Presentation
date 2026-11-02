@@ -1,6 +1,6 @@
 # Ten stakeholder questions and answers
 
-Extracted verbatim from the hybrid-updated Milestone 2 report. This is written Q&A, not evidence of a recorded/live Q&A. See the report version note before submission.
+Written Q&A corresponding to the ten questions and answers in the [user-designated final report](../reports/Milestone_2_ERCOT_Demand_Prediction_FINAL.pdf). Answers are unchanged from the earlier extraction and checked against the final PDF. This is written Q&A, not evidence of a recorded/live Q&A.
 
 ## 1. What business decision does the project inform?
 

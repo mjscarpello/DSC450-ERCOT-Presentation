@@ -1,6 +1,6 @@
 {
   "status": "pass",
-  "source_hashes_verified": 12,
+  "source_hashes_verified": 14,
   "notebooks_validated": [
     {
       "path": "notebooks/01_data_wrangling.ipynb",
@@ -39,6 +39,12 @@
       "executed_this_pass": false
     },
     {
+      "path": "notebooks/originals/DSC450_ERCOT_Full_Visualization_Hybrid_model.ipynb",
+      "code_cells": 45,
+      "has_saved_execution_counts": true,
+      "executed_this_pass": false
+    },
+    {
       "path": "notebooks/originals/DSC450_ERCOT_Storyboard_Visuals.ipynb",
       "code_cells": 9,
       "has_saved_execution_counts": true,
@@ -63,6 +69,7 @@
   "final_video_received": false,
   "missing_raw_snapshot": "eia930_erco_hourly.csv",
   "training_reexecuted": false,
-  "report_version_review_required": true,
-  "scope": "Source/analysis repository; pending media and report-version signoff are not certified complete."
+  "report_version_review_required": false,
+  "user_final_visualization_received": true,
+  "scope": "Source/analysis repository; final report and final visualization source are user-designated; final media has not been received."
 }

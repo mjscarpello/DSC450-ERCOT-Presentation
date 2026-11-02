@@ -1,5 +1,7 @@
 # Notebook guide
 
+**Final submitted visualization source:** [Matthew’s complete final notebook](../notebooks/originals/DSC450_ERCOT_Full_Visualization_Hybrid_model.ipynb). This user-designated version is preserved exactly as supplied, with 104 cells and all saved outputs. It was format/syntax checked, not rerun or condensed in this update. The numbered notebooks below remain separate repository adaptations and reproduction tools.
+
 | Notebook | Responsibility and source | Execution status / requirements |
 |---|---|---|
 | 01_data_wrangling.ipynb | Sarah's EIA-930 cleaning and feature construction; original 47-cell notebook preserved. | Repository paths added. Not executed: original eia930_erco_hourly.csv is missing. The supplied cleaned CSV is included for downstream analysis. |

@@ -6,14 +6,16 @@ Research and submission materials for **Forecasting Next-Day Hourly Electricity 
 
 | Required deliverable | Location | Status |
 |---|---|---|
-| Report / white paper | [Hybrid-updated Milestone 2 report](research/reports/Milestone_2_ERCOT_Hybrid_Updated.docx) | Latest hybrid-updated report recovered from the shared source package. See [version notes](research/reports/README.md). |
+| Report / white paper | [Final Milestone 2 report (PDF)](research/reports/Milestone_2_ERCOT_Demand_Prediction_FINAL.pdf) | Exact final report designated by Matthew. Earlier versions are reference only; see [version notes](research/reports/README.md). |
 | Presentation | [Final video handoff](research/presentation/README.md) | Matthew's final video is being exported locally; the final file/link has not been supplied here. |
-| Q&A | [Ten stakeholder questions and answers](research/qa/stakeholder_questions.md) | Written Q&A extracted from the hybrid-updated report. |
+| Q&A | [Ten stakeholder questions and answers](research/qa/stakeholder_questions.md) | Written Q&A corresponding to the final report’s ten stakeholder questions. |
 | Code / link to code | [Research notebook guide](research/docs/NOTEBOOK_GUIDE.md) | Cleaning, model-training, complete visualization and presentation-research notebooks, with source data and reproducibility checks. |
 
 The video and the final Studio S project are maintained separately from the research code. Earlier storyboard/audio drafts are **not** labeled as the final presentation. This organization does not change Matthew's completed local video or visual edits.
 
 ## Start with the research
+
+**Authoritative final visualization notebook:** [DSC450_ERCOT_Full_Visualization_Hybrid_model.ipynb](research/notebooks/originals/DSC450_ERCOT_Full_Visualization_Hybrid_model.ipynb). Matthew supplied this complete final version: all 104 cells, including 45 code cells, and saved outputs are preserved without condensing or rerunning it. The numbered notebooks below are reproducibility/reference copies; they do not replace his final notebook.
 
 1. [03_visualization.ipynb](research/notebooks/03_visualization.ipynb): full historical exploration and eight-series forecast comparison, including the added opposite-direction error scatterplot.
 2. [04_presentation_research.ipynb](research/notebooks/04_presentation_research.ipynb): independently checked presentation numbers and research figures.
