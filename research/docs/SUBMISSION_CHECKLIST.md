@@ -8,7 +8,8 @@ The assignment calls for one team submission containing a report/white paper, pr
 - [x] Ten written stakeholder Q&As extracted into their own file.
 - [x] Frozen-prediction notebooks executed successfully and source hashes, notebook syntax, numerical evidence and documentation links verified. See validation.
 - [x] Matthew explicitly confirmed the primary report and supplied his true final visualization notebook, included without condensing.
-- [ ] Add your newly exported final presentation file or its accessible host URL to the course submission. The final export has not been received here.
+- [x] Final MP4 received and technical metadata/full decode checked without changing the file.
+- [ ] Finish attaching the MP4 to the prepared GitHub Release and publish it, or upload it directly to the course portal; no public video link is available yet.
 - [ ] Confirm any course-specific recorded/live Q&A requirement against Project Overview; the included artifact is written Q&A.
 - [ ] Submit the report, presentation, Q&A and repository link together once for the team; retain the portal receipt.
 

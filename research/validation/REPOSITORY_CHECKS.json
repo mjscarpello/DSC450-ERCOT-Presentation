@@ -66,10 +66,11 @@
   "ten_written_questions_present": true,
   "markdown_links_valid": true,
   "unchanged_final_media": true,
-  "final_video_received": false,
+  "final_video_received": true,
+  "final_video_published": false,
   "missing_raw_snapshot": "eia930_erco_hourly.csv",
   "training_reexecuted": false,
   "report_version_review_required": false,
   "user_final_visualization_received": true,
-  "scope": "Source/analysis repository; final report and final visualization source are user-designated; final media has not been received."
+  "scope": "Source/analysis repository; final report and final visualization source are user-designated; final media is supplied but release publication is pending."
 }

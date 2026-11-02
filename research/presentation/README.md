@@ -1,13 +1,16 @@
-# Final presentation handoff
+# Final recorded presentation
 
-Matthew confirmed that all video edits are finished and the video is exporting locally. That new final export has not been supplied in this workspace, so no older draft has been copied here or labeled final.
+Matthew supplied the final MP4, **ERCOT electricity demand forcasting project 2.mp4**, unchanged.
 
-After export:
+- Duration: 18 minutes 39.2 seconds.
+- Size: 40,201,171 bytes (about 40 MB).
+- Video: H.264, 1280 by 760, 30 fps.
+- Audio: AAC.
+- Full video/audio decode: completed without reported decoder errors. This is a technical file check, not a new human listening or scientific-content approval.
+- SHA-256: `27596c46462d8777c5ebb4558d0ec641ae6bc1fd1f922c868d5ad11cb39906d8`.
 
-1. Watch the complete exported video, including the end, and verify voices, highlights and transitions.
-2. Upload the final MP4 to the course submission or an accessible approved video host. Add its actual share URL below if you want the repository to point to it, and check access without a signed-in owner session.
-3. If archiving the editable Studio S work, use the newly exported project and all its assets. Do not replace it with the earlier assistant-generated draft.
+A GitHub Release draft named **Project 2 Milestone 3 - Final presentation** is prepared, with planned tag `project2-milestone3-final`. The MP4 has not been attached or published: Chrome's ChatGPT extension file-upload permission is disabled. No public playback/download URL is claimed yet.
 
-**Final video URL:** not supplied.
+After attaching the supplied MP4 and publishing the release, add its actual asset/release URL here and in the root README. The draft is not a public submission link. The MP4 can also be uploaded directly to the course portal.
 
-Large MP4/MOV files are excluded from ordinary Git commits. Use course upload, a host link or a release artifact rather than embedding a large video in the research source history. The research code and notebooks are independent of the video export.
+Large videos stay outside ordinary Git commits. The final report, Q&A, notebooks and data are already linked in the repository. No video edits, recompression or changes to Matthew's local Studio S project were made.

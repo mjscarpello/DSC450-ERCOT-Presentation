@@ -7,7 +7,7 @@ Research and submission materials for **Forecasting Next-Day Hourly Electricity 
 | Required deliverable | Location | Status |
 |---|---|---|
 | Report / white paper | [Final Milestone 2 report (PDF)](research/reports/Milestone_2_ERCOT_Demand_Prediction_FINAL.pdf) | Exact final report designated by Matthew. Earlier versions are reference only; see [version notes](research/reports/README.md). |
-| Presentation | [Final video handoff](research/presentation/README.md) | Matthew's final video is being exported locally; the final file/link has not been supplied here. |
+| Presentation | [Final video handoff](research/presentation/README.md) | Final MP4 received and media decode checked (18:39, 40 MB). GitHub Release draft prepared; asset upload and public video link pending. |
 | Q&A | [Ten stakeholder questions and answers](research/qa/stakeholder_questions.md) | Written Q&A corresponding to the final report’s ten stakeholder questions. |
 | Code / link to code | [Research notebook guide](research/docs/NOTEBOOK_GUIDE.md) | Cleaning, model-training, complete visualization and presentation-research notebooks, with source data and reproducibility checks. |
 

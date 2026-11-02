@@ -1,0 +1,18 @@
+{
+  "status": "pass",
+  "scope": "Technical file/container/decoder validation only",
+  "file": "ERCOT electricity demand forcasting project 2.mp4",
+  "size_bytes": 40201171,
+  "sha256": "27596c46462d8777c5ebb4558d0ec641ae6bc1fd1f922c868d5ad11cb39906d8",
+  "duration_seconds": 1119.2,
+  "video": {
+    "codec": "h264",
+    "width": 1280,
+    "height": 760,
+    "fps": 30
+  },
+  "audio_codec": "aac",
+  "full_decode_errors": false,
+  "human_listening_review_performed": false,
+  "github_release_asset_uploaded": false
+}

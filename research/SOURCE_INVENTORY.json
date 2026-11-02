@@ -86,9 +86,23 @@
       "sha256": "d00ff8e65837c826cdf100edc2cbced8d7ef4c229f84a2081d68b355213a9ddc"
     }
   ],
-  "final_video_received": false,
+  "final_video_received": true,
   "latest_user_local_edits_received": false,
   "approved_final_report": "research/reports/Milestone_2_ERCOT_Demand_Prediction_FINAL.pdf",
   "approved_final_visualization_notebook": "research/notebooks/originals/DSC450_ERCOT_Full_Visualization_Hybrid_model.ipynb",
-  "latest_final_notebook_received": true
+  "latest_final_notebook_received": true,
+  "final_video": {
+    "original_filename": "ERCOT electricity demand forcasting project 2.mp4",
+    "size_bytes": 40201171,
+    "sha256": "27596c46462d8777c5ebb4558d0ec641ae6bc1fd1f922c868d5ad11cb39906d8",
+    "duration_seconds": 1119.2,
+    "width": 1280,
+    "height": 760,
+    "fps": 30,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "storage": "GitHub Release asset intended; not stored in Git history",
+    "publication_status": "draft prepared; upload blocked by disabled browser file-upload permission",
+    "public_video_url": null
+  }
 }
